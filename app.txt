@@ -1,0 +1,18 @@
+50 recettes 
+
+inscription 
+connection 
+deconnection 
+consulter ses donnees personnelles
+modifier ses donnees personnelles
+                                                        supprimer son compte
+
+ajouter une recette 
+modifier une recette 
+supprimer une recette 
+                                                        laisser un/plusireus commentaires 
+
+ajouter une recette dans les favoris 
+supprimer une recette dans les favoris 
+
+                                                        rechercher des recettes ou des personnes 
