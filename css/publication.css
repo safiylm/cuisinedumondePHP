@@ -1,0 +1,122 @@
+body {
+
+    background-color: #fff !important;
+}
+
+.head {
+    background-color: #858585;
+    height: 150px;
+    width: 70%;
+    margin: 0 auto;
+    min-width: 400px;
+}
+
+.main {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    min-width: 300px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    padding: auto;
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+
+.flex-item .element {
+    width: 250px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.div-img {
+    width: 250px !important;
+    height: 250px !important;
+}
+
+
+.div-img img {
+    width: auto !important;
+    height: auto !important;
+    min-height: 250px;
+    max-height: 250px;
+    border: none;
+   
+}
+
+.a-titre {
+
+    width: 250px !important;
+    padding-top: 5px;
+    display: block;
+    text-decoration: none;
+    font-size: 0.8em;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    height: 75px;
+
+}
+
+#btn-trash{
+    border:none; border-radius:5px;  padding:7px; text-decoration:none; background-color: transparent ;color:white;
+}
+
+#btn-update {
+    display: block;
+    text-align: center;
+    width: 80px;
+    padding: 5px;
+    margin: 5px auto;
+}
+
+.div-titre {
+    padding: 5px;
+    height: auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.a-titre:hover {
+    color: steelblue;
+}
+
+@media screen and (max-device-width: 940px) {
+
+    .main {
+        width: 95%;
+    }
+
+}
+
+
+@media screen and (max-device-width: 605px) {
+
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    h2 {
+        margin: 70px;
+        font-size: 4em;
+    }
+
+}

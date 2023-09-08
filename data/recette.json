@@ -1,0 +1,467 @@
+{
+    "sitecuisine": {
+        "liste_categorie": {
+            "categorie": [
+                "Accompagnements",
+                "Apéritifs",
+                "Bases",
+                "Boissons",
+                "Boulangerie - Viennoiserie",
+                "Confiseries",
+                "Confitures",
+                "Desserts",
+                "Entrées",
+                "Gâteaux - Biscuits",
+                "Petit-déjeuner",
+                "Plats",
+                "Pâtisserie",
+                "Salades",
+                "Sauces",
+                "Soupes",
+                "Tartes"
+            ]
+        },
+        "liste_recette": {
+            "recette": [
+                {
+                    "titre": "Lasagne",
+                    "auteur": "safinazylm@gmail.com",
+                    "categorie": "Plats",
+                    "image": "lasagneR1.jpg",
+                    "liste_ingredients": {
+                        "nb_personne": "8 personnes",
+                        "ingredient": [
+                            "1 paquet de lasagne",
+                            "3 oignons",
+                            "1 carotte",
+                            "15 cl d'eau",
+                            "thym",
+                            "sel",
+                            "poivre",
+                            "100g de farine",
+                            "125g de beurre",
+                            "2 gousse d'ail",
+                            "1 branche de c\u00e9leri",
+                            "600g de boeuf hach\u00e9",
+                            "1 l de lait"
+                        ]
+                    },
+                    "difficulte": "",
+                    "temps_preparation": "30 min",
+                    "temps_cuisson": "25min",
+                    "temps_repos": "",
+                    "preparation": {
+                        "etape": [
+                            "Faire revenir gousses hach\u00e9es d'ail et les oignons \u00e9minc\u00e9s dans un peu d'huile\n                d'olive.",
+                            "Ajouter la carotte et la branche de c\u00e9leri hach\u00e9e puis la viande et faire revenir le\n                tout.",
+                            "Laisser cuire jusqu'\u00e0 \u00e9vaporation.",
+                            "Ajouter la pur\u00e9e de tomates, l'eau et les herbes. Saler, poivrer, puis laisser\n                mijoter \u00e0\n                    feu doux 45 minutes.",
+                            "Pr\u00e9parer la b\u00e9chamel : faire fondre 100 g de beurre.",
+                            "Hors du feu, ajouter la farine d'un coup.",
+                            "Ajouter le lait peu \u00e0 peu.",
+                            "Remuer sans cesse, jusqu'\u00e0 ce que le m\u00e9lange s'\u00e9paississe.",
+                            "Ensuite, parfumer avec la muscade, saler, poivrer. Laisser cuire environ 5 minutes,\n                    \u00e0\n                    feu tr\u00e8s doux, en remuant. R\u00e9server.",
+                            "Pr\u00e9chauffer le four \u00e0 200\u00b0C (thermostat 6-7). Huiler le plat \u00e0 lasagnes. Poser une\n                fine\n                    couche de b\u00e9chamel puis des feuilles de lasagnes, de la bolognaise, de la\n                b\u00e9chamel et du\n                    parmesan. R\u00e9p\u00e9ter l'op\u00e9ration 3 fois de suite.",
+                            "Sur la derni\u00e8re couche de lasagnes, ne mettre que de la b\u00e9chamel et recouvrir de\n                fromage\n                    r\u00e2p\u00e9. Parsemer quelques noisettes de beurre.",
+                            "Enfourner pour environ 25 minutes de cuisson.",
+                            "D\u00e9guster"
+                        ]
+                    }
+                },
+                {
+                    "titre": "Hambuger",
+                    "auteur": "safinazylm@gmail.com",
+                    "categorie": "Plats",
+                    "image": "https:\/\/img.cuisineaz.com\/312x250\/2016\/03\/04\/i91705-hamburger.webp",
+                    "liste_ingredients": {
+                        "nb_personne": "4 personnes",
+                        "ingredient": [
+                            "pain pour hamburger",
+                            "oignon",
+                            "tomate",
+                            "viande hach\u00e9",
+                            "cheddar",
+                            "salade",
+                            "sauces"
+                        ]
+                    },
+                    "difficulte": "",
+                    "temps_preparation": "5 min",
+                    "temps_cuisson": "5min",
+                    "temps_repos": "",
+                    "preparation": {
+                        "etape": [
+                            "Faites revenir les oignons \u00e0 feux doux.",
+                            "Ajouter les steaks.",
+                            "Une fois saisi, poser une tranche de cheddar sur le steak et laisser fondre.",
+                            "Une fois cuit, d\u00e9poser le steak et le fromage sur une des tranches du pain\n                    que\n                    vous aurez auparavant tartin\u00e9e d'un m\u00e9lange de ketchup et de moutarde.",
+                            "Ajouter la salade et de petites rondelles de tomates.",
+                            "Vous pouvez maintenant recouvrir la pr\u00e9paration de l'autre tranche (avec\n                    ketchup\n                    et moutarde)"
+                        ]
+                    }
+                },
+                {
+                    "titre": "Sandwich au thon et \u0153uf",
+                    "auteur": "safinazylm@gmail.com",
+                    "categorie": "Plats",
+                    "image": "https:\/\/img.cuisineaz.com\/320x320\/2018\/10\/27\/i143583-croque-monsieur-au-saumon-et-au-boursin.webp",
+                    "liste_ingredients": {
+                        "nb_personne": "4 personnes",
+                        "ingredient": [
+                            "2 baguettes de pain frais",
+                            "1 salade",
+                            "2 tomates",
+                            "2 \u0153ufs",
+                            "1 grosse bo\u00eete de thon au naturel",
+                            "Mayonnaise",
+                            "Poivre"
+                        ]
+                    },
+                    "difficulte": "facile",
+                    "temps_preparation": "25 min",
+                    "temps_cuisson": "",
+                    "temps_repos": "",
+                    "preparation": {
+                        "etape": [
+                            "Commencez par faire cuire les \u0153ufs : dans une casserole d\u2019eau bouillante, plongez les \u0153ufs et comptez 10 min de cuisson \u00e0 partir de l\u2019\u00e9bullition. Lavez la salade et coupez-la grossi\u00e8rement. Lavez les tomates et coupez-les en rondelles assez \u00e9paisses.",
+                            "Dans un bol, \u00e9miettez le thon et m\u00e9langez-le avec la mayonnaise. Coupez chaque baguette de pain frais en deux.",
+                            "Quand les \u0153ufs sont cuits, passez-les sous l\u2019eau pour les rafra\u00eechir et stopper la cuisson. Ecalez-les et coupez-les en rondelles.",
+                            "Sur chaque pain, d\u00e9posez la salade, les rondelles de tomates, les rondelles d\u2019\u0153ufs et le thon. Faites un tour de moulin \u00e0 poivre et refermez les pains."
+                        ]
+                    },
+                    "nombre_denregistrement": ""
+                },
+                {
+                    "titre": "Maki Sushi",
+                    "auteur": "safinazylm@gmail.com",
+                    "categorie": "Plats",
+                    "image": "https:\/\/img.cuisineaz.com\/312x250\/2013\/12\/20\/i8238-maki-sushi.webp",
+                    "liste_ingredients": {
+                        "nb_personne": "2 personnes",
+                        "ingredient": [
+                            "250 g (environ) de riz rond",
+                            "des feuilles de nori",
+                            "vinaigre de riz",
+                            "sucre",
+                            "garniture : surimi, thon, concombre, avocat....",
+                            "sel"
+                        ]
+                    },
+                    "difficulte": "interm\u00e9diaire",
+                    "temps_preparation": "",
+                    "temps_cuisson": "",
+                    "temps_repos": "1h20min",
+                    "preparation": {
+                        "etape": [
+                            "Rincez le riz jusqu'\u00e0 ce que l'eau qui s'\u00e9coule devienne bien claire.\n                    Egouttez-le. Versez le riz dans une grande casserole, puis recouvrez d\u2019eau.",
+                            "Couvrez, portez \u00e0 \u00e9bullition sur feu moyen et laissez mijoter pendant 10 min. Coupez ensuite le feu, puis patientez encore 10 min.",
+                            "Pendant ce temps, m\u00e9langez le vinaigre de riz avec du sucre et du sel jusqu'\u00e0 dissolution compl\u00e8te du sucre. Incorporez le m\u00e9lange vinaigre-sucre-sel dans le riz, puis m\u00e9langez pendant quelques instants. Laissez refroidir votre riz assaisonn\u00e9 et collant.",
+                            "Coupez la feuille de nori en 2 dans le sens de la longueur. Posez-la bien \u00e0 plat sur une natte de bambou \u00e9tal\u00e9e sur le plan de travail.",
+                            "Sur la face non brillante du nori, \u00e9talez du riz en laissant une marge de nori sur un c\u00f4t\u00e9. Au centre du riz, sur la longueur, d\u00e9posez la garniture.",
+                            "A l'aide de la natte, roulez la feuille de nori sur elle-m\u00eame afin d'emprisonner la garniture. Serrez bien et refermez bien les extr\u00e9mit\u00e9s. Si le bord a du mal \u00e0 coller, humectez la marge de nori et rabattez-la (le nori colle mieux humidifi\u00e9).",
+                            "Avec un couteau dont vous aurez plong\u00e9 la lame dans l'eau froide, coupez votre boudin en plusieurs tron\u00e7ons de 1,5 \u00e0 2 cm de largeur. D\u00e9gustez vos maki-sushi avec de la sauce soja (sal\u00e9e ou sucr\u00e9e selon les go\u00fbts) pour les tremper dedans, ainsi que de wasabi pour donner du piquant aux bouch\u00e9es."
+                        ]
+                    }
+                },
+                {
+                    "titre": "Cappuccino rapide",
+                    "auteur": "safinazylm@gmail.com",
+                    "categorie": "Boisson",
+                    "image": "https:\/\/img.cuisineaz.com\/660x660\/2022\/06\/11\/i184231-shutterstock-1897158040.webp",
+                    "liste_ingredients": {
+                        "nb_personne": "1 personne",
+                        "ingredient": [
+                            "1 espresso",
+                            "20 cl Lait",
+                            "Cacao en poudre"
+                        ]
+                    },
+                    "difficulte": "facile",
+                    "temps_preparation": "5 min",
+                    "temps_cuisson": "5min",
+                    "temps_repos": "",
+                    "preparation": {
+                        "etape": [
+                            "Faites un espresso serr\u00e9 dans un grand verre ou une grande tasse.",
+                            "Au micro-ondes ou \u00e0 la casserole, faites chauffer le lait \u00e0 environ 60\u00b0C (il\n                    doit \u00eatre juste fumant).",
+                            "Faites-le mousser \u00e0 l'aide d'un fouet, d'un mousseur \u00e0 lait ou en utilisant\n                    la technique \"du bocal\". Pour cela, faites chauffer le lait au micro-ondes dans\n                    un bocal ouvert rempli \u00e0 mi-hauteur. Fermez le bocal et secouez-le \u00e9nergiquement\n                    pendant environ 30 secondes.",
+                            "Versez doucement sur le caf\u00e9 afin de le m\u00e9langer avec le lait chaud, avant\n                    de d\u00e9poser la mousse.",
+                            "Saupoudrez d'une pinc\u00e9e de cacao en poudre."
+                        ]
+                    }
+                },
+                {
+                    "titre": "Cappuccino noisette",
+                    "auteur": "safinazylm@gmail.com",
+                    "categorie": "Boisson",
+                    "image": "https:\/\/img.cuisineaz.com\/320x320\/2017\/06\/22\/i129579-special-cappuccino-noisette.webp",
+                    "liste_ingredients": {
+                        "nb_personne": "1 personne",
+                        "ingredient": [
+                            "caf\u00e9",
+                            "Lait",
+                            "chocolat en poudre",
+                            "chantilly",
+                            "sucre",
+                            "p\u00e2te \u00e0 tartiner au cacao et \u00e0 la noisette"
+                        ]
+                    },
+                    "difficulte": "facile",
+                    "temps_preparation": "5 min",
+                    "temps_cuisson": "5min",
+                    "temps_repos": "",
+                    "preparation": {
+                        "etape": [
+                            "Prenez une tasse et faites-y chauffer environ 1 cm de fond de lait.",
+                            "Incorporez 1 c. \u00e0 soupe de p\u00e2te \u00e0 tartiner au cacao et \u00e0 la noisette.\n                    Ajoutez du sucre.",
+                            "Pr\u00e9parez du caf\u00e9 et faites-le couler dessus.",
+                            "Nappez ensuite d'une grande quantit\u00e9 de chantilly au sommet.",
+                            "Saupoudrez d'une pinc\u00e9e de cacao en poudre. Saupoudrez le tout de chocolat\n                    en poudre."
+                        ]
+                    }
+                },
+                {
+                    "titre": "P\u00e2te bris\u00e9e au Kitchenaid",
+                    "auteur": "safinazylm@gmail.com",
+                    "categorie": "Bases",
+                    "image": "https:\/\/img.cuisineaz.com\/660x660\/2017\/09\/26\/i132581-pate-brisee-au-kitchenaid.webp",
+                    "liste_ingredients": {
+                        "nb_personne": "4 personnes",
+                        "ingredient": [
+                            "200 g de farine",
+                            "1 \u0153uf entier",
+                            "100 g de beurre \u00e0 temp\u00e9rature ambiante",
+                            "100 g de beurre \u00e0 temp\u00e9rature ambiante"
+                        ]
+                    },
+                    "difficulte": "facile",
+                    "temps_preparation": "5 min",
+                    "temps_cuisson": "5min",
+                    "temps_repos": "",
+                    "preparation": {
+                        "etape": [
+                            "Mettez la farine et le sel dans le bol du Kitchenaid. Ajoutez le beurre coup\u00e9 en\n                    d\u00e9s. D\u00e9marrez le robot muni de la feuille en vitesse 2.",
+                            "Lorsque le beurre est incorpor\u00e9 \u00e0 la farine, changez la feuille par le\n                    crochet.",
+                            "Ajoutez l\u2019\u0153uf puis m\u00e9langez en vitesse 2 jusqu\u2019\u00e0 ce que la p\u00e2te forme une\n                    boule.",
+                            "Laissez reposer 30 minutes au frais avant de la travailler."
+                        ]
+                    }
+                },
+                {
+                    "titre": "Th&#xE9; &#xE0; la menthe",
+                    "auteur": "safinazylm@gmail.com",
+                    "categorie": "Boisson",
+                    "image": "https:\/\/assets.afcdn.com\/recipe\/20200504\/110609_w2000h1125c1cx960cy540cxb1920cyb1080.webp",
+                    "temps_preparation": "10 min",
+                    "temps_cuisson": "10 min",
+                    "temps_repos": "",
+                    "difficulte": "Facile",
+                    "cout": "Pas cher",
+                    "liste_ingredients": {
+                        "nb_personne": "4 personnes",
+                        "ingredient": [
+                            "2 c. &#xE0; caf&#xE9 th&#xE9; vert"
+                        ]
+                    },
+                    "preparation": {
+                        "etape": [
+                            "Faire chauffer de l'eau, verser 1 petit verre d'eau bouillante sur 2\n                    cuill&#xE8;res &#xE0; caf&#xE9; de th&#xE9; vert.&#xD;",
+                            "Apr&#xE8;s une minute, jeter le liquide, garder le th&#xE9;. (c'est pour\n                    enlever la premi&#xE8;re amertume du th&#xE9;), puis verser le reste de l'eau\n                    (il faut avoir une petite th&#xE9;i&#xE8;re, &#xE9;quip&#xE9;e id&#xE9;alement\n                    d'un filtre dans le bec verseur, c'est + facile).",
+                            "Ajouter ensuite la menthe fra&#xEE;che, en noyant tout de suite les feuilles\n                    dans l'eau (si elles surnagent, elles prennent un go&#xFB;t de br&#xFB;l&#xE9;,\n                    un peu amer -avec l'habitude, vous le reconna&#xEE;trez- c'est pour les\n                    marocains quand le th&#xE9; est br&#xFB;l&#xE9;)."
+                        ]
+                    }
+                },
+                {
+                    "titre": "Mousse au chocolat facile",
+                    "auteur": "safinazylm@gmail.com",
+                    "categorie": "Dessert",
+                    "image": "https:\/\/assets.afcdn.com\/recipe\/20131024\/48381_w380h380c1cx1728cy2340.webp",
+                    "temps_preparation": "10 min",
+                    "temps_cuisson": "5 min",
+                    "temps_repos": "",
+                    "difficulte": "Facile",
+                    "cout": "Pas cher",
+                    "liste_ingredients": {
+                        "nb_personne": "4 personnes",
+                        "ingredient": [
+                            "100 gramme chocolat noir",
+                            "1 paquet de sucre vanill&#xE9;",
+                            "3 mesure oeufs"
+                        ]
+                    },
+                    "preparation": {
+                        "etape": [
+                            "S&#xE9;parer les blancs des jaunes d'oeufs.",
+                            "Faire ramollir le chocolat dans une casserole au bain-marie.",
+                            "Hors du feu, incorporer les jaunes et le sucre.",
+                            "Battre les blancs en neige ferme.",
+                            "Ajouter d&#xE9;licatement les blancs au m&#xE9;lange &#xE0; l'aide d'une\n                    spatule.",
+                            "Verser dans une terrine ou des verrines.&#xD;\n                    Mettre au frais 2h minimum.&#xD;\n                    D&#xE9;corer de cacao ou de chocolat r&#xE2;p&#xE9;. D&#xE9;guster"
+                        ]
+                    }
+                },
+                {
+                    "titre": "Cookies maison",
+                    "auteur": "safinazylm@gmail.com",
+                    "categorie": "Dessert",
+                    "image": "https:\/\/assets.afcdn.com\/recipe\/20190529\/93153_w2000h1556c1cx2220cy1728cxb4441cyb3456.webp",
+                    "temps_preparation": "10 min",
+                    "temps_cuisson": "10 min",
+                    "temps_repos": "",
+                    "difficulte": "Facile",
+                    "cout": "Pas cher",
+                    "liste_ingredients": {
+                        "nb_personne": "4 personnes",
+                        "ingredient": [
+                            "100 gramme chocolat noir",
+                            "85 gramme beurre tendre",
+                            "85 gramme sucre",
+                            "150 gramme farine",
+                            "1 c.\u00e0.c de sel",
+                            "1 c.\u00e0.c de levure chimique",
+                            "1 paquet de sucre vanill&#xE9;",
+                            "1 oeuf"
+                        ]
+                    },
+                    "preparation": {
+                        "etape": [
+                            " D\u00e9tailler le chocolat en p\u00e9pites.",
+                            "Pr\u00e9chauffer le four \u00e0 180\u00b0C (thermostat 6). Dans un saladier, mettre 75 g de beurre, le sucre, l'oeuf entier, la vanille et m\u00e9langer le tout avec une cuill\u00e8re en bois.",
+                            "Ajouter petit \u00e0 petit la farine m\u00e9lang\u00e9e \u00e0 la levure, le sel et le chocolat.",
+                            "Avec une feuille de papier essuie-tout, beurrer une plaque allant au four et former les cookies sur la plaque.",
+                            "Pour former les cookies, utiliser 2 cuill\u00e8res \u00e0 soupe et faire des petits tas espac\u00e9s les uns des autres; ils grandiront \u00e0 la cuisson.",
+                            "Enfourner pour 10 minutes de cuisson."
+                        ]
+                    }
+                },
+                {
+                    "titre": "P\u00e2te \u00e0 cr\u00eapes",
+                    "auteur": "safinazylm@gmail.com",
+                    "categorie": "Dessert",
+                    "image": "https:\/\/assets.afcdn.com\/recipe\/20211122\/124598_w2000h1333c1cx3176cy2107cxt1161cyt477cxb5347cyb3565.webp",
+                    "temps_preparation": "10 min",
+                    "temps_cuisson": "",
+                    "temps_repos": "",
+                    "difficulte": "Facile",
+                    "cout": "Pas cher",
+                    "liste_ingredients": {
+                        "nb_personne": "4 personnes",
+                        "ingredient": [
+                            "50 gramme beurre fondu",
+                            "3 c.\u00e0.s de sucre",
+                            "300 gramme de farine",
+                            "60 cl de lait",
+                            "2 c.\u00e0.s d'huile",
+                            "3 oeufs"
+                        ]
+                    },
+                    "preparation": {
+                        "etape": [
+                            " Mettre la farine dans une terrine et former un puits. ",
+                            "Y d\u00e9poser les oeufs entiers, le sucre, l'huile et le beurre.",
+                            "M\u00e9langer d\u00e9licatement avec un fouet en ajoutant au fur et \u00e0 mesure le lait. La p\u00e2te ainsi obtenue doit avoir une consistance d'un liquide l\u00e9g\u00e8rement \u00e9pais. ",
+                            "Faire chauffer une po\u00eale antiadh\u00e9sive et la huiler tr\u00e8s l\u00e9g\u00e8rement \u00e0 l'aide d'un papier Essuie-tout. Y verser une louche de p\u00e2te, la r\u00e9partir dans la po\u00eale puis attendre qu'elle soit cuite d'un c\u00f4t\u00e9 avant de la retourner. Cuire ainsi toutes les cr\u00eapes \u00e0 feu doux."
+                        ]
+                    }
+                },
+                {
+                    "titre": "Tarte aux fraises",
+                    "auteur": "safinazylm@gmail.com",
+                    "categorie": "Dessert",
+                    "image": "https:\/\/assets.afcdn.com\/recipe\/20230630\/143929_w300h300c1cx960cy540cxb1920cyb1080.webp",
+                    "temps_preparation": "15 min",
+                    "temps_cuisson": "20min",
+                    "temps_repos": "",
+                    "difficulte": "Facile",
+                    "cout": "Pas cher",
+                    "liste_ingredients": {
+                        "nb_personne": "6 personnes",
+                        "ingredient": [
+                            "40 g de sucre",
+                            "30 gramme de farine",
+                            "25 cl de lait",
+                            "2 c.\u00e0.s d'huile",
+                            "1 oeuf",
+                            "1 sachet de sucre vanill\u00e9",
+                            "fraises"
+                        ]
+                    },
+                    "preparation": {
+                        "etape": [
+                            "P\u00c2TE: Blanchir les jaunes et le sucre au fouet et d\u00e9tendre le m\u00e9lange avec un peu d'eau.",
+                            "M\u00e9langer au doigt la farine et le beurre coup\u00e9 en petites parcelles pour obtenir une consistance sableuse et que tout le beurre soit absorb\u00e9 (!!! Il faut faire vite pour que le m\u00e9lange ne ramollisse pas trop!).",
+                            "Verser au milieu de ce \"sable\" le m\u00e9lange liquide. Incorporer au couteau les \u00e9l\u00e9ments rapidement sans leur donner de corps.",
+                            "Former une boule avec les paumes et fraiser 1 ou 2 fois pour rendre la boule + homog\u00e8ne. ",
+                            "Foncer un moule de 25 cm de diam\u00e8tre avec la p\u00e2te, garnissez la de papier sulfuris\u00e9 et de haricots secs. Faire cuire \u00e0 blanc 20 \u00e0 25 min, \u00e0 180\u00b0C (thermostat 6).",
+                            "CR\u00c8ME P\u00c2TISSI\u00c8RE : Mettre le lait \u00e0 bouillir avec le parfum choisi (vanille ou autre).",
+                            "Travailler l'oeuf avec le sucre jusqu'\u00e0 ce que la p\u00e2te fasse le ruban, ajouter la farine. ",
+                            "Verser le lait bouillant sur le m\u00e9lange en tournant bien. ",
+                            "Remettre dans la casserole sur le feu. Faire cuire en tournant tr\u00e8s soigneusement. Retirer apr\u00e8s \u00e9bullition.",
+                            "Verser la cr\u00e8me sur le fond de tarte et disposer joliment les fraises coup\u00e9es en 2."
+                        ]
+                    }
+                },
+                {
+                    "titre": "Sandwich au thon",
+                    "auteur": "safinazylm@gmail.com",
+                    "categorie": "Plat",
+                    "image": "https:\/\/assets.afcdn.com\/recipe\/20160928\/21224_w1280h972c1cx2128cy1416.webp",
+                    "liste_ingredients": {
+                        "nb_personne": "1 personne",
+                        "ingredient": [
+                            "100 gramme fromage blanc",
+                            "  poivre",
+                            "  sel",
+                            "  citron",
+                            "  basilic"
+                        ]
+                    },
+                    "difficulte": "Facile",
+                    "temps_preparation": "5",
+                    "temps_cuisson": "0",
+                    "temps_repos": "0",
+                    "preparation": {
+                        "etape": [
+                            "Pr\u00e9parer la sauce au fromage blanc : battre dans un bol le fromage blanc battu \u00e0 0% avec du sel, poivre, basilic et quelques gouttes de citron.",
+                            "Emietter le thon, le m\u00e9langer \u00e0 la sauce au fromage blanc. Saler, poivrer, re-basilic.\r\n",
+                            "Couper quelques tomates s\u00e9ch\u00e9es en morceaux, et les incorporer \u00e0 la pr\u00e9paration.",
+                            "Couper le petit pain sans s\u00e9parer les deux parties, tartiner g\u00e9n\u00e9reusement de la pr\u00e9paration"
+                        ]
+                    }
+                },
+                {
+                    "titre": "Muffins \u00e0 la p\u00e2te \u00e0 tartiner et aux p\u00e9pites de chocolat",
+                    "auteur": "safinazylm@gmail.com",
+                    "categorie": "Dessert",
+                    "image": "https://assets.afcdn.com/recipe/20180830/82064_w2000h1335c1cx3008cy2008cxb6016cyb4016.webp",
+                    "liste_ingredients": {
+                        "nb_personne": "6 personnes",
+                        "ingredient": [
+                            "180 gramme de farine \u00e0 levure incorpor\u00e9 ",
+                            "90 gramme sucre",
+                            "125 gramme beurre fondu ",
+                            "1\u20442  c. \u00e0 caf\u00e9 de sel",
+                            " 1   oeuf ",
+                            "10 centilitre  lait",
+                            "6  c. \u00e0 caf\u00e9 de p\u00e2te \u00e0 tartiner",
+                            "1\u20442 c. \u00e0 caf\u00e9 de vanille liquide"
+                        ]
+                    },
+                    "difficulte": "Facile",
+                    "temps_preparation": "35 min",
+                    "temps_cuisson": "20",
+                    "temps_repos": "0",
+                    "preparation": {
+                        "etape": [
+                            "Pr\u00e9chauffez le four thermostat 7-8 (220\u00b0C).\r\nCassez l'oeuf dans un saladier, battez \u00e0 la fourchette avec le beurre ti\u00e9di, le lait et le sel.\r\n",
+                            "Incorporez la farine et le sucre ainsi que la vanille liquide sans trop travailler la pate.\r\nAjoutez les p\u00e9pites de chocolat et m\u00e9langer.",
+                            "Disposez dans 6 moules \u00e0 muffins 1 cuill\u00e9r\u00e9e \u00e0 soupe de p\u00e2te puis une grosse cuill\u00e8re \u00e0 caf\u00e9 de nutella et recouvrez pour terminer par une autre grosse cuill\u00e9r\u00e9e \u00e0 soupe de p\u00e2te.\r\n",
+                            "Enfournez, \u00e0 thermostat 7-8 pendant 5 min puis baisser le thermostat \u00e0 6 (180\u00b0C) et laisser cuire pendant encore 15 min.",
+                            "A la sortie du four, laisser refroidir puis d\u00e9mouler.\r\nCes muffins se d\u00e9gustent \u00e0 temp\u00e9rature ambiante."
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

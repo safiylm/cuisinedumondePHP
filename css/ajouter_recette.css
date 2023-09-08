@@ -1,0 +1,83 @@
+
+
+.container-ajouter-recette {
+
+  display: block;
+  margin: 20px auto;
+  width: 800px;
+  padding: 30px;
+  overflow: hidden;
+  text-align: left;
+}
+
+
+
+.div1_ing,
+#div_etapes, .div-temps, .div-difficulte-cout-categorie {
+    display: flex; 
+    flex-direction: row;
+    /* border: 1px solid salmon; */
+    border-radius: 20px;
+    margin: 15px 0px;
+    justify-content: space-between;
+    width: 700px;
+    align-items: center;
+}
+
+
+#div-ingredient, 
+#div_etapes{
+  flex-direction: column;
+  margin: 15px 0px;
+
+}
+
+
+.container-ajouter-recette input:not(.btnFile), .container-ajouter-recette select ,.container-ajouter-recette .input_etape {
+  margin: 5px; padding: 5px;
+  width: auto;
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: var(--bs-border-radius);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  height: 43px;
+}
+
+.container-ajouter-recette .input_etape {
+  height: 150px;
+  width: 700px;
+  overflow: hidden;
+}
+
+
+#nom-recette, #nb-personne {
+  width: 700px;
+  margin-left: 0;
+ 
+}
+
+.container-ajouter-recette select{
+  background-color: white;
+  color: black;
+}
+
+.btnn, .btn_delete, .btn-submit{
+  background-color:#9bb3d0;
+  width: 700px;
+  border: none ;
+  border-radius: 4px;
+  padding: 6px;
+  color : white;
+
+}
+
+.btn_delete{
+  background-color:rgb(133, 162, 171);
+}
+
+.btn-submit{
+  background-color:rgb(141, 190, 155);
+}
