@@ -46,11 +46,6 @@ print_r($newrecette);
 array_push($tab["sitecuisine"]['liste_recette']['recette'], $newrecette);
 
 
-
-
-
-
-
  $jsonString = json_encode($tab , JSON_PRETTY_PRINT);
  // Write in the file
  $fp = fopen($path, 'w');
