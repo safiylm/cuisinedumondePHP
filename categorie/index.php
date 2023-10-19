@@ -12,7 +12,6 @@
 <?php
 
 include("../Navigation/index.php");
-require "../data/config.php";
 
 $json_object = file_get_contents("../data/recette.json");
 $tab = json_decode($json_object, true);
