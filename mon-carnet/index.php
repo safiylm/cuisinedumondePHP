@@ -1,7 +1,4 @@
 <script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
-<link rel="stylesheet" href='../css/publication.css'>
-<link rel="stylesheet" href='../css/home.css'>
-<link rel="stylesheet" href='css/nav.css'>
 
 
 
@@ -15,16 +12,16 @@ if (file_exists('../data/recette-utilisateur.xml')) {
     exit('Failed to open test.xml.');
 }
 
-
 $json_object = file_get_contents("../data/recette.json");
 $tab = json_decode($json_object, true);
 
-?>
-<?php if (empty($_SESSION['utilisateur']['email'])) {
+if (empty($_SESSION['utilisateur']['email'])) {
     include("../navigation/index.php");
 
     echo " <h1 class='nav__title'> Mon Carnet </h1>";
-} ?>
+} 
+
+?>
 
 
 
@@ -72,10 +69,7 @@ $tab = json_decode($json_object, true);
             echo "<p> </p> <p class='p-vide'> Votre panier est vide. </p>";
         else {
             foreach ($xml->xpath($path) as $res) {
-            ?>
-
-
-                <?php
+           
                 $recette = $tab["sitecuisine"]["liste_recette"]['recette'][intval($res)];
                 $photoo = $recette["image"];
                 $url = '../Photos/' . $photoo;

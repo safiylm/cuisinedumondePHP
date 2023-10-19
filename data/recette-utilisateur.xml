@@ -1,14 +1,125 @@
 <?xml version="1.0"?>
 <recette_utilisateur>
+
+
+    <liste_utilisateur>
+
+        <utilisateur id="1">
+            <prenom>Safinaz</prenom>
+            <nom>Yilmaz</nom>
+            <email>safinazylm@gmail.com</email>
+            <password>123</password>
+        </utilisateur>
+
+        <utilisateur id="2">
+            <prenom>Berat</prenom>
+            <nom>Yilmaz</nom>
+            <email>berat@gmail.com</email>
+            <password>123</password>
+        </utilisateur>
+
+        <utilisateur id="3">
+            <prenom>azra</prenom>
+            <nom>yilmaz</nom>
+            <email>azra@gmail.com</email>
+            <password>123</password>
+        </utilisateur>
+        <utilisateur id="4">
+            <prenom>Zehra</prenom>
+            <nom>kaya</nom>
+            <email>zehrakaya@gmail.com</email>
+            <password>123</password>
+        </utilisateur>
+    </liste_utilisateur>
+
+
     <liste_enregistrements>
-        
-        
-        
-        
+
+
+        <enregistrement id="2">
+            <email_utilisateur />
+            <id_recette>1</id_recette>
+        </enregistrement>
+        <enregistrement id="3">
+            <email_utilisateur />
+            <id_recette>2</id_recette>
+        </enregistrement>
+        <enregistrement id="7">
+            <email_utilisateur>safinazyilmaz54@gmail.com</email_utilisateur>
+            <id_recette>3</id_recette>
+        </enregistrement>
+        <enregistrement id="7">
+            <email_utilisateur>safinazyilmaz54@gmail.com</email_utilisateur>
+            <id_recette>4</id_recette>
+        </enregistrement>
+        <enregistrement id="8">
+            <email_utilisateur>safinazyilmaz54@gmail.com</email_utilisateur>
+            <id_recette>2</id_recette>
+        </enregistrement>
+        <enregistrement id="6">
+            <email_utilisateur>safinazyilmaz54@gmail.com</email_utilisateur>
+            <id_recette>0</id_recette>
+        </enregistrement>
+
+
+        <enregistrement id="7">
+            <email_utilisateur>safinazylm@gmail.com</email_utilisateur>
+            <id_recette>0</id_recette>
+        </enregistrement>
+    </liste_enregistrements>
 
     <liste_commentaires>
+
+        <commentaire id="1">
+            <email_utilisateur>safinazylm@gmail.com</email_utilisateur>
+            <id_recette>9</id_recette>
+            <contenu> offf elles sont tellement bonnes </contenu>
+        </commentaire>
+
+
+        <commentaire id="2">
+            <email_utilisateur>safinazylm@gmail.com</email_utilisateur>
+            <id_recette>6</id_recette>
+            <contenu>bonne appetit &#xD;
+</contenu>
+        </commentaire>
+        <commentaire id="3">
+            <email_utilisateur>safinazylm@gmail.com</email_utilisateur>
+            <id_recette>6</id_recette>
+            <contenu>j'adore </contenu>
+        </commentaire>
+        <commentaire id="4">
+            <email_utilisateur>safinazylm@gmail.com</email_utilisateur>
+            <id_recette>13</id_recette>
+            <contenu>j'adore c'est trop bon</contenu>
+        </commentaire>
     </liste_commentaires>
 
-    <liste_note_star/>
-
+    <liste_note_etoile>
+        <note_etoile id="1">
+            <id_recette>2</id_recette>
+            <email_utilisateur>safinazylm@gmail.com</email_utilisateur>
+            <nbetoile>3</nbetoile>
+        </note_etoile>
+        <note_etoile id="2">
+            <email_utilisateur>safinazylm@gmail.com</email_utilisateur>
+            <id_recette>8</id_recette>
+            <nbetoile>3</nbetoile>
+        </note_etoile>
+        <note_etoile id="3">
+            <email_utilisateur>safinazylm@gmail.com</email_utilisateur>
+            <id_recette>10</id_recette>
+            <nbetoile>3</nbetoile>
+        </note_etoile>
+        <note_etoile id="4">
+            <email_utilisateur>safinazylm@gmail.com</email_utilisateur>
+            <id_recette>13</id_recette>
+            <nbetoile>4</nbetoile>
+        </note_etoile>
+        <note_etoile id="5">
+            <email_utilisateur />
+            <id_recette>4</id_recette>
+            <nbetoile>3</nbetoile>
+        </note_etoile>
+    </liste_note_etoile>
 </recette_utilisateur>
