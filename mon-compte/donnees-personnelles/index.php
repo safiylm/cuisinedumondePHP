@@ -1,24 +1,36 @@
+<?php
 
+if (file_exists('../data/recette-utilisateur.xml')) {
+    $xml = simplexml_load_file('../data/recette-utilisateur.xml');
+} else {
+    exit('Failed to open test.xml.');
+}
+
+$path = "//utilisateur[ email ='" . $_SESSION['utilisateur']['email'] . "' ]";
+if (count($xml->xpath($path)) == 1) {
+    foreach ($xml->xpath($path) as $item) {?>
 <div class="container-donnees-personnelles">
- 
+
     <h2 id="titreDataUpdate">Modifier ses données personelles</h2>
-    
+
     <form action="donnees-personnelles/post-modification.php" method="post">
 
-        <input type="text" class="form-control" name="nom" value="<?php echo $nom; ?>" /><br />
-
-        <input type="text" class="form-control" name="email" value="<?php echo $email; ?>" /><br />
-
-        <!-- <input type="password" class="form-control" name="password" placeholder="*" required /><br /> -->
+        <input type="text" class="form-control" name="nom" value="<?php echo $item->nom[0]->__toString(); ?>" /><br />
+        <input type="text" class="form-control" name="prenom" value="<?php echo $item->prenom[0]->__toString(); ?>" /><br />
 
         <input type="submit" id="EnregistrerUpdate" value="Enregistrer les modifications" class="btn btn-primary" />
-    <button type="button" id="annuler" class="btn btn-light"> Annuler </button>
+        <button type="button" id="annuler" class="btn btn-light"> Annuler </button>
 
     </form>
-    <button id="modifier" class="btn btn-primary"> Modifier </button> 
+    <button id="modifier" class="btn btn-primary"> Modifier </button>
 
 
 </div>
+
+<?php  }
+}
+?>
+
 
 <script>
     $("input").prop('disabled', true);
@@ -26,7 +38,7 @@
     $("#annuler").hide();
     $("#EnregistrerUpdate").hide();
     $("#titreDataUpdate").hide();
-  
+
 
     $("#modifier").click(() => {
         $("input").prop('disabled', false);
@@ -34,7 +46,7 @@
         $("#titreDataUpdate").show();
         $("#modifier").hide();
         $("#annuler").css('display', "inline");
-    $("#EnregistrerUpdate").css('display', "inline");
+        $("#EnregistrerUpdate").css('display', "inline");
         $("#annuler").show();
     })
 
@@ -45,7 +57,7 @@
         $("#EnregistrerUpdate").hide();
         $("#titreDataUpdate").hide();
         $("#modifier").show();
-       
+
     })
 </script>
 
@@ -70,7 +82,8 @@
         margin-bottom: 70px;
     }
 
-    .container-donnees-personnelles button, .container-donnees-personnelles input{
+    .container-donnees-personnelles button,
+    .container-donnees-personnelles input {
         width: 600px;
-    } 
+    }
 </style>

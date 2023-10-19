@@ -1,34 +1,31 @@
 <?php
 session_start();
-require "../../data/config.php";
 
+if (file_exists('../../data/recette-utilisateur.xml')) {
+  $xml = simplexml_load_file('../../data/recette-utilisateur.xml');
+} else {
+  exit('Failed to open test.xml.');
+}
 
-$email = htmlspecialchars($_POST['email']);
 $nom = htmlspecialchars($_POST['nom']);
+$prenom = htmlspecialchars($_POST['prenom']);
 
+if ( !empty($nom) && !empty($prenom)) {
+  for ($i = 0; $i < count($xml->liste_utilisateur->utilisateur); $i++) {
+    if ($_SESSION['utilisateur']['email'] == $xml->liste_utilisateur->utilisateur[$i]->email) {
+      $xml->liste_utilisateur->utilisateur[$i]->nom  = $nom;
+      $xml->liste_utilisateur->utilisateur[$i]->prenom  = $prenom;
 
-if (!empty($email) || !empty($nom)) {
-
-
-  $sql = "UPDATE utilisateur SET  email = '".$email."' , nom='".$nom."' WHERE email = '" . $_SESSION['utilisateur']['email'] . "'";
- 
-
-    if ($result = $mysqli->query($sql)) {
-       
-      echo 'Changment is successful!  ' ;
-
-      $_SESSION['utilisateur']['email'] = $email;
-
-
-      header('Location: ../index.php');
-      exit();
-
-    } else {
-        echo 'Changment is error!\n ';
-
-    //  header('Location: ../index.php?pwdinvalid=true');
-     // exit();
+      $_SESSION['utilisateur']['nom'] = $nom;
+      $_SESSION['utilisateur']['prenom'] = $prenom;
     }
+  }
 
-  } 
-  echo "55";
+  $xml->asXML();
+  $xml->asXML('../../data/recette-utilisateur.xml');
+  header('Location: ../index.php');
+  exit();
+
+}
+header('Location: ../index.php?commingupsoon=true');
+exit();
