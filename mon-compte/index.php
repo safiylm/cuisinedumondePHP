@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <link rel="stylesheet" href="../CSS/ajouter_recette.css" />
-
+<link rel="stylesheet" href="../CSS/publication.css" />
 <?php
 
-
 include("../navigation/index.php");
-// Connexion à la base de données
-require "../data/config.php";
-$sql = "Select * from utilisateur where email= '" . $_SESSION['utilisateur']['email'] . "'";
-if ($result = $mysqli->query($sql)->fetch_row()) {
-
-    $nom = $result[1];
-    $email = $result[2];
-    $password = $result[3];
+if( empty($_SESSION['utilisateur']['email'])){
+    header("../auth/connexion.php");
+    exit();
 }
+
+
 ?>
 
 
@@ -77,7 +73,7 @@ if ($result = $mysqli->query($sql)->fetch_row()) {
     <div class="centrer">
         <div class='div-img-nom'>
             <img id="image_utilisateur" src="../Photos/personne.png" width="150px" height="auto;" />&nbsp &nbsp &nbsp &nbsp
-            <h1> <?php echo $nom; ?></h1>
+            <h1> <?php echo $_SESSION['utilisateur']['prenom'] ." ".  $_SESSION['utilisateur']['nom']; ?></h1> 
         </div>
         <div class="menu-bar">
             <button id="mon-carnet-btn"> Mon Carnet</button>
