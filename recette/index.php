@@ -20,13 +20,10 @@
 
     // Connexion à la base de données
     include("../navigation/index.php");
-    require "../data/config.php";
-
 
     $json_object = file_get_contents("../data/recette.json");
     $tab = json_decode($json_object, true);
     $id = $_GET['idRecette'];
-
 
 
     if (file_exists('../data/recette-utilisateur.xml')) {

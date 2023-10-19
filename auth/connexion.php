@@ -13,7 +13,6 @@
 <?php
 
 include("../Navigation/index.php");
-require "../data/config.php";
 ?>
 
 
