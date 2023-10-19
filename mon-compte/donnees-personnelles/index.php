@@ -24,12 +24,22 @@ if (count($xml->xpath($path)) == 1) {
     </form>
     <button id="modifier" class="btn btn-primary"> Modifier </button>
 
+<button onclick="deleteAccount()" class="btn btn-danger" style="margin: 15px 0;"> Supprimer le compte </button>
 
 </div>
+
 
 <?php  }
 }
 ?>
+
+<script>
+function deleteAccount() {
+  if (confirm("Etes-vous sûre de vouloir supprimer votre compte ?") == true) {
+    document.location.href= "donnees-personnelles/post-delete.php";
+  } 
+}
+</script>
 
 
 <script>

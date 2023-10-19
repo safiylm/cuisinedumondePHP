@@ -617,6 +617,33 @@
                             null
                         ]
                     }
+                },
+                {
+                    "titre": " riz turc pilaf (ou pilav) ",
+                    "auteur": "talhakaya@gmail.com",
+                    "categorie": "Accompagnements",
+                    "liste_ingredients": {
+                        "nb_personne": "5 personnes",
+                        "ingredient": [
+                            "2 verres d'eau  Mesure non renseign\u00e9 de riz",
+                            "3  verres d'eau ",
+                            "20  gramme de beurre ",
+                            "20 gramme d'huile",
+                            "50 gramme  bomb\u00e9es de p\u00e2tes tel \u015fehriye turques, ou utilisez des vermicelles\/cheveux d\u2019ange"
+                        ]
+                    },
+                    "difficulte": "Interm\u00e9diaire",
+                    "temps_preparation": "10 min",
+                    "temps_cuisson": "10 min",
+                    "temps_repos": "0",
+                    "preparation": {
+                        "etape": [
+                            "Lavez et trempez le riz. Mettez le riz dans une passoire et rincez-le sous de l\u2019eau courante ti\u00e8de jusqu\u2019\u00e0 ce que l\u2019eau qui sort de la passoire soit claire. Versez le riz dans un saladiez, couvrez-le d\u2019eau ti\u00e8de, ajoutez-y 1 c\u00e0c de sel et m\u00e9langez. Laissez le riz tremper pendant 30 min puis \u00e9gouttez-le avec la passoire.",
+                            "Faites dorer les p\u00e2tes. Pour cette recette de riz turc, vous aurez besoin d\u2019une sauteuse antiadh\u00e9sive avec un couvercle bien herm\u00e9tique. Les c\u00f4t\u00e9s doivent mesurer au moins 8 cm de haut. Placez la sauteuse sur le br\u00fbleur le plus large et faites fondre le beurre sur feu moyen. Une fois fondu, ajoutez les p\u00e2tes et faites les cuire en remuant souvent avec une cuill\u00e8re en bois jusqu\u2019\u00e0 ce que les p\u00e2tes dorent et deviennent marron clair. Cela prend environ 3 \u00e0 4 min.",
+                            "Faites cuire le riz. Mettez le riz \u00e9goutt\u00e9 dans la sauteuse, remuez jusqu\u2019\u00e0 ce que la plupart des grains soient enrob\u00e9s de beurre et faites cuire 2 min. Versez le bouillon dans la sauteuse, ajoutez 1 c\u00e0c de sel, remuez et augmenter le feu pour porter rapidement \u00e0 \u00e9bullition. Lorsque \u00e7a bout mettez le couvercle et r\u00e9duisez le feu \u00e0 moyen-doux. Les chaleurs de ma plaque \u00e0 induction vont de 1 \u00e0  ( 9 \u00bd \u00e9tant le maximum) et je baisse le feu \u00e0 4 lorsque je cuis du riz turc. Faites cuire le le riz, couvert, pendant 10 min. Si le bouillon n\u2019a pas \u00e9t\u00e9 compl\u00e8tement absorb\u00e9 au bout de 10 min, retirez le couvercle et poursuivez la cuisson quelques minutes jusqu\u2019\u00e0 ce qu\u2019il soit absorb\u00e9. Au contraire, si le riz turc a l\u2019air un peu sec et pas compl\u00e8tement cuit (n\u2019h\u00e9sitez pas \u00e0 go\u00fbter mais attention \u00e0 ne pas vous br\u00fbler) ajoutez un demi-verre d\u2019eau et laissez cuire \u00e0 couvert jusqu\u2019\u00e0 absorption compl\u00e8te.",
+                            "Laissez le riz turc reposer. Lorsque le riz est cuit, \u00e9teignez le feu, retirez le couvercle et remuez doucement avec une cuill\u00e8re en bois. Posez un torchon propre, ou plusieurs feuilles de papier absorbant, sur la sauteuse (il ne doit pas toucher le riz directement mais restez au dessus). Remettez le couvercle et laissez ainsi le riz reposer 10 min. Remuez doucement le riz et servez saupoudr\u00e9 de poivre noir fra\u00eechement moulu et de grosses cuiller\u00e9es de yaourt."
+                        ]
+                    }
                 }
             ]
         }

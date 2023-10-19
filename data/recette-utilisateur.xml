@@ -30,6 +30,13 @@
             <email>zehrakaya@gmail.com</email>
             <password>123</password>
         </utilisateur>
+
+        <utilisateur id="5">
+            <prenom>Talha</prenom>
+            <nom>Kayahan</nom>
+            <email>talhakaya@gmail.com</email>
+            <password>123</password>
+        </utilisateur>
     </liste_utilisateur>
 
 
@@ -37,11 +44,11 @@
 
 
         <enregistrement id="2">
-            <email_utilisateur />
+            <email_utilisateur/>
             <id_recette>1</id_recette>
         </enregistrement>
         <enregistrement id="3">
-            <email_utilisateur />
+            <email_utilisateur/>
             <id_recette>2</id_recette>
         </enregistrement>
         <enregistrement id="7">
@@ -66,7 +73,7 @@
             <email_utilisateur>safinazylm@gmail.com</email_utilisateur>
             <id_recette>0</id_recette>
         </enregistrement>
-    </liste_enregistrements>
+    <enregistrement id="9"><email_utilisateur>talhakaya@gmail.com</email_utilisateur><id_recette>3</id_recette></enregistrement></liste_enregistrements>
 
     <liste_commentaires>
 
@@ -93,7 +100,8 @@
             <id_recette>13</id_recette>
             <contenu>j'adore c'est trop bon</contenu>
         </commentaire>
-    </liste_commentaires>
+    <commentaire id="5"><email_utilisateur>talhakaya@gmail.com</email_utilisateur><id_recette>4</id_recette><contenu>D&#xE9;licieux!!</contenu></commentaire><commentaire id="6"><email_utilisateur>talhakaya@gmail.com</email_utilisateur><id_recette>4</id_recette><contenu>J'adore le caf&#xE9;&#xD;
+</contenu></commentaire><commentaire id="7"><email_utilisateur>talhakaya@gmail.com</email_utilisateur><id_recette>4</id_recette><contenu>Incroyable !</contenu></commentaire></liste_commentaires>
 
     <liste_note_etoile>
         <note_etoile id="1">
@@ -117,9 +125,9 @@
             <nbetoile>4</nbetoile>
         </note_etoile>
         <note_etoile id="5">
-            <email_utilisateur />
+            <email_utilisateur/>
             <id_recette>4</id_recette>
             <nbetoile>3</nbetoile>
         </note_etoile>
-    </liste_note_etoile>
+    <note_etoile id="6"><email_utilisateur>talhakaya@gmail.com</email_utilisateur><id_recette>4</id_recette><nbetoile>1</nbetoile></note_etoile></liste_note_etoile>
 </recette_utilisateur>
