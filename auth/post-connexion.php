@@ -1,42 +1,50 @@
-
 <?php
+session_start();
 
-require "../data/config.php";
-
-
+if (file_exists('../data/recette-utilisateur.xml')) {
+  $xml = simplexml_load_file('../data/recette-utilisateur.xml');
+} else {
+  exit('Failed to open test.xml.');
+}
 
 $email = htmlspecialchars($_POST['email']);
 $password = htmlspecialchars($_POST['mdp']);
 
-
 if (!empty($email) && !empty($password)) {
 
+  $path = "//utilisateur[ email ='" . $email . "' ]";
 
-  $sql = "SELECT * FROM utilisateur WHERE email = '" . $email . "'";
-  if ($result = $mysqli->query($sql)->fetch_row()) {
-    print_r($result[3]);
+  echo $path;
+  // on ajoute la recette dans le carnet de recette
+  if (count($xml->xpath($path)) == 1) {
+    foreach ($xml->xpath($path) as $item) {
+      if($password== $item->password){
+    //  if (password_verify($password, $item->password)) {
+        $_SESSION['utilisateur']['email'] = $email;
+        $_SESSION['utilisateur']['password'] = $item->password[0]->__toString();
+        $_SESSION['utilisateur']['prenom'] = $item->prenom[0]->__toString();
+        $_SESSION['utilisateur']['nom'] =  $item->nom[0]->__toString();
+        print_r($_SESSION);
+         header('Location: ../mon-compte/index.php');
+         exit();
+      }
 
-    $hash = $result[3];
-
-    if (password_verify($password, $hash)) {
-      echo 'Password is valid!\n ';
-      $_SESSION['utilisateur']['email'] = $result[2];
-      $_SESSION['utilisateur']['password'] = $hash;
-
-
-      header('Location: ../index.php');
-      exit();
-    } else {
-
-      header('Location: connexion.php?pwdinvalid=true');
-      exit();
+   
+       else{ //password incorrecte
+        echo "erreur password";
+          header('Location: connexion.php?erreur=password');
+          exit();
+        }
     }
-  } else {
-    header('Location: connexion.php?emailinvalid=true');
-    exit();
+  }
+  else{ //email incorrecte 
+    echo "erreur email";
+
+     header('Location: connexion.php?erreur=email');
+     exit();
   }
 }
-
-
+ header('Location: connexion.php?erreur=emailpassword');
+ exit();
 
 ?>

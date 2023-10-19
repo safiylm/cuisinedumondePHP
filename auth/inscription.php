@@ -19,6 +19,8 @@
     <h2>Inscription</h2><br>
     <form action="post-inscription.php" method="post">
 
+      <input type="text" class="form-control" name="prenom" placeholder="prenom" required /><br />
+
       <input type="text" class="form-control" name="nom" placeholder="nom" required /><br />
 
       <input type="email" class="form-control" name="email" placeholder="email" required /><br />
