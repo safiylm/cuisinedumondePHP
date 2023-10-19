@@ -25,9 +25,9 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 90%;
+    width: 100%;
     height: auto;
     padding: auto;
     margin: 50px;

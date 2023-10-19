@@ -1,43 +1,48 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+/** important for thin font weight **/
+
+
+
+
+body {
+
+    margin: 0 ;
+    padding: 0;
+    /* background-color: #F7CAC9; */
+    font-family: 'Raleway', sans-serif;
+}
 
 /* Base styling */
 nav {
     background-color: white
         /* #e8dacd   */
         !important;
-    padding: 8px;
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    align-items: center;
+    height: 55px;
+    border-bottom: 0.5px solid gray;
 }
-
 .nav__title {
     font-size: 22px;
-    font-weight: 900;
     text-align: center;
     color: #ff8b88;
-    margin-bottom: 40px;
+    color: rgb(83, 83, 83);
+    font-weight: 300;
+    padding-left: 15px;
     text-decoration: none;
 }
 
 .nav__link {
     font-size: 19px;
-    font-weight: 800;
     text-align: center;
-    color: salmon;
+    color: rgb(83, 83, 83);
+    font-weight: 300;
     text-decoration: none;
-    margin-bottom: 40px;
-    margin-left:18px;
+    padding-right:20px;
 }
 
 .nav__title:hover,
 .nav__link:hover {
     color: orange;
-}
-
-body {
-
-    margin: 0 auto;
-    background-color: #F7CAC9;
-    font-family: 'Raleway', sans-serif;
 }
