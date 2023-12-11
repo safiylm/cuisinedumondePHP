@@ -1,5 +1,11 @@
 <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 
+<?php
+$path='../data/recette.json';
+$json_object = file_get_contents($path);
+$tab = json_decode($json_object, true);
+
+?>
 <div class="container-ajouter-recette">
 
    <form method='post' action="../ajouter-recette/post-ajouter-recette.php">
@@ -19,23 +25,10 @@
       <div class="div-difficulte-cout-categorie">
          <select name="categorie" id="categorie" class="input" required>
             <option value="Non renseigné">Catégorie non renseigné </option>
-            <option value="Plats">Plats</option>
-            <option value="Entrées">Entrées</option>
-            <option value="Désserts">Désserts</option>
-            <option value="Pâtisserie">Pâtisserie</option>
-            <option value="Salades">Salades</option>
-            <option value="Confitures">Confitures</option>
-            <option value="Gâteaux - Biscuits">Gâteaux - Biscuits</option>
-            <option value="Petit-déjeuner">Petit-déjeuner</option>
-            <option value="Sauces">Sauces</option>
-            <option value="Soupes">Soupes</option>
-            <option value="Tartes">Tartes</option>
-            <option value="Accompagnements">Accompagnements</option>
-            <option value="Apéritifs">Apéritifs</option>
-            <option value="Bases">Bases</option>
-            <option value="Boissons">Boissons</option>
-            <option value="Boulangerie - Viennoiserie">Boulangerie - Viennoiserie</option>
-            
+            <?php foreach($tab["sitecuisine"]["liste_categorie"]["categorie"] as $item){
+               echo "<option value='".$item['nom']."'>". $item['nom']."</option>";
+            } ?>
+
          </select>
          <select name="difficulte" id="difficulte" class="input" required>
             <option value="difficulté" selected>Difficulté non renseigné </option>
