@@ -18,7 +18,7 @@ body {
     display: block;
     margin: 0 auto;
     width: fit-content;
-
+}
     .flex-container {
         display: flex;
         flex-direction: row;
@@ -49,8 +49,13 @@ body {
                         max-height: 250px;
                         border: none;
                         object-fit: cover;
+                          transition: transform .5s ease;
 
                     }
+
+                    img:hover {
+                        transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+                      }
 
                 }
 
@@ -95,7 +100,7 @@ body {
 
         }
     }
-}
+
 
 
 #btn-update {
