@@ -2,12 +2,12 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Connexion</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
-  <link rel="stylesheet" href="../CSS/body.css" />
-  <link rel="stylesheet" href="../CSS/auth.css" />
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+    <link rel="stylesheet" href="../CSS/body.css" />
+    <link rel="stylesheet" href="../CSS/auth.scss" />
 </head>
 
 <?php
@@ -18,22 +18,27 @@ include("../Navigation/index.php");
 
 
 <body>
-  <div class="container">
-    <h2>Login</h2><br>
-    <form action="post-connexion.php" method="post">
+    <div class="container">
+        <img id="image-left" src="../Photos/auth.jpg" />
+        <div id="div-right">
+            <h2>Login</h2>
+            <form action="post-connexion.php" method="post">
 
-      <input type="text" class="form-control" name="email" placeholder="email" required /><br />
+                <input type="text" class="form-control" name="email" placeholder="email" required />
 
-      <input type="password" class="form-control" name="mdp" placeholder="mot de passe" required /><br />
-      <br>
-      <div style='display: block; text-align:center;'>
-        <input class="btn" type="submit" value="Se connecter " /> 
-        <a href='inscription.php' style='text-decoration:none; color:white; font-size:20px; margin-left:15px;'> S'inscrire </a>
-      </div>
+                <input type="password" class="form-control" name="mdp" placeholder="mot de passe" required />
+            
+                <div id="div-btn-submit-go-for-inscription">
+                    <input class="btnSubmit" type="submit" value="Se connecter " />
+                    <a href='inscription.php'> S'inscrire </a>
+                </div>
 
-    </form>
+            </form>
 
-  </div> <!-- fin div containerC -->
+        </div>
+
+
+    </div> <!-- fin div containerC -->
 </body>
 
 </html>

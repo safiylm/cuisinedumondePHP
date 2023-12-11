@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <link rel="stylesheet" href="../CSS/ajouter_recette.css" />
-<link rel="stylesheet" href='../css/publication.css'>
+<link rel="stylesheet" href='../css/publication.scss'>
 
 <?php
 include("../navigation/index.php");

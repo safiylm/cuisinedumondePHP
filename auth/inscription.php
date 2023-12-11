@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Inscription</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../connexion/co.css" />
+  <link rel="stylesheet" href="../css/auth.scss" />
 </head>
 
 <body>
@@ -13,25 +13,29 @@
 
   include("../Navigation/index.php");
 
-?>
+  ?>
 
   <div class="container">
-    <h2>Inscription</h2><br>
-    <form action="post-inscription.php" method="post">
+    <img id="image-left" src="../Photos/auth.jpg" />
+    <div id="div-right">
 
-      <input type="text" class="form-control" name="prenom" placeholder="prenom" required /><br />
+      <h2>Inscription</h2>
+      <form action="post-inscription.php" method="post">
 
-      <input type="text" class="form-control" name="nom" placeholder="nom" required /><br />
+        <input type="text" class="form-control" name="nom" placeholder="nom" required />
 
-      <input type="email" class="form-control" name="email" placeholder="email" required /><br />
+        <input type="text" class="form-control" name="prenom" placeholder="prenom" required />
 
-      <input type="password" class="form-control" name="mdp" placeholder="password" required /><br />
-      <br>
-      <div style='display: block; text-align:center;'>
-        <input type="submit" class="btn btn-light" value="S'inscrire" />
-      </div>
-    </form>
+        <input type="email" class="form-control" name="email" placeholder="email" required />
 
+        <input type="password" class="form-control" name="mdp" placeholder="password" required />
+
+        <div style='display: block; text-align:center;'>
+          <input type="submit" class="btnSubmit" value="S'inscrire" />
+        </div>
+      </form>
+
+    </div>
   </div>
 
   <script>
