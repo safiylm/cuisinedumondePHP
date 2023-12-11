@@ -6,8 +6,8 @@
 
     <meta charset="utf-8">
     <title>Cuisine du monde </title>
-    <link rel="stylesheet" href='css/publication.css'>
-    <link rel="stylesheet" href='css/home.css'>
+    <link rel="stylesheet" href='css/publication.scss'>
+    <link rel="stylesheet" href='css/home.scss'>
     <link rel="stylesheet" href='css/nav.css'>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,7 +72,6 @@ if (!isset($_SESSION['favori']))
             <span id="txtHint" style='display:flex;'></span>
 
         </div>
-        </br>
         <div class="flex-container">
             <?php
 
@@ -160,7 +159,7 @@ if (!isset($_SESSION['favori']))
         <div class="div-rose-incline">
             <div class="sur-div-rose-incline">
 
-                <img src='Photos/cheesecakee.jpg' width="450px" height="auto">
+                <img src='Photos/cheesecakee.jpg' >
                 <div>
                     <h1> Cheesecake </h1></br>
                     <p> C'est une variété nord-américaine de gâteau au fromage. C'est un dessert sucré composé d'un mélange de fromage à la crème, d'œufs, de sucre et de parfums de vanille et/ou de citron, sur une croûte de miettes de biscuits ou une génoise.
@@ -171,27 +170,3 @@ if (!isset($_SESSION['favori']))
         </div>
 </body>
 
-<style>
-    .div-liste-utilisateur {
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .div-1-utilisateur {
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-        align-items: center;
-        justify-content: center;
-    }
-    .a-login-utilisateur{
-        text-transform: capitalize;
-        font-weight: 200;
-        color: grey;
-        text-decoration: none;
-        font-size: 23px;
-    }
-</style>
