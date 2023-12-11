@@ -1,0 +1,58 @@
+.h1-categorie {
+    text-align: center;
+    padding: 30px 0;
+    text-decoration: underline;
+}
+
+.div-toutes-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+
+
+    .div-categorie {
+        margin: 20px;
+        width: 150px;
+
+        a {
+            text-decoration: none;
+            color: black;
+
+
+            h3 {
+                padding: 20px;
+                text-align: center;
+                font-size: large;
+            }
+
+        }
+
+        img {
+            border: none;
+            border-radius: 50%;
+            object-fit: cover;
+            width: 150px;
+            height: 150px;
+        }
+
+    }
+}
+
+
+@media screen and (max-device-width: 750px) {
+
+    .div-toutes-categories {
+        margin: 0;
+        padding: 0;
+
+        .div-categorie {
+            margin: 10px;
+
+            h3{
+                font-size: 1.3em;
+            }
+        }
+    }
+}

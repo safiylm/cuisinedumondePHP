@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
   <link rel="stylesheet" href="../CSS/body.css" />
+  <link rel="stylesheet" href="../CSS/categorie.scss" />
 </head>
 
 <?php
@@ -40,7 +41,7 @@ $tab = json_decode($json_object, true);
 </div>
 
 
-<h1 style='text-align:center;'>Les catégories </h1>
+<h1 class="h1-categorie">Les cuisines du monde </h1>
 <div class="div-toutes-categories">
 
 <?php
@@ -63,43 +64,3 @@ $tab = json_decode($json_object, true);
 </body>
 
 </html>
-
-<style>
-
-.h1-categorie{
-  text-align:center;
-  margin-top: 30px;
-}
-
-  .div-toutes-categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-  }
-
-  .div-categorie {
-    margin: 20px;
-  }
-
-  .div-categorie a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .div-categorie img {
-    border: none;
-    ;
-    border-radius: 50%;
-    object-fit: cover;
-    width: 150px;
-    height: 150px;
-  }
-
-  .div-categorie h3 {
-    padding: 20px;
-    text-align: center;
-    font-size: large;
-  }
-</style>
