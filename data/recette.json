@@ -86,6 +86,208 @@
         },
         "liste_recette": {
             "recette": [
+            
+                {
+                    "titre": "Patlıcanlı Şiş Köfte Tarifi",
+                    "auteur": "",
+                    "categorie": "Viande",
+                    "pays": "Cuisine Turque",
+                    "image": "https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2021%2F10%2Fpatlicanli-sis-kofte-yemekcom.jpg&w=1920&q=75",
+                    "liste_ingredients": {
+                        "nb_personne": "",
+                        "ingredient": [
+                            "Pour les boulettes de viande :",
+                            "400 grammes de bœuf haché mi-gras",
+                            "1 oeuf",
+                            "1 oignon (transformé)",
+                            "3 cuillères à soupe de chapelure",
+                            "1 cuillère à café de sel",
+                            "1/2 cuillère à café de poivre noir",
+                            "1 cuillère à café de cumin",
+                            "1 gousse d'ail râpée",
+                            " 2 cuillères à soupe d'huile (pour cuire les boulettes de viande)",
+                            "Pour l'aubergine :",
+                            "4 aubergines (tranchées finement, trempées dans de l'eau salée)",
+                            "6 cuillères à soupe d'huile d'olive",
+                            "1,5 cuillères à café de sel",
+                            "Pour la sauce tomate :",
+                            "3 cuillères à soupe d'huile",
+                            "2 gousses d'ail",
+                            "1,5 tasse de purée de tomates",
+                            "1 cuillère à soupe de concentré de tomate",
+                            "1 cuillère à café de sel",
+                            "1/2 cuillère à café de poivre noir",
+                            "1/2 tasse d'eau",
+                            "Pour ce qui précède :",
+                            "1 pincée de persil haché"
+                        ]
+                    },
+                    "difficulte": "",
+                    "temps_preparation": "",
+                    "temps_cuisson": "",
+                    "temps_repos": "",
+                    "preparation": {
+                        "etape": [
+                            "Placer les aubergines tranchées finement et séchées dans de l'eau salée sur une plaque à pâtisserie recouverte de papier sulfurisé. Versez dessus l'huile d'olive et le sel et enfournez à 180 degrés pendant 15 minutes.",
+                            "Pour les boulettes de viande ; Dans un bol profond, pétrir la viande hachée, l'œuf, l'oignon, la chapelure, le sel, le poivre noir, le cumin et l'ail jusqu'à ce que le tout soit bien mélangé.",
+                            "Prenez des morceaux du mélange de la taille d'une paume, façonnez-les en longues boulettes de viande plates et enfilez-les sur des brochettes.",
+                            "Faites cuire les boulettes de viande que vous avez préparées dans une poêle chauffée pendant environ 2 minutes, devant et derrière.",
+                            "Pour la sauce; Faire revenir l'ail avec l'huile dans une poêle. Ajoutez ensuite le concentré de tomates et le concentré de tomates. Assaisonner de sel et de poivre, ajouter de l'eau, faire bouillir un moment et retirer du feu.",
+                            "Placez 2 aubergines sorties du four sur le plan de travail afin qu'elles se touchent. Mettez la brochette de boulettes de viande au bout et enveloppez-la.",
+                            "Placez les boulettes de viande emballées dans la plaque du four, versez dessus la sauce tomate et faites-les cuire au four à 185 degrés pendant 15 minutes. Disposez les brochettes de boulettes sorties du four sur une assiette de service, saupoudrez de persil et servez. Bon appétit!"
+                        ]
+                    }
+                },
+                {
+                    "titre": "Tartelette aux pommes",
+                    "auteur": "",
+                    "categorie": "Désserts",
+                    "pays": "",
+                    "image": "https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2022%2F03%2Felmali-kurabiye-tarifi-yemekcom.jpg&w=1920&q=75",
+                    "liste_ingredients": {
+                        "nb_personne": "",
+                        "ingredient": [
+                            "150g de beurre",
+                            "1/2 verre d'eau de sucre glace",
+                            "1 oeuf",
+                            "1 vanille",
+                            "1/2 c. à thé de carbonate",
+                            "2,5 verre d'eau de farine",
+                            "pour la garniture",
+                            "3 pommes",
+                            "3 c. de sucre ",
+                            "1/2 verre d'eau de noix"
+                        ]
+                    },
+                    "difficulte": "",
+                    "temps_preparation": "",
+                    "temps_cuisson": "",
+                    "temps_repos": "",
+                    "preparation": {
+                        "etape": [
+                            "On commence par ajouter les pommes râpées dans la poêle. Ajouter le sucre cristallisé par dessus. Vous ne le laissez pas tant qu'il n'est pas caramélisé.",
+                            "Après la cuisson, ajoutez un demi-verre de noix concassées et de cannelle et mélangez.",
+                            "Pour préparer la pâte, ajoutez le beurre ramolli à température ambiante,  le sucre glace, le bicarbonate de soude et le reste dans un bol profond. Bien pétrir puis ajouter la farine petit à petit pour obtenir une pâte molle mais non collante.",
+                            "Rassemblez la pâte sur le comptoir, saupoudrez légèrement de farine et étalez-la. Réalisez des formes rondes, mettez le mélange de pommes au milieu et pliez les deux côtés.",
+                            "Placez les biscuits sur une plaque à pâtisserie recouverte de papier sulfurisé et faites cuire au four préchauffé à 180 degrés jusqu'à ce qu'ils soient dorés, environ 20-25 minutes.",
+                            "Une fois à température ambiante, saupoudrez-y du sucre en poudre. Vos cookies sont maintenant prêts à être servis ! Bon appétit.."
+                        ]
+                    }
+                },
+                {
+                    "titre": "Kuru Fasulye",
+                    "auteur": "",
+                    "categorie": "Soupes",
+                    "pays": "Cuisine Turque",
+                    "image": "https://img.cuisineaz.com/660x660/2019/07/22/i148279-.webp",
+                    "liste_ingredients": {
+                        "nb_personne": "6 personnes",
+                        "ingredient": [
+                            "500 g haricots blancs",
+                            "3 c. à soupe concentré de tomates",
+                            "1 c. à soupe beurre",
+                            "sel, poivre",
+                            "1 oignon",
+                            "2 c. à soupe huile d'olive",
+                            "1 c. à café paprika"
+                        ]
+                    },
+                    "difficulte": "",
+                    "temps_preparation": "10 minutes ",
+                    "temps_cuisson": "",
+                    "temps_repos": "",
+                    "preparation": {
+                        "etape": [
+                            " Mettre les haricots à tremper dans de l’eau froide la veille de la préparation. Ils vont ainsi se gorger d’eau et seront plus simples à cuire.",
+                            "Le jour J, faites cuire les haricots dans un grand volume d'eau bouillante. Écumez régulièrement la mousse qui se formera. Laissez cuire 20 minutes, et égouttez.",
+                            "Émincez l’oignon et faites le revenir quelques minutes dans le beurre et l’huile.",
+                            "Ajoutez le paprika en poudre et le poivre généreusement.",
+                            "Versez les haricots dans la préparation, et mélangez bien. Salez.",
+                            "Versez 1,5 l d’eau sur les haricots, et laissez mijoter pendant au moins 30 minutes à partir de la reprise de l’ébullition.",
+                            "Rectifiez l'assaisonnement si nécessaire, et servez chaud !"
+                        ]
+                    }
+                },
+                {
+                    "titre": "Eclairs au chocolat faciles de Chef Damien",
+                    "auteur": "",
+                    "categorie": "Désserts",
+                    "pays": "Cusine française",
+                    "image": "https://static.750g.com/images/640-400/c727cfc5240b2ac4e92882acf519543d/eclairs-au-chocolat.jpg",
+                    "liste_ingredients": {
+                        "nb_personne": "",
+                        "ingredient": [
+                            "Pour la crème pâtissière",
+                            "Chocolat noir 70%100 g de chocolat noir 70%",
+                            "Sucre125 g de sucre",
+                            "Jaune d'oeuf3 jaunes d'oeuf",
+                            "Lait entier33 cl de lait entier ou sucre glace",
+                            "Fécule de maïs2 c. à s. de fécule de maïs Maïzena",
+                            "Extrait de vanille ou vanille liquide½ c. à c. d'extrait de vanille ou vanille liquide",
+                            "Pour la pâte à choux",
+                            "Oeuf moyen3 oeufs moyens",
+                            "Oeuf1 oeuf battu avec une pincée de sel",
+                            "Farine80 g de farine",
+                            "Beurre75 g de beurre",
+                            " Eau10 cl d'eau",
+                            "Sel ou sel fin1 pincée de sel ou sel fin",
+                            "Pour le décor",
+                            "Fondant100 g de fondant",
+                            "Chocolat en poudre20 g de chocolat en poudre"
+                        ]
+                    },
+                    "difficulte": "Moyen",
+                    "temps_preparation": "30 minutes",
+                    "temps_cuisson": "25 minutes",
+                    "temps_repos": "",
+                    "cout": "Bon marcher",
+                    "preparation": {
+                        "etape": [
+                            "Pour la crème pâtissière : Faites bouillir le lait avec la moitié du sucre et la vanille liquide. Dans un saladier, délayez au fouet les jaunes d'oeufs et le reste du sucre jusqu'à ce que le mélange soit bien blanchi. Ajoutez la fécule de maïs et mélangez.",
+                            "Ajoutez le lait bouillant en fouettant. Reversez dans la casserole. Placez la casserole sur le feu doux en remuant toujours au fouet. Portez à ébullition en fouettant sans cesse et cuire 3 minutes.Hors du feu ajoutez le chocolat en morceaux et fouettez pour incorporer. Laissez refroidir la crème au réfrigérateur.",
+                            "Pour la pâte à choux :",
+                            "Préchauffez votre four à 180°C. Dans une casserole, portez à ébullition l'eau avec le beurre en morceaux et le sel.",
+                            "Sortir du feu et jetez en une fois la farine. Remuez avec une spatule en bois jusqu'à ce que le mélange forme une pâte épaisse qui colle à la spatule. Remettez la casserole sur un feu léger et desséchez la pâte quelques secondes.",
+                            "Otez la casserole du feu puis ajoutez chaque oeuf, l'un après l'autre, en mélangeant énergiquement jusqu'à ce que les oeufs et la pâte soient assimilés. La pâte devient coulante mais pas liquide.",
+                            "Vous devez mettre le dernier oeuf progressivement car sinon la pâte risque d'être trop liquide et vous risquez de rater votre pâte à choux.",
+                            "Mettez la pâte dans une poche à douille. Déposer la pâte à choux en donnant une forme d'éclair. Dorer et cuire au four pendant 25 minutes environ. Les choux doivent être secs.",
+                            "Pour la garniture des éclairs :",
+                            "Percez 2 petits trous sous l'éclair et garnir de crème à l'aide d'une poche à douille. Chauffez très légèrement le fondant pâtissier et colorez-le avec le cacao en poudre. Trempez légèrement vos éclairs dans le fondant."
+                        ]
+                    }
+                },
+                {
+                    "titre": "Mersin Tantuni",
+                    "auteur": "",
+                    "categorie": "Viande",
+                    "pays": "Cuisine Turque",
+                    "image": "https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2021%2F08%2Ftantuni-yemekcom.jpg&w=1920&q=75",
+                    "liste_ingredients": {
+                        "nb_personne": "4 personnes",
+                        "ingredient": [
+                            "4 lavash tandoori",
+                            "400 grammes de surlonge de bœuf (finement haché)",
+                            "1/2 verre à thé d'huile de coton",
+                            "1/4 cuillère à café de sel",
+                            "1 cuillère à soupe de poivron rouge moulu",
+                            "1/2 verre à thé d'eau",
+                            "1/4 bouquet de persil (facultatif)",
+                            "2 tomates (facultatif)",
+                            "1 oignon (facultatif)"
+                        ]
+                    },
+                    "difficulte": "Moyen",
+                    "temps_preparation": "1h",
+                    "temps_cuisson": "1h",
+                    "temps_repos": "",
+                    "preparation": {
+                        "etape": [
+                            "Pour le tantuni à la Mersin, nettoyez les parties grasses en excès de la viande, le cas échéant, et coupez-les en fines tranches. Ajoutez suffisamment d'eau FROIDE pour couvrir et faites bouillir jusqu'à ce que l'eau s'évapore.",
+                            "Faites chauffer la plaque sur la cuisinière. Versez l'huile de coton dans la poêle et ajoutez-y la viande bouillie. Ajouter le poivre moulu et mélanger. Ajouter l'eau lentement et cuire jusqu'à ce que l'eau s'évapore.",
+                            "Placez le tantuni cuit dans le pain de mie et le lavash. Ajouter les tomates hachées, l'oignon et le persil si désiré. Apprécier!"
+                        ]
+                    }
+                },
                 {
                     "titre": "Profiteroles maison",
                     "auteur": "",
@@ -111,6 +313,7 @@
                     "temps_preparation": "30 minutes",
                     "temps_cuisson": "20 minutes",
                     "temps_repos": "",
+                    "cout": "Bon marcher",
                     "preparation": {
                         "etape": [
                             "Pour la pâte à choux : Mettre l'eau, le beurre, le sucre et le sel dans une casserole sur le feu.",
@@ -675,6 +878,7 @@
                     "titre": "P\u00e2te \u00e0 pizza maison et rapide",
                     "auteur": "safinazylm@gmail.com",
                     "categorie": "Bases",
+                    "image": "https://img.cuisineaz.com/660x660/2018/03/19/i137552-pate-a-pizza-rapide.webp",
                     "liste_ingredients": {
                         "nb_personne": "6 personnes ",
                         "ingredient": [
@@ -704,6 +908,7 @@
                     "titre": "Spaghetti \u00e0 la bolognaise",
                     "auteur": "safinazylm@gmail.com",
                     "categorie": "Plats",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1JMHbvKr2YjfsAZjjBJ9Bl3Si-pXXsfhEQ&usqp=CAU",
                     "liste_ingredients": {
                         "nb_personne": "2 personnes",
                         "ingredient": [
@@ -737,6 +942,7 @@
                     "titre": "Salade fra\u00eecheur gourmande (p\u00e2tes)",
                     "auteur": "safinazylm@gmail.com",
                     "categorie": "Salades",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeUjZ9Osg3R08gH9oC7NYLhOlRUWcmxe2VKg&usqp=CAU",
                     "liste_ingredients": {
                         "nb_personne": "6 personnes",
                         "ingredient": [
@@ -767,6 +973,8 @@
                     "titre": " riz turc pilaf (ou pilav) ",
                     "auteur": "talhakaya@gmail.com",
                     "categorie": "Accompagnements",
+                    "pays": "Cuisine Turque",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZr2pYV5MlK_5b66NwF45-ZMEsHh5kudZvQA&usqp=CAU",
                     "liste_ingredients": {
                         "nb_personne": "5 personnes",
                         "ingredient": [
