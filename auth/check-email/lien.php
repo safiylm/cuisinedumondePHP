@@ -59,6 +59,8 @@
 <body>
 
     <?php
+    include('../../sendmail.php');
+
     if (file_exists('../../data/recette-utilisateur.xml')) {
         $xml = simplexml_load_file('../../data/recette-utilisateur.xml');
     } else {
@@ -74,12 +76,17 @@
                     $xml->asXML();
                     $xml->asXML('../../data/recette-utilisateur.xml');
 
+
+                    $subjet = "Mail a été confirmé avec succès";
+                    $contenuMail = "Mail a été confirmé avec succès.";
+                    $altbody = "Mail a été confirmé avec succès";
+                    sendmail("safinazylm@gmail.com", $subjet, $contenuMail, $altbody);
+                    
                     header('Location: ../connexion.php');
                     exit();
                 }
             }
         }
-
         else{
             echo "email incorrecte!";
         }
