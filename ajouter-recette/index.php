@@ -51,6 +51,7 @@ $tab = json_decode($json_object, true);
       </br>
       <p>Entrez les ingrédients </p>
       <div id="div-ingredient">
+         <div class="div_etapes">
          <input type="text" class="input-ing" name="quantite" placeholder="Quantité" required/>
 
          <select name="mesure" id="cout" class="input-ing" required>
@@ -66,7 +67,7 @@ $tab = json_decode($json_object, true);
          </select>
 
          <input type="text" class="input-ing" name="ingredient" placeholder="Ingrédient" required/>
-
+</div>
       </div>
       <input type='hidden' name='nb-ingredients-total' id='nb-ingredients-total'/>
       <button type="button" class="btnn" onClick="ajouterIngredient()"> Ajouter un ingrédient </button>
