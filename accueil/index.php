@@ -69,8 +69,9 @@ if (!isset($_SESSION['favori']))
 
     <div class="main">
         <div class="flex-container" id="div-recherche">
+        <div class="flex-item">
             <span id="txtHint" style='display:flex;'></span>
-
+        </div>
         </div>
         <div class="flex-container">
             <?php
