@@ -33,6 +33,20 @@ include("../Navigation/index.php");
                     <a href='inscription.php'> S'inscrire </a>
                 </div>
 
+                <div class="info">
+                    <?php if($_GET['erreur']=="password"){
+                        echo "<p>Votre mot de passe est incorrecte.</p>";
+                    }
+                    else if ($_GET['erreur']=="email"){
+                        echo "<p>Votre adresse e-mail est incorrecte.</p>";
+                    }
+                    else if ($_GET['erreur']=="emailpassword"){
+                        echo "<p>Votre adresse e-mail et votre mot de passe sont incorrectes.</p>";
+                    }
+                    
+                    ?>
+                </div>
+
             </form>
 
         </div>

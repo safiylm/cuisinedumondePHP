@@ -1,5 +1,6 @@
 <?php
 session_start();
+include('../sendmail.php');
 
 if (file_exists('../data/recette-utilisateur.xml')) {
     $xml = simplexml_load_file('../data/recette-utilisateur.xml');
@@ -16,7 +17,8 @@ $id = $_GET['idRecette'];
 $path = "//utilisateur[email ='" . $_POST['email']. "']";
 
 
-$password = $_POST['mdp'];  // password_hash($_POST['mdp'], PASSWORD_DEFAULT);
+$password = $_POST['mdp'];  
+$password = password_hash($password ,  PASSWORD_BCRYPT );
 // on ajoute la recette dans le carnet de recette
 if (count($xml->xpath($path)) == 0) {
 
@@ -28,14 +30,17 @@ if (count($xml->xpath($path)) == 0) {
     $var->addChild('nom', $_POST['nom']);
     $var->addChild('email', $_POST['email']);
     $var->addChild('password',$password );
- 
-    $_SESSION['utilisateur']['email'] =  $_POST['email'];
-    $_SESSION['utilisateur']['password'] =  $_POST['mdp'];
-    $_SESSION['utilisateur']['prenom'] = $_POST['prenom'];
-    $_SESSION['utilisateur']['nom'] =  $_POST['nom'];
+    $var->addChild('isEmailChecked', false );
+    $var->addChild('dateCreation', false );
 
+ 
     $xml->asXML();
     $xml->saveXML("../data/recette-utilisateur.xml");
+
+    $subjet= "Demande de confirmation de votre mail";
+    $contenuMail = "Veuillez confirmer votre mail<br/>";
+    $altbody = "Demande de confirmation de votre mail";
+    sendmail("safinazylm@gmail.com", $subjet, $contenuMail, $altbody);
 
 } else { // on enleve la recette du carnet de recette
   header('Location: inscription.php?erreur=emailexistedeja');

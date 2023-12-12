@@ -18,8 +18,9 @@ if (!empty($email) && !empty($password)) {
   // on ajoute la recette dans le carnet de recette
   if (count($xml->xpath($path)) == 1) {
     foreach ($xml->xpath($path) as $item) {
-      if($password== $item->password){
-    //  if (password_verify($password, $item->password)) {
+      echo  $item->password[0]->__toString();
+      if(password_verify( $password, $item->password[0]->__toString() ) ){
+      
         $_SESSION['utilisateur']['email'] = $email;
         $_SESSION['utilisateur']['password'] = $item->password[0]->__toString();
         $_SESSION['utilisateur']['prenom'] = $item->prenom[0]->__toString();
@@ -44,7 +45,7 @@ if (!empty($email) && !empty($password)) {
      exit();
   }
 }
- header('Location: connexion.php?erreur=emailpassword');
+header('Location: connexion.php?erreur=emailpassword');
  exit();
 
 ?>
