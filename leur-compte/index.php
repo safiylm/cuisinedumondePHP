@@ -1,7 +1,12 @@
 <!DOCTYPE html>
+<html>
+<head>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <link rel="stylesheet" href="../CSS/ajouter_recette.css" />
 <link rel="stylesheet" href='../css/publication.scss'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 <?php
 include("../navigation/index.php");
@@ -25,6 +30,7 @@ foreach ($xml->xpath($path) as $item) {
     $email = $item->email;
 }
 ?>
+<title><?php echo $renom. " ". $nom ;?> | Cuisine du monde </title>
 
 
 
@@ -79,7 +85,7 @@ foreach ($xml->xpath($path) as $item) {
         width: 85%;
     }
 </style>
-
+</head>
 
 <body>
     <div class="centrer">
@@ -139,3 +145,5 @@ foreach ($xml->xpath($path) as $item) {
         </div>
     </div>
 </body>
+
+</html>

@@ -8,25 +8,25 @@ if (file_exists('../data/recette-utilisateur.xml')) {
 
 $path = "//utilisateur[ email ='" . $_SESSION['utilisateur']['email'] . "' ]";
 if (count($xml->xpath($path)) == 1) {
-    foreach ($xml->xpath($path) as $item) {?>
-<div class="container-donnees-personnelles">
+    foreach ($xml->xpath($path) as $item) { ?>
+        <div class="container-donnees-personnelles">
 
-    <h2 id="titreDataUpdate">Modifier ses données personelles</h2>
+            <h2 id="titreDataUpdate">Modifier ses données personelles</h2>
 
-    <form action="donnees-personnelles/post-modification.php" method="post">
+            <form action="donnees-personnelles/post-modification.php" method="post">
 
-        <input type="text" class="form-control" name="nom" value="<?php echo $item->nom[0]->__toString(); ?>" /><br />
-        <input type="text" class="form-control" name="prenom" value="<?php echo $item->prenom[0]->__toString(); ?>" /><br />
+                <input type="text" class="form-control" name="nom" value="<?php echo $item->nom[0]->__toString(); ?>" /><br />
+                <input type="text" class="form-control" name="prenom" value="<?php echo $item->prenom[0]->__toString(); ?>" /><br />
 
-        <input type="submit" id="EnregistrerUpdate" value="Enregistrer les modifications" class="btn btn-primary" />
-        <button type="button" id="annuler" class="btn btn-light"> Annuler </button>
+                <input type="submit" id="EnregistrerUpdate" value="Enregistrer les modifications" class="btn btn-primary" />
+                <button type="button" id="annuler" class="btn btn-light"> Annuler </button>
 
-    </form>
-    <button id="modifier" class="btn btn-primary"> Modifier </button>
+            </form>
+            <button id="modifier" class="btn btn-primary"> Modifier </button>
 
-<button onclick="deleteAccount()" class="btn btn-danger" style="margin: 15px 0;"> Supprimer le compte </button>
+            <button onclick="deleteAccount()" class="btn btn-danger" style="margin: 15px 0;"> Supprimer le compte </button>
 
-</div>
+        </div>
 
 
 <?php  }
@@ -34,11 +34,11 @@ if (count($xml->xpath($path)) == 1) {
 ?>
 
 <script>
-function deleteAccount() {
-  if (confirm("Etes-vous sûre de vouloir supprimer votre compte ?") == true) {
-    document.location.href= "donnees-personnelles/post-delete.php";
-  } 
-}
+    function deleteAccount() {
+        if (confirm("Etes-vous sûre de vouloir supprimer votre compte ?") == true) {
+            document.location.href = "donnees-personnelles/post-delete.php";
+        }
+    }
 </script>
 
 
@@ -95,5 +95,20 @@ function deleteAccount() {
     .container-donnees-personnelles button,
     .container-donnees-personnelles input {
         width: 600px;
+    }
+
+    @media screen and (max-device-width: 900px) {
+        .container-donnees-personnelles {
+            width: 100vw;
+
+          
+
+
+        }
+  .container-donnees-personnelles button,
+            .container-donnees-personnelles input {
+
+                width: 100%;
+            }
     }
 </style>
