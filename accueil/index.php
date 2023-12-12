@@ -69,16 +69,14 @@ if (!isset($_SESSION['favori']))
 
     <div class="main">
         <div class="flex-container" id="div-recherche">
-        <div class="flex-item">
-            <span id="txtHint" style='display:flex;'></span>
-        </div>
+            <div class="flex-item">
+                <span id="txtHint" style='display:flex;'></span>
+            </div>
         </div>
         <div class="flex-container">
             <?php
-
-            for ($i = 0; $i < count($tab["sitecuisine"]["liste_recette"]['recette']); $i++) {
-
-                $recette = $tab["sitecuisine"]["liste_recette"]['recette'][$i];
+            //itere in order to display respice
+            foreach ($tab["sitecuisine"]["liste_recette"]['recette'] as $recette) {
 
                 $photoo = $recette["image"];
                 $url = './Photos/' . $photoo;
@@ -97,7 +95,7 @@ if (!isset($_SESSION['favori']))
                         </div>
 
                         <div class="div-titre">
-                            <a class="a-titre" href='Recette/index.php?idRecette=<?php echo $i; ?>'>
+                            <a class="a-titre" href='Recette/index.php?idRecette=<?php echo $recette['id']; ?>'>
                                 <?php echo $recette['titre']; ?>
                             </a>
                             <?php if (!empty($_SESSION['utilisateur']['email'])) {
@@ -151,16 +149,16 @@ if (!isset($_SESSION['favori']))
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
                     </svg>
-             <a href='leur-compte/index.php?idUtilisateur=<?php echo $item->attributes();?>' class='a-login-utilisateur'>  <?php echo $item->nom ." " . $item->prenom . "</a> </div>";
-            } ?>
+                    <a href='leur-compte/index.php?idUtilisateur=<?php echo $item->attributes(); ?>' class='a-login-utilisateur'> <?php echo $item->nom . " " . $item->prenom . "</a> </div>";
+                                                                                                                                } ?>
 
-        </div>
+                </div>
 
         </div>
         <div class="div-rose-incline">
             <div class="sur-div-rose-incline">
 
-                <img src='Photos/cheesecakee.jpg' >
+                <img src='Photos/cheesecakee.jpg'>
                 <div>
                     <h1> Cheesecake </h1></br>
                     <p> C'est une variété nord-américaine de gâteau au fromage. C'est un dessert sucré composé d'un mélange de fromage à la crème, d'œufs, de sucre et de parfums de vanille et/ou de citron, sur une croûte de miettes de biscuits ou une génoise.
@@ -170,4 +168,3 @@ if (!isset($_SESSION['favori']))
 
         </div>
 </body>
-

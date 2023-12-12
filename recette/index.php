@@ -33,6 +33,14 @@
         exit('Failed to open test.xml.');
     }
 
+    function getRecetteById($arrays, $id){
+        foreach($arrays as $item){
+            if ($item['id'] == $id)
+                return $item;
+        }
+        return null;
+    }
+
     ?>
 </head>
 
@@ -41,10 +49,10 @@
     <?php
 
 
-    if (isset($id)) {
-        $recette = $tab["sitecuisine"]["liste_recette"]['recette'][$id];
 
-    ?>
+
+    if (isset($id)) {
+        $recette = getRecetteById($tab["sitecuisine"]["liste_recette"]['recette'], $id); ?>
 
         <div class="contenu">
             <div class="div-image-infos">
