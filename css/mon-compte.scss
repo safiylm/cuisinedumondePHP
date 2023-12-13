@@ -1,0 +1,102 @@
+body {
+    background-color:#dbdfe9 !important;
+    height: 100%;
+    padding: 30px ;
+    margin-bottom: 100px;
+}
+
+.div-mon-compte {
+    .div0 {
+        background-color: #2c395d;
+        height: 50vh;
+        width: 100vw;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding-bottom: 100px;
+        h3 {
+            color: white;
+            font-weight: 700;
+            padding:20px 70px ;
+        }
+
+        .div-menu-horizontale {
+
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            width: 75%;
+            border-bottom: 1.5px solid lightgray;
+            margin: 20px 50px;
+            padding: 20px 0;
+
+            button {
+                color: white;
+                font-size: 20px;
+                font-weight: 600;
+                border: none;
+                background-color: transparent;
+            }
+        }
+
+    }
+
+    .div1{
+        display: flex;
+       
+        .div1-left{
+            margin: 0 20px;
+            margin-top: -60px;
+            background-color: white;
+            border-radius: 20px;
+            padding: 30px;
+            width: 65vw;
+            
+        }
+
+        .div1-right{
+            width: 25vw;
+            background-color: white;
+            margin: 0 20px;
+            margin-top: -60px;
+            background-color: white;
+            border-radius: 20px;
+            padding: 30px;
+            height: max-content;
+
+        }
+
+    }
+
+}
+
+
+
+
+#mon-carnet-contenu {
+    width: 85%;
+}
+
+
+@media screen and (max-device-width: 900px) {
+    .menu-bar {
+        flex-direction: column;
+
+        * {
+            padding: 15px;
+            ;
+        }
+    }
+
+
+    .menu-bar button {
+
+        text-decoration: underline;
+    }
+
+}

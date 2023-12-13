@@ -3,9 +3,10 @@ body {
     background-color: #fff !important;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
+
 .head {
     background-color: #858585;
     height: 150px;
@@ -19,87 +20,119 @@ body {
     margin: 0 auto;
     width: fit-content;
 }
-    .flex-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        padding: auto;
-        margin: 15px auto;
 
-        .flex-item {
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: auto;
+    margin: 0 auto;
+    background-color: whitesmoke;
 
-            .element {
-                width: 250px;
-                height: auto;
-                margin-left: auto;
-                margin-right: auto;
+    .flex-item {
+        
+        background-color: whitesmoke;
+        .element {
+            width: auto;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: #f98d8d ;
+            border-radius: 20px 20px 0 0;
 
-                .div-img {
-                    width: 250px !important;
-                    height: 250px !important;
+            .div-img {
 
-                    img {
-                        width: auto !important;
-                        height: auto !important;
-                        min-height: 250px;
-                        max-height: 250px;
-                        border: none;
-                        object-fit: cover;
-                          transition: transform .5s ease;
+                width: 350px !important;
+                height: 300px !important;
+                padding: 0;
+                margin: 0;
+                img {
+                    padding: 0;
+                    margin: 0;
+                    border-radius: 20px 20px 0 0;
+                    width: 350px !important;
+                    height: 300px !important;
+                    min-height: 300px;
+                    max-height: 300px;
+                    object-fit: cover;
 
-                    }
-
-                    img:hover {
-                        transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-                      }
-
-                }
-
-                .div-titre {
-
-                    padding: 5px;
-                    height: auto;
-                    margin-bottom: 30px;
-                    display: flex;
-                    justify-content: center;
-
-                    .a-titre {
-
-                        width: 250px !important;
-                        padding-top: 5px;
-                        display: block;
-                        text-decoration: none;
-                        font-size: 1em;
-                        text-align: center;
-                        text-transform: uppercase;
-                        color: rgb(0, 0, 0);
-                        height: 75px;
-
-                    }
-
-                    .a-titre:hover {
-                        color: steelblue;
-                    }
-                    
-
-                    #btn-trash {
-                        border: none;
-                        border-radius: 5px;
-                        padding: 7px;
-                        text-decoration: none;
-                        background-color: transparent;
-                        color: white;
-                    }
+                    border: none;
+                    transition: transform .5s ease;
 
                 }
+
+                img:hover {
+                    transform: scale(1.05);
+                    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+                }
+
+            }
+            .info-recette{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 20px 10px;
+                color: darkslategrey;
+                font-weight: 700;
+                max-height: 70px;
+                height: 50px;
             }
 
+            .div-titre {
+
+                padding: 10px;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 350px;
+                max-height: 110px;
+                height: 90px;
+
+                .a-titre {
+
+                    display: block;
+                    text-decoration: none;
+                    font-size: 1em;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: darkslategrey;
+                    font-weight: 700;
+                
+                }
+
+                .a-titre:hover {
+                    color: steelblue;
+                }
+
+
+                #btn-trash {
+                    border: none;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    background-color: transparent;
+                    color: white;
+                }
+
+            }
         }
+
+        #heart{
+            width: 20px;
+            height: 20px ;
+        }
+
     }
+}
 
 
 
@@ -118,34 +151,37 @@ body {
         margin: 0;
         padding: 0;
         padding-top: 35px;
+
         .flex-container {
             width: 100vw;
             margin: 0;
             padding: 0;
-            
-            .flex-item{
+
+            .flex-item {
                 width: 100%;
                 padding: 5px;
                 margin: 0;
-                .element{
+
+                .element {
                     width: 100% !important;
                     height: auto;
 
                     padding: 0;
                     margin: 0;
-                    .div-img{
+
+                    .div-img {
                         width: 100% !important;
                         height: auto;
 
-                        img{
+                        img {
                             width: 100% !important;
                             height: auto;
                         }
                     }
 
-                    .div-titre{
+                    .div-titre {
                         font-size: 1.3em;
-                       
+
                     }
                 }
             }
@@ -153,4 +189,3 @@ body {
     }
 
 }
-
