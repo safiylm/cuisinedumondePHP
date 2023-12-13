@@ -1,52 +1,19 @@
-body{
-    background: linear-gradient(10deg, rgba(2,0,36,1) 0%, rgba(24,51,80,1) 25%, rgba(64,145,161,1) 100%); 
-}
-
-
-.h1-categorie {
-    text-align: center;
-    padding: 30px 0;
-    text-decoration: underline;
-    color: white;
+body {
+    // background: linear-gradient(10deg, rgba(2,0,36,1) 0%, rgba(24,51,80,1) 25%, rgba(64,145,161,1) 100%); 
+   // background-color: rgb(20, 20, 20);
 }
 
 .div-toutes-categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-
-
+    display: block;
+    margin: 10px 40px;
 
     .div-categorie {
-        margin: 20px;
-        width: 150px;
-
-        a {
-            text-decoration: none;
-            color: black;
-            color: white;
-
-
-            h3 {
-                padding: 20px;
-                text-align: center;
-                font-size: large;
-    color: white;
-            
-            }
-
+        h3{
+            color: darkslategray;
+            font-weight: 800;
+            font-size: 45px;
+            padding: 25px 0;
         }
-
-        img {
-            border: none;
-            border-radius: 50%;
-            object-fit: cover;
-            width: 150px;
-            height: 150px;
-        }
-
     }
 }
 
@@ -60,7 +27,7 @@ body{
         .div-categorie {
             margin: 10px;
 
-            h3{
+            h3 {
                 font-size: 1.3em;
             }
         }

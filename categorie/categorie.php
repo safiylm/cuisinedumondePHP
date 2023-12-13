@@ -7,7 +7,6 @@
     <link rel="stylesheet" href='../css/publication.scss'>
     <link rel="stylesheet" href='../css/home.scss'>
     <link rel="stylesheet" href='../css/nav.css'>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Work+Sans&display=swap" rel="stylesheet">
@@ -19,7 +18,6 @@
 </head>
 
 <?php
-session_start();
 $json_object = file_get_contents("../data/recette.json");
 $tab = json_decode($json_object, true);
 echo "<script>var tabjson = $json_object </script>";
