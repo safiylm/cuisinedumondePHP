@@ -1,105 +1,84 @@
 <!DOCTYPE html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<link rel="stylesheet" href="../CSS/ajouter_recette.css" />
-<link rel="stylesheet" href="../CSS/publication.css" />
-<?php
+<html>
 
-include("../navigation/index.php");
-if( empty($_SESSION['utilisateur']['email'])){
-    header("../auth/connexion.php");
-    exit();
-}
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../CSS/ajouter_recette.scss" />
+    <link rel="stylesheet" href="../CSS/publication.scss" />
+    <link rel="stylesheet" href="../CSS/mon-compte.scss" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mon compte | Cuisine du monde </title>
 
+    <?php
 
-?>
+    $json_object = file_get_contents("../data/recette.json");
+    $tab = json_decode($json_object, true);
+    include('../accueil/recette.php');
 
+    include("../navigation/index.php");
 
-
-<style>
-    body {
-        background-color: white !important;
-        height: 100%;
+    if (empty($_SESSION['utilisateur']['email'])) {
+        header("../auth/connexion.php");
+        exit();
     }
 
-    .div-img-nom {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 550px;
+    if (file_exists('../data/recette-utilisateur.xml')) {
+        $xml = simplexml_load_file('../data/recette-utilisateur.xml');
+    } else {
+        exit('Failed to open test.xml.');
     }
 
-    .div-img-nom h1 {
-        text-transform: capitalize;
-    }
+    ?>
 
-    #image_utilisateur {
-        margin: 50px auto;
-        border-radius: 50%;
-    }
-
-    .centrer {
-        display: block;
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .menu-bar {
-        margin-left: auto;
-        margin-right: auto;
-        
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 80%;
-        border-bottom: 1px solid lightgray;
-        padding: 10px;
-    }
-
-    .menu-bar button {
-        border: none;
-        background-color: transparent;
-    }
-
-    #mon-carnet-contenu{
-        width: 85%;
-    }
-    
-</style>
-
+</head>
 
 <body>
-    <div class="centrer">
-        <div class='div-img-nom'>
-            <img id="image_utilisateur" src="../Photos/personne.png" width="150px" height="auto;" />&nbsp &nbsp &nbsp &nbsp
-            <h1> <?php echo $_SESSION['utilisateur']['prenom'] ." ".  $_SESSION['utilisateur']['nom']; ?></h1> 
+    <div class="div-mon-compte">
+        <div class="div0">
+            <h3>Hello <?php echo $_SESSION['utilisateur']['prenom']; ?></h3>
+
+            <div class="div-menu-horizontale">
+                <button id="mon-carnet-btn"> Mon Carnet</button>
+                <button id="mes-recettes-btn"> Mes recettes</button>
+                <button id="mes-donnees-personnelles-btn"> Mes données personnelles </button>
+                <button id="deposer-recette-btn"> Déposer une recette </button>
+                <button onclick="sedeconnecter()"> Se déconnecter </button>
+            </div>
         </div>
-        <div class="menu-bar">
-            <button id="mon-carnet-btn"> Mon Carnet</button>
-            <button id="mes-recettes-btn"> Mes recettes</button>
-            <button id="mes-donnees-personnelles-btn"> Mes données personnelles </button>
-            <button id="deposer-recette-btn"> Déposer une recette </button>
-            <button onclick="sedeconnecter()"> Se déconnecter </button>
+        <div class="div1">
+
+            <div class="div1-left">
+
+                <div id="mes-recettes-contenu">
+                    <?php include('publications/partial.php'); 
+                    ?>
+                </div>
+
+                <div id="mon-carnet-contenu">
+                    <?php include('../mon-carnet/partial.php'); ?>
+                </div>
+
+                <div id="mes-donnees-personnelles-contenu">
+                    <?php include('donnees-personnelles/partial.php'); ?>
+                </div>
+
+                <div id="deposer-recette-contenu">
+                    ajouter une nouvelle recette
+                    <?php // include('../ajouter-recette/index.php'); 
+                    ?>
+
+                </div>
 
 
+            </div>
+
+            <div class="div1-right">
+                ME
+            </div>
         </div>
-        <div id="mes-recettes-contenu">
-            <?php include('publications/index.php'); ?> </div>
-
-        <div id="mon-carnet-contenu">
-            <?php include('../mon-carnet/index.php'); ?> </div>
 
     </div>
 
-    <div id="mes-donnees-personnelles-contenu">
-        <?php include('donnees-personnelles/index.php'); ?>
-    </div>
-
-    <div id="deposer-recette-contenu">
-        <?php include('../ajouter-recette/index.php'); ?>
-
-    </div>
     </div>
 
     <script>
@@ -134,8 +113,10 @@ if( empty($_SESSION['utilisateur']['email'])){
 
 
         function sedeconnecter() {
-            document.location.href = "../deconnexion/index.php"
-
+            document.location.href = "../auth/deconnexion/index.php"
         }
     </script>
+
 </body>
+
+</html>
