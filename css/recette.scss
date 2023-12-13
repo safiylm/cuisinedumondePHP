@@ -1,3 +1,7 @@
+:root{
+    --width-ingredients : 500px;
+}
+
 body {
     background-color: white !important;
     /*background-color: lightslategrey;*/
@@ -8,37 +12,50 @@ body {
 
     .contenu {
         background-color: white;
-        margin: 40px auto;
-        padding: 15px;
-        height: auto;
+        margin: 0 auto;
+        padding: 50px 15px;
         width: 100vw;
-
+        background-color:rgb(232, 232, 232);
+        
         .div-image-infos {
+            background-color: white;
             display: flex;
             flex-direction: row;
             align-items: flex-start;
-            justify-content: center;
+            justify-content: flex-start;
             flex-wrap: wrap;
+            width: calc( var(--width-ingredients ) * 2 + 20px );
+            box-sizing: border-box;
+            padding: 0;
+            margin: 10px auto;
+            border-radius: 15px;
+            height: 400px;
 
             .div-image {
                 margin: 0;
-                padding: 0;
+                padding: 0 ;
+                width: var(--width-ingredients );
+                height: 400px;
+
+                border-radius: 15px 0 0 15px;
 
                 .image-recette {
-                    height: 50vh;
-                    width: 500px;
+                    height: 400px;
+                    width: var(--width-ingredients );
                     object-fit: cover;
+                    border-radius: 15px 0 0 15px;
                 }
             }
 
             .div-right {
-                width: 40vw;
-                padding-left: 30px;
-                ;
+                width: var(--width-ingredients );
+                max-height: 400px;
+                padding: 30px;
+
 
                 h1 {
                     margin-bottom: 30px 0;
-                    font-size: 2.5em;
+                    font-size: 2em;
                     text-align: center;
                 }
 
@@ -92,7 +109,10 @@ body {
 
             .div-ingredients,
             .div-etapes {
-                width: 35vw;
+                background-color: white;
+                width: var(--width-ingredients );
+                border-radius: 20px;
+                margin: 20px ;
                 padding: 30px;
 
                 h2 {
@@ -185,19 +205,23 @@ table.preparation tr {
 @media screen and (max-device-width: 940px) {
 
     .contenu {
-        padding: 0;
+        padding: 0 !important;
         margin: 0 !important;
-
+        width: 100%;
 
         .div-image-infos,
         .div-ingredients-etapes {
             padding: 0;
             margin: 0;
-            width: 100%;
+            width: 100vw !important;
+            height: auto;
         }
 
         .div-image-infos {
+            min-height:900px;
             .div-image {
+                width: 100vw;
+
                 .image-recette {
                     height: auto;
                     width: 100vw;
@@ -210,7 +234,7 @@ table.preparation tr {
         .div-temps{
             flex-direction: column !important;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             *{
                 margin: 20px 0;
 
@@ -218,7 +242,8 @@ table.preparation tr {
         }
         .div-right {
             width: 100vw !important;
-            padding: 0;
+            padding: 0 !important;
+            max-height: none !important;
 
             h1 {
                 margin: 30px 0;
@@ -228,7 +253,9 @@ table.preparation tr {
             }
 
             .div-temps {
-               
+               margin: 0 !important;
+               padding: 15px 0 !important;
+               border: none;
                 .element-div-temps {
                     font-size: 1.1em;
                 }
@@ -245,11 +272,14 @@ table.preparation tr {
 
         .div-ingredients-etapes {
         margin: 0 !important;
+        width: 100vw !important;
         
         .div-ingredients,
         .div-etapes {
             width: 100vw !important;
             padding: 5px;
+            margin: 0 !important;
+
         }
         }
         

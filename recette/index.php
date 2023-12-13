@@ -79,10 +79,8 @@
                     <div class="div-temps">
                         <?php
                         echo "<div class='element-div-temps'><strong> Difficulté </strong> <br>" . $recette["difficulte"] . "</div>";
-                        echo  "<div class='element-div-temps'><strong> Temps de préparation </strong><br>" . $recette["temps_preparation"] . "</div>";
-                        echo  "<div class='element-div-temps'><strong> Temps de repos</strong> <br>" . $recette["temps_repos"] . "</div>";
-                        echo  "<div class='element-div-temps'><strong> Temps de cuisson</strong> <br>" . $recette["temps_cuisson"] . "</div>";
-                        ?>
+                        echo  "<div class='element-div-temps'><strong> Temps Totale </strong><br>" . $recette["temps_total"] . "</div>";
+                      ?>
 
                     </div>
 
