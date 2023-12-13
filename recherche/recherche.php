@@ -33,7 +33,7 @@ if ($q !== "") {
                     " <img src='". $tab["sitecuisine"]["liste_recette"]['recette'][$id]['image']. "' class='img-thumbnail' />" .
                     "</div>
                         <div class='div-titre'>
-                            <a class='a-titre' href='Recette/index.php?idRecette=" .$id . "' style='min-width: 300px;'>
+                            <a class='a-titre' href='Recette/index.php?idRecette=" .$id . "' >
                                " . $name .
                     "  </a>
                         </div>
@@ -45,7 +45,7 @@ if ($q !== "") {
             " <img src='". $tab["sitecuisine"]["liste_recette"]['recette'][$id]['image']. "' class='img-thumbnail' />" .
             "</div>
                 <div class='div-titre'>
-                    <a class='a-titre' href='Recette/index.php?idRecette=" .$id . "' style='min-width: 300px;'>
+                    <a class='a-titre' href='Recette/index.php?idRecette=" .$id . "'>
                        " . $name .
             "  </a>
                 </div>
