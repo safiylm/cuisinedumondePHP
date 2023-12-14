@@ -41,7 +41,7 @@
                 <button id="mon-carnet-btn"> Mon Carnet de recettes favorites </button>
                 <button id="mes-recettes-btn"> Mes recettes</button>
                 <button id="mes-donnees-personnelles-btn"> Mes données personnelles </button>
-                <button id="deposer-recette-btn"> Déposer une recette </button>
+                <button onclick="goAddRespice()" id="deposer-recette-btn"> Déposer une recette </button>
                 <button onclick="sedeconnecter()"> Se déconnecter </button>
             </div>
         </div>
@@ -185,6 +185,10 @@
 
         function sedeconnecter() {
             document.location.href = "../auth/deconnexion/index.php"
+        }
+
+        function goAddRespice(){
+            document.location.href = "../ajouter-recette/index.php"
         }
     </script>
 
