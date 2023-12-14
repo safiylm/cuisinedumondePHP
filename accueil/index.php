@@ -17,6 +17,7 @@
 </head>
 
 <?php
+session_start();
 include('recette.php');
 $json_object = file_get_contents("data/recette.json");
 $tab = json_decode($json_object, true);
