@@ -1,5 +1,5 @@
 <?php
-
+//function allow to factorisation code for repice display in Container of many repice
 function recette($url_image, $temps_total, $difficulte, $nb_personne, $id, $titre, $xml)
 {
     if (is_file($url_image)) {
@@ -55,6 +55,7 @@ function recette($url_image, $temps_total, $difficulte, $nb_personne, $id, $titr
 }
 
 
+//function allow to factorisation code for repice display in Container of many repice
 function recette_($url_image, $temps_total, $difficulte, $nb_personne, $id, $titre, $xml)
 {
     if (is_file($url_image)) {
