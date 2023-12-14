@@ -18,7 +18,7 @@
 
     <?php
 
-
+    include("../accueil/recette.php");
     // Connexion à la base de données
     include("../navigation/index.php");
 
@@ -170,55 +170,24 @@
         </div>
     <?php
 
-    } else { // fin_if (isset($_GET['titreRecette'])) 
+    } else { // si id de la recette n'existe pas 
         header('Location: ../index.php');
         exit();
     }
     ?>
 
-    <div class="flex-container">
-        <?php
+<div class="flex-container" >
+            <?php
 
-        //  for ($i = 0; $i < 10; $i++) {
-        $i = 0;
-        $c = 0;
-        while ($i < 10) {
-            $recette = $tab["sitecuisine"]["liste_recette"]['recette'][$i];
+            foreach ($tab["sitecuisine"]["liste_recette"]['recette'] as $recette) {
+                       if ($categorie == $recette['categorie']) {
+                    
+                recette_($recette['image'], $recette["temps_total"], $recette["difficulte"], $recette["nb_personne"], $recette["id"], $recette["titre"], $xml);
+           
+           }
+           } ?>
+        </div>
 
-            if ($categorie == $recette['categorie']) {
-                $photoo = $recette["image"];
-                $url = '../Photos/' . $photoo;
-
-        ?>
-
-                <div class="flex-item">
-                    <div class="element">
-
-                        <div class="div-img">
-
-                            <?php if (is_file($url)) { ?>
-                                <img src='../Photos/<?php echo $photoo; ?>' class="img-thumbnail" />
-                            <?php  } else { ?>
-                                <img src='<?php echo  $photoo; ?>' class="img-thumbnail" />
-                            <?php } ?>
-                        </div>
-
-                        <div class="div-titre">
-                            <a class="a-titre" href='../Recette/index.php?idRecette=<?php echo $i; ?>'>
-                                <?php echo $recette['titre']; ?>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-
-        <?php
-                $c++;
-            }
-            $i++;
-        }
-        ?>
-    </div>
 
 
         <div class="div-commentaire-etoile">
