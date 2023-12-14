@@ -31,20 +31,23 @@ if (file_exists('../data/recette-utilisateur.xml')) {
   <div class="div-toutes-categories">
     <?php foreach ($tab['sitecuisine']['liste_categorie']['categorie'] as $categ) { ?>
       <div class="div-categorie">
-        <h3> <?php echo $categ; ?> </h3>
+      <a href="categorie.php?nom=<?php echo $categ; ?>">
+       
+      <h3> <?php echo $categ; ?> </h3>
         <?php liste_recette_by_categorie($tab, $categ, $xml); ?>
       </div>
+    </a>
     <?php } ?>
   </div>
 
   <div class="div-toutes-categories">
     <?php foreach ($tab['sitecuisine']['liste_cuisine_pays']['pays'] as $pays) { ?>
       <div class="div-categorie">
-        <!-- <a href="pays.php?nom=<?php echo $pays['nom']; ?>"> -->
+        <a href="pays.php?nom=<?php echo $pays['nom']; ?>">
         <h3> <?php echo $pays["nom"]; ?> </h3>
         <?php liste_recette_by_pays($tab, $pays['nom'], $xml); ?>
 
-        <!-- </a> -->
+        </a> 
       </div>
     <?php } ?>
   </div>

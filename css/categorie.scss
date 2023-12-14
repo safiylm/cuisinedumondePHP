@@ -1,6 +1,6 @@
 body {
     // background: linear-gradient(10deg, rgba(2,0,36,1) 0%, rgba(24,51,80,1) 25%, rgba(64,145,161,1) 100%); 
-   // background-color: rgb(20, 20, 20);
+    // background-color: rgb(20, 20, 20);
 }
 
 .div-toutes-categories {
@@ -8,11 +8,20 @@ body {
     margin: 10px 40px;
 
     .div-categorie {
-        h3{
+        a {
+            text-decoration: none !important;
+            color: darkslategray !important;
+
+
+        }
+
+        h3 {
             color: darkslategray;
             font-weight: 800;
             font-size: 45px;
             padding: 25px 0;
+            text-decoration: none;
+
         }
     }
 }
