@@ -38,7 +38,7 @@
             <h3>Hello <?php echo $_SESSION['utilisateur']['prenom']; ?></h3>
 
             <div class="div-menu-horizontale">
-                <button id="mon-carnet-btn"> Mon Carnet</button>
+                <button id="mon-carnet-btn"> Mon Carnet de recettes favorites </button>
                 <button id="mes-recettes-btn"> Mes recettes</button>
                 <button id="mes-donnees-personnelles-btn"> Mes données personnelles </button>
                 <button id="deposer-recette-btn"> Déposer une recette </button>
@@ -50,7 +50,7 @@
             <div class="div1-left">
 
                 <div id="mes-recettes-contenu">
-                    <?php include('publications/partial.php'); 
+                    <?php include('publications/partial.php');
                     ?>
                 </div>
 
@@ -73,7 +73,7 @@
             </div>
 
             <div class="div1-right">
-                ME
+                <img src='../Photos/personne.png'  />
             </div>
         </div>
 
@@ -85,30 +85,101 @@
         $('#mes-donnees-personnelles-contenu').hide()
         $('#deposer-recette-contenu').hide()
         $('#mes-recettes-contenu').hide()
+        $("#mon-carnet-btn").css({
+            'color': "pink"
+        });
+       
+        $("#mes-recettes-btn").css({
+            'color': "white"
+        });
+        $("#mes-donnees-personnelles-btn").css({
+            'color': "white"
+        });
+        $("#deposer-recette-btn").css({
+            'color': "white"
+        });
 
         $('#mes-recettes-btn').click(function() {
             $('#mes-recettes-contenu').show()
             $('#mes-donnees-personnelles-contenu').hide()
             $('#deposer-recette-contenu').hide()
             $('#mon-carnet-contenu').hide()
+            $("#mes-recettes-btn").css({
+                'color': "pink"
+            });
+
+            $("#mon-carnet-btn").css({
+                'color': "white"
+            });
+           
+            $("#mes-donnees-personnelles-btn").css({
+                'color': "white"
+            });
+            $("#deposer-recette-btn").css({
+                'color': "white"
+            });
+
+
         })
         $('#mes-donnees-personnelles-btn').click(function() {
             $('#mes-recettes-contenu').hide()
             $('#mes-donnees-personnelles-contenu').show()
             $('#mon-carnet-contenu').hide()
             $('#deposer-recette-contenu').hide()
+            $("#mes-donnees-personnelles-btn").css({
+                'color': "pink"
+            });
+            $("#mon-carnet-btn").css({
+                'color': "white"
+            });
+            $("#mes-recettes-btn").css({
+                'color': "white"
+            });
+          
+            $("#deposer-recette-btn").css({
+                'color': "white"
+            });
+
+
         })
         $('#deposer-recette-btn').click(function() {
             $('#mes-recettes-contenu').hide()
             $('#mes-donnees-personnelles-contenu').hide()
             $('#mon-carnet-contenu').hide()
             $('#deposer-recette-contenu').show()
+            $("#mon-carnet-btn").css({
+                'color': "pink"
+            });
+          
+            $("#mes-recettes-btn").css({
+                'color': "white"
+            });
+            $("#mes-donnees-personnelles-btn").css({
+                'color': "white"
+            });
+            $("#deposer-recette-btn").css({
+                'color': "white"
+            });
+
         })
         $('#mon-carnet-btn').click(function() {
             $('#mes-recettes-contenu').hide()
             $('#mes-donnees-personnelles-contenu').hide()
             $('#mon-carnet-contenu').show()
             $('#deposer-recette-contenu').hide()
+            $("#mon-carnet-btn").css({
+                'color': "pink"
+            });
+          
+            $("#mes-recettes-btn").css({
+                'color': "white"
+            });
+            $("#mes-donnees-personnelles-btn").css({
+                'color': "white"
+            });
+            $("#deposer-recette-btn").css({
+                'color': "white"
+            });
         })
 
 

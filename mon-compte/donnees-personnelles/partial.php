@@ -22,9 +22,9 @@ if (count($xml->xpath($path)) == 1) {
                 <button type="button" id="annuler" class="btn btn-light"> Annuler </button>
 
             </form>
-            <button id="modifier" class="btn btn-primary"> Modifier </button>
+            <button id="modifier" class="btn btn-primary" style="background-color:#2c395d;"> Modifier </button>
 
-            <button onclick="deleteAccount()" class="btn btn-danger" style="margin: 15px 0;"> Supprimer le compte </button>
+            <button onclick="deleteAccount()" class="btn btn-danger" style="margin: 15px 0; background-color: crismon;"> Supprimer le compte </button>
 
         </div>
 
@@ -77,13 +77,10 @@ if (count($xml->xpath($path)) == 1) {
         margin-bottom: 20px;
     }
 
-    /* body {
-        background-color: #f7cac9 !important;
-    } */
-
 
     .container-donnees-personnelles {
         padding: 30px;
+        box-sizing: border-box;
         border-radius: 5%;
         margin-top: 15px;
         margin-left: auto;
@@ -94,21 +91,17 @@ if (count($xml->xpath($path)) == 1) {
 
     .container-donnees-personnelles button,
     .container-donnees-personnelles input {
-        width: 600px;
+        width: 100%;
     }
 
     @media screen and (max-device-width: 900px) {
         .container-donnees-personnelles {
             width: 100vw;
-
-          
-
-
         }
-  .container-donnees-personnelles button,
-            .container-donnees-personnelles input {
 
-                width: 100%;
-            }
+        .container-donnees-personnelles button,
+        .container-donnees-personnelles input {
+            width: 100%;
+        }
     }
 </style>
