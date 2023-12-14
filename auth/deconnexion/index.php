@@ -9,6 +9,6 @@ $_SESSION = array();
 session_destroy();
 
 //Direction vers la page d'accueil
-header("location: ../index.php");
+header("location: ../../index.php");
 exit;
 ?>

@@ -71,34 +71,22 @@ if (!isset($_SESSION['favori']))
                 recette($recette['image'], $recette["temps_total"], $recette["difficulte"], $recette["nb_personne"], $recette["id"], $recette["titre"], $xml);
             } ?>
         </div>
+        <?php include("footer/index.php");?>
 
-
-        <div class="div-liste-utilisateur">
+        <!-- <div class="div-liste-utilisateur">
 
             <?php
-            $path = "//utilisateur";
-            foreach ($xml->xpath($path) as $item) { ?>
+            //$path = "//utilisateur";
+            //foreach ($xml->xpath($path) as $item) { ?>
                 <div class='div-1-utilisateur'>
                     <svg xmlns="http://www.w3.org/2000/svg" color="gray" width="86" height="86" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
                     </svg>
-                    <a href='leur-compte/index.php?idUtilisateur=<?php echo $item->attributes(); ?>' class='a-login-utilisateur'> <?php echo $item->nom . " " . $item->prenom . "</a> </div>";
-                                                                                                                                } ?>
+                    <a href='leur-compte/index.php?idUtilisateur=<?php //echo $item->attributes(); ?>' class='a-login-utilisateur'> <?php //echo $item->nom . " " . $item->prenom . "</a> </div>"; } ?>
 
                 </div>
 
-        </div>
-        <div class="div-rose-incline">
-            <div class="sur-div-rose-incline">
-
-                <img src='Photos/cheesecakee.jpg'>
-                <div>
-                    <h1> Cheesecake </h1></br>
-                    <p> C'est une variété nord-américaine de gâteau au fromage. C'est un dessert sucré composé d'un mélange de fromage à la crème, d'œufs, de sucre et de parfums de vanille et/ou de citron, sur une croûte de miettes de biscuits ou une génoise.
-                    </p>
-                </div>
-            </div>
-
-        </div>
+        </div> -->
+        
 </body>

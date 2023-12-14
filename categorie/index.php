@@ -52,6 +52,8 @@ if (file_exists('../data/recette-utilisateur.xml')) {
     <?php } ?>
   </div>
 
+  <?php include("../footer/index.php");?>
+
 </body>
 
 </html>

@@ -322,6 +322,7 @@
             }
         }
     </script>
+  <?php include("../footer/index.php");?>
 
 </body>
 
