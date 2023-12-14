@@ -1,5 +1,5 @@
 body {
-    background-color: #dbdfe9 !important;
+    background-color: #eff1f6 !important;
     height: 100%;
     padding: 30px;
     margin-bottom: 100px;
@@ -8,6 +8,8 @@ body {
 .div-mon-compte {
     .div0 {
         background-color: #2c395d;
+        background-color: hsl(188, 11.3%, 26.1%);
+
         height: 400px;
         width: 100vw;
         box-sizing: border-box;
@@ -37,7 +39,7 @@ body {
             padding: 20px 0;
 
             button {
-                color: white;
+                color:  white;;
                 font-size: 20px;
                 font-weight: 600;
                 margin: 15px 0;

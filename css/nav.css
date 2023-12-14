@@ -9,26 +9,24 @@ body {
     margin: 0 ;
     padding: 0;
     /* background-color: #F7CAC9; */
-    font-family: 'Raleway', sans-serif;
 }
 
 /* Base styling */
 nav {
-    background-color: white
-        /* #e8dacd   */
-        !important;
+    background-color: whitesmoke;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 55px;
-    border-bottom: 0.5px solid gray;
 }
 .nav__title {
     font-size: 22px;
     text-align: center;
-    color: #ff8b88;
-    color: rgb(83, 83, 83);
-    font-weight: 300;
+    color: darkslategray;
+    font-weight: 800;
+    font-size: 35px;
+    padding: 25px ;
+    text-decoration: none;
     padding-left: 15px;
     text-decoration: none;
 }
@@ -36,13 +34,13 @@ nav {
 .nav__link {
     font-size: 19px;
     text-align: center;
-    color: rgb(83, 83, 83);
-    font-weight: 300;
+    color: darkslategray;
+    font-weight: 500;
     text-decoration: none;
     padding-right:20px;
 }
 
 .nav__title:hover,
 .nav__link:hover {
-    color: orange;
+    color: rgb(101, 163, 139);
 }

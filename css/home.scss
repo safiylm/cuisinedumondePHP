@@ -8,18 +8,13 @@
 
 .container__photo__search {
     display: flex;
-    justify-content: space-between;
+    justify-content :center;
     width: 100%;
-    background-color: #e8dacd;
+    background-color: #eae7e0;
 
-    img {
-        height: 300px;
-        width: 300px;
-        object-fit: cover;
-    }
 
     .search__container {
-        padding-top: 100px;
+        padding: 100px 0;
         /*pour centrer la bar de recherche*/
         width: 600px;
 
@@ -66,6 +61,8 @@
     }
 
 }
+
+
 @media screen and (max-device-width: 940px) {
     .container__photo__search {
         flex-wrap: wrap;

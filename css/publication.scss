@@ -19,6 +19,13 @@ body {
     display: block;
     margin: 0 auto;
     width: fit-content;
+    h1{
+        color: darkslategray;
+        font-weight: 800;
+        font-size: 45px;
+        padding: 25px ;
+        text-decoration: none;
+    }
 }
 
 .flex-container {
