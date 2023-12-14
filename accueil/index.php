@@ -71,7 +71,9 @@ if (!isset($_SESSION['favori']))
                 recette($recette['image'], $recette["temps_total"], $recette["difficulte"], $recette["nb_personne"], $recette["id"], $recette["titre"], $xml);
             } ?>
         </div>
-        <?php include("footer/index.php");?>
+        <?php include("footer/index.php");
+        footer($tab);
+        ?>
 
         <!-- <div class="div-liste-utilisateur">
 

@@ -52,7 +52,9 @@ if (file_exists('../data/recette-utilisateur.xml')) {
     <?php } ?>
   </div>
 
-  <?php include("../footer/index.php");?>
+  <?php include("../footer/index.php");
+          footer_($tab);
+          ?>
 
 </body>
 
