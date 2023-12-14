@@ -1,104 +1,44 @@
 <style>
-    #info-panier-vide{
-    margin: 100px 0;
-    line-height: 65px;
-    font-size: 40px;
-    text-align: center;
-    color:darkslategray;
-    text-decoration: underline;
-}
-.h1-mon-carnet{
-    text-align: center;
-    color:darkslategray;
-    font-size: 30px;
-    font-weight: 800;
-}
+    #info-panier-vide {
+        margin: 100px 0;
+        line-height: 65px;
+        font-size: 40px;
+        text-align: center;
+        color: darkslategray;
+        text-decoration: underline;
+    }
+
+    .h1-mon-carnet {
+        text-align: center;
+        color: darkslategray;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    #mon-carnet-contenu{
+        width: 100% !important;
+    }
+    
 </style>
-<div class="div-mon-carnet">
-<h1 class='h1-mon-carnet'> Mon Carnet </h1>
-    <div class="flex-container">
 
-        <?php if (empty($_SESSION['utilisateur']['email'])) {   // utilisateur n'est pas connecté  
+<div class="flex-container">
 
-            if (empty($_SESSION['favori'])) {
-                echo "<h5 id='info-panier-vide'>VOTRE CARNET DE RECETTE EST VIDE.</h5>";
-            }
-            foreach ($_SESSION['favori'] as $e) {
+    <?php if (!empty($_SESSION['utilisateur']['email'])) {   // utilisateur doit etre connecté car ce code est inclu dans la page de compte de l'utilisateur
+        $path = "//enregistrement[email_utilisateur ='" . $_SESSION['utilisateur']['email'] . "' ]/id_recette";
 
-
-                $recette = $tab["sitecuisine"]["liste_recette"]['recette'][intval($e)];
-
-                $photoo = $recette["image"];
-                $url = '../Photos/' . $photoo;
-        ?>
-                <div class="flex-item">
-                    <div class="element">
-                        <div class="div-img">
-
-                            <?php if (is_file($url)) { ?>
-                                <img src='../Photos/<?php echo $photoo; ?>' class="img-thumbnail" />
-                            <?php  } else { ?>
-                                <img src='<?php echo  $photoo; ?>' class="img-thumbnail" />
-                            <?php } ?>
-                        </div>
-                        <div class="div-titre">
-                            <a class="a-titre" href='../Recette/index.php?idRecette=<?php echo $e; ?>'>
-                                <?php echo $recette['titre']; ?>
-                            </a>
-                            <a href="../mon-carnet/mon-carnet-session.php?idRecette=<?php echo intval($res); ?>" id="btn-trash">
-                                <img src="../Photos/trash3.svg">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <?php
-            }
-        } else { // connexion 
-            $path = "//enregistrement[email_utilisateur ='" . $_SESSION['utilisateur']['email'] . "' ]/id_recette";
-
-
-            if (count($xml->xpath($path)) == 0)
-                echo "<p> </p> <p class='p-vide'> Votre panier est vide. </p>";
-            else {
-                foreach ($xml->xpath($path) as $res) {
-
-                    $recette = $tab["sitecuisine"]["liste_recette"]['recette'][intval($res)];
-                    $photoo = $recette["image"];
-                    $url = '../Photos/' . $photoo;
-
-                ?>
-
-
-                    <div class="flex-item">
-                        <div class="element">
-                            <div class="div-img">
-
-                                <?php if (is_file($url)) { ?>
-                                    <img src='../Photos/<?php echo $photoo; ?>' class="img-thumbnail" />
-                                <?php  } else { ?>
-                                    <img src='<?php echo  $photoo; ?>' class="img-thumbnail" />
-                                <?php } ?>
-                            </div>
-                            <div class="div-titre">
-                                <a class="a-titre" href='../Recette/index.php?idRecette=<?php echo intval($res); ?>'>
-                                    <?php echo $recette['titre']; ?>
-                                </a>
-                                <a href="../mon-carnet/mon-carnet-xml.php?idRecette=<?php echo intval($res); ?>" id="btn-trash">
-                                    <img src="../Photos/trash3.svg">
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-
-        <?php }
+        if (count($xml->xpath($path)) == 0)
+            echo "<h5 id='info-panier-vide'>VOTRE CARNET DE RECETTE EST VIDE.</h5>";
+        else {
+            foreach ($xml->xpath($path) as $favori) {
+                foreach ($tab["sitecuisine"]["liste_recette"]['recette'] as $recette) {
+                    if ($recette['id'] == $favori) {
+                        recette_($recette['image'], $recette["temps_total"], $recette["difficulte"], $recette["nb_personne"], $recette["id"], $recette["titre"], $xml);
+                    }
+                }
             }
         }
-        ?>
+    }
+    ?>
 
-    </div>
+
 </div>
