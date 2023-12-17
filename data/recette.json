@@ -366,7 +366,6 @@
                     "titre": "G\u00e2teau au chocolat hyper moelleux ",
                     "auteur": 5,
                     "categorie": "D\u00e9sserts",
-                
                     "pays": "",
                     "image": "https:\/\/cdn.pratico-pratiques.com\/app\/uploads\/sites\/3\/2018\/08\/20193309\/gateau-au-chocolat-hyper-moelleux.jpeg",
                     "liste_ingredients": {
@@ -548,7 +547,7 @@
                     "titre": "Cappuccino rapide",
                     "auteur": 6,
                     "categorie": "Boissons",
-                    "image": "https:\/\/img.cuisineaz.com\/660x660\/2022\/06\/11\/i184231-shutterstock-1897158040.webp",
+                    "image": "https:\/\/cac.img.pmdstatic.net\/fit\/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2F1bcfed7e-ad56-47a6-95a3-b667fcdc9bd3.2Ejpeg\/650x324\/quality\/80\/crop-from\/center\/cappuccino-noisette.jpeg",
                     "liste_ingredients": {
                         "nb_personne": "1 personne",
                         "ingredient": [
@@ -562,12 +561,13 @@
                     "preparation": {
                         "etape": [
                             "Faites un espresso serr\u00e9 dans un grand verre ou une grande tasse.",
-                            "Au micro-ondes ou \u00e0 la casserole, faites chauffer le lait \u00e0 environ 60\u00b0C (il\n                    doit \u00eatre juste fumant).",
-                            "Faites-le mousser \u00e0 l'aide d'un fouet, d'un mousseur \u00e0 lait ou en utilisant\n                    la technique \"du bocal\". Pour cela, faites chauffer le lait au micro-ondes dans\n                    un bocal ouvert rempli \u00e0 mi-hauteur. Fermez le bocal et secouez-le \u00e9nergiquement\n                    pendant environ 30 secondes.",
-                            "Versez doucement sur le caf\u00e9 afin de le m\u00e9langer avec le lait chaud, avant\n                    de d\u00e9poser la mousse.",
+                            "Au micro-ondes ou \u00e0 la casserole, faites chauffer le lait \u00e0 environ 60\u00b0C (il\r\n                    doit \u00eatre juste fumant).",
+                            "Faites-le mousser \u00e0 l'aide d'un fouet, d'un mousseur \u00e0 lait ou en utilisant\r\n                    la technique \"du bocal\". Pour cela, faites chauffer le lait au micro-ondes dans\r\n                    un bocal ouvert rempli \u00e0 mi-hauteur. Fermez le bocal et secouez-le \u00e9nergiquement\r\n                    pendant environ 30 secondes.",
+                            "Versez doucement sur le caf\u00e9 afin de le m\u00e9langer avec le lait chaud, avant\r\n                    de d\u00e9poser la mousse.",
                             "Saupoudrez d'une pinc\u00e9e de cacao en poudre."
                         ]
-                    }
+                    },
+                    "cout": "Pas cher"
                 },
                 {
                     "id": 15,
@@ -988,7 +988,7 @@
                     "id": 29,
                     "titre": "Pancakes faciles et rapides",
                     "auteur": "6",
-                    "image": "https://assets.afcdn.com/recipe/20211222/126211_w600.jpg",
+                    "image": "https:\/\/assets.afcdn.com\/recipe\/20211222\/126211_w600.jpg",
                     "categorie": "Rapide",
                     "cout": "Pas cher",
                     "liste_ingredients": {
@@ -1013,6 +1013,68 @@
                             "Aucun temps de repos n'est n\u00e9cessaire, si ce n'est juste le temps de faire chauffer votre po\u00eale \u00e0 feu moyen. Huilez ou beurrez la po\u00eale \u00e0 l'aide de papier essuie-tout.",
                             "A l'aide d'une petite louche ou d'une grosse cuill\u00e8re \u00e0 sauce, d\u00e9poser des \"ronds\" dans la po\u00eale.",
                             "Lorsque les bulles apparaissent et \u00e9clatent, retourner les pancakes et ne pas les laisser plus d'une min sur l'autre face."
+                        ]
+                    }
+                },
+                {
+                    "id": 30,
+                    "titre": "Gaufres l\u00e9g\u00e8res",
+                    "auteur": "6",
+                    "image": "https:\/\/assets.afcdn.com\/recipe\/20161215\/25578_w600.jpg",
+                    "categorie": "D\u00e9sserts",
+                    "cout": "Pas cher",
+                    "liste_ingredients": {
+                        "nb_personne": "4 personnes",
+                        "ingredient": [
+                            " 50 g de beurre fondu ",
+                            "50 g de sucre en poudre",
+                            " 1 pinc\u00e9e de sel ",
+                            " 250 g de farine ",
+                            " 25 cl de lait ",
+                            " 25 cl d' eau gazeuse ",
+                            "limonade"
+                        ]
+                    },
+                    "difficulte": "Facile",
+                    "temps_total": "25 min",
+                    "preparation": {
+                        "etape": [
+                            "Tamisez la farine, le sel et le sucre.",
+                            "Cassez les oeufs, s\u00e9parez les jaunes et les blancs. Ajoutez les jaunes dans la p\u00e2te puis le beurre fondu refroidi et la bi\u00e8re, toujours en remuant bien.\r\n",
+                            "Montez les blancs en neige, incorporez-les d\u00e9licatement \u00e0 la p\u00e2te. Laissez reposer environ 1 h.\r\n\r\n",
+                            "Faites cuire les gaufres 4-5 minutes au gaufrier.\r\nD\u00e9gustez."
+                        ]
+                    }
+                },
+                {
+                    "id": 31,
+                    "titre": "Soupes aux lentilles rouges",
+                    "auteur": "6",
+                    "pays": "Cuisine Turque",
+                    "image": "https:\/\/yemek.com\/_next\/image\/?url=https%3A%2F%2Fcdn.yemek.com%2Fmncrop%2F940%2F625%2Fuploads%2F2014%2F06%2Fmercimek-corbasi-yemekcom.jpg&w=1920&q=75",
+                    "categorie": "Soupes",
+                    "cout": "Pas cher",
+                    "liste_ingredients": {
+                        "nb_personne": "4 personnes",
+                        "ingredient": [
+                            "1 verre de lentilles rouges (\u00e9picerie turque)",
+                            " 1 cuill\u00e8re \u00e0 soupe de beurre",
+                            "1 carotte",
+                            "1 oignon ",
+                            "piment rouge",
+                            "3 verres d",
+                            "citron ",
+                            "sel"
+                        ]
+                    },
+                    "difficulte": "Facile",
+                    "temps_total": "35 min",
+                    "preparation": {
+                        "etape": [
+                            "Faire revenir l'oignon avec le beurre jusqu'\u00e0 ce qu'il soit l\u00e9g\u00e8rement brun. Ajouter lentilles bien lav\u00e9es, eau (et\/ou bouillon), carottes coup\u00e9es en rondelles et le sel. Cuire jusqu'\u00e0 ce que les lentilles soient bien ramollies dans une casserole avec couvercle pas enti\u00e8rement ferm\u00e9e.",
+                            "Mixer le tout au blender et refaites cuire jusqu'\u00e0 \u00e9bullition. Dans une po\u00eale \u00e0 part cuire le piment dans l'huile. L'ajouter \u00e0 la soupe en fin de cuisson selon ce que vous pouvez supporter de piment. ",
+                            "Servir chaud avec le citron coup\u00e9 en quartiers servi \u00e0 part pour en ajouter le jus par dessus. ",
+                            "* Il est important que les lentilles soient rouges car j'ai essay\u00e9 avec des vertes du Puy et c'est trop \u00e9pais, il faut ajouter le double d'eau et une fois refroidi \u00e7a s'\u00e9paissit encore plus et enfin le go\u00fbt n'est pas le m\u00eame que le vrai. Bon app\u00e9tit."
                         ]
                     }
                 }
