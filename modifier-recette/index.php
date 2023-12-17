@@ -4,13 +4,13 @@
 <head>
     <title>Modifier Recette</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../CSS/ajouter_recette.css" />
+    <link rel="stylesheet" href="../CSS/ajouter_recette.scss" />
 
     <?php
     session_start();
-    // Connexion à la base de données
     include("../navigation/index.php");
     ?>
+
 </head>
 
 <body>
@@ -27,53 +27,34 @@
     ?>
     <div class="container-ajouter-recette">
 
-        <form method='post' action="../post-update-recette.php">
+        <form method='post' action="post-update-recette.php">
+            <input type="hidden" name="idRecette" value="<?php echo $id; ?>" />
 
-            <input type="text" id="nom-recette" name="nom-recette" class="input" value="<?php echo $recette['titre'] ;?>"  />
+            <input type="text" id="nom-recette" name="nom-recette" class="input" value="<?php echo $recette['titre']; ?>" />
+            <img src="<?php echo $recette['image']; ?>">
 
-            <img src="<?php echo $recette['image'] ;?>">
+            <input type="text" id="nb-personne" name="nb-personne" class="input" value="<?php echo $recette['liste_ingredients']['nb_personne']; ?>" />
 
-            </br></br>
-            <input type="text" id="nb-personne" name="nb-personne" class="input" value="<?php echo $recette['liste_ingredients']['nb_personne'] ;?>"  />
-
-            <div class="div-temps">
-                <input type="text" id="tmp-prep" name="tmp-prep" class="input" value="<?php echo $recette['temps_preparation'] ;?>"  />
-                <input type="text" id="tmp-cuisson" name="tmp-cuisson" class="input" value="<?php echo $recette['temps_cuisson'] ;?>"  />
-                <input type="text" id="tmp-attente" name="tmp-attente" class="input" value="<?php echo $recette['temps_repos'] ;?>"  />
-            </div>
-
+            <input type="text" id="tmp-prep" name="tmp-prep" class="input" value="<?php echo $recette['temps_total']; ?>" />
 
             <div class="div-difficulte-cout-categorie">
-                <select name="categorie" id="categorie" class="input" >
-                    <option value="Non renseigné">Catégorie non renseigné </option>
-                    <option value="Plats">Plats</option>
-                    <option value="Entrées">Entrées</option>
-                    <option value="Désserts">Désserts</option>
-                    <option value="Pâtisserie">Pâtisserie</option>
-                    <option value="Salades">Salades</option>
-                    <option value="Confitures">Confitures</option>
-                    <option value="Gâteaux - Biscuits">Gâteaux - Biscuits</option>
-                    <option value="Petit-déjeuner">Petit-déjeuner</option>
-                    <option value="Sauces">Sauces</option>
-                    <option value="Soupes">Soupes</option>
-                    <option value="Tartes">Tartes</option>
-                    <option value="Accompagnements">Accompagnements</option>
-                    <option value="Apéritifs">Apéritifs</option>
-                    <option value="Bases">Bases</option>
-                    <option value="Boissons">Boissons</option>
-                    <option value="Boulangerie - Viennoiserie">Boulangerie - Viennoiserie</option>
-
+                <select name="categorie" id="categorie" class="input">
+                    <option value="<?php echo $recette['categorie']; ?>"><?php echo $recette['categorie']; ?></option>
+                    <?php foreach ($tab["sitecuisine"]["liste_categorie"]["categorie"] as $item) {
+                        if ($item != $recette['categorie'])
+                            echo "<option value='" . $item . "'>" . $item . "</option>";
+                    } ?>
                 </select>
+
                 <select name="difficulte" id="difficulte" class="input" required>
-                    <option value="difficulté" selected>Difficulté non renseigné </option>
+                    <option value="<?php echo $recette['difficulte']; ?>" selected><?php echo $recette['difficulte']; ?></option>
                     <option value="Facile">Facile</option>
                     <option value="Intermédiaire">Intermédiaire</option>
                     <option value="Difficile">Difficile</option>
                 </select>
 
                 <select name="cout" id="cout" class="input" required>
-
-                    <option value="Non renseigné">Coût non renseigné </option>
+                    <option value="<?php echo $recette['cout']; ?>" selected><?php echo $recette['cout']; ?></option>
                     <option value="Pas cher">Pas cher</option>
                     <option value="Abordable">Abordable</option>
                     <option value="Assez cher">Assez cher</option>
@@ -81,37 +62,27 @@
 
             </div>
 
-
             </br>
             <p>Entrez les ingrédients </p>
-            <div id="div-ingredient">
-                <input type="text" class="input-ing" name="quantite" placeholder="Quantité" required />
+            <?php for ($i = 0; $i < count($recette['liste_ingredients']['ingredient']); $i++) {
+                $ingred = $recette['liste_ingredients']['ingredient'][$i];
+            ?>
+                <input type="text" class="input-ing" name="ingredient<?php echo $i; ?>" value='<?php echo $ingred; ?>' />
 
-                <select name="mesure" id="cout" class="input-ing" required>
-                    <option value="Mesure non renseigné">Mesure non renseigné </option>
-                    <option value="gramme"> gramme (g) </option>
-                    <option value="kilogramme"> kilogramme (kg) </option>
-                    <option value="litre"> litre (l) </option>
-                    <option value="centilitre"> centilitre (cl) </option>
-                    <option value="milmilitre"> milmilitre (ml) </option>
-                    <option value="c. à café"> c. à café </option>
-                    <option value="c. à soupe"> c. à soupe </option>
-                    <option value="c. à thé "> c. à thé </option>
-                </select>
 
-                <input type="text" class="input-ing" name="ingredient" placeholder="Ingrédient" required />
-
-            </div>
-            <input type='hidden' name='nb-ingredients-total' id='nb-ingredients-total' />
+            <?php }; ?>
+            <input type='hidden' name='nb-ingredients-total' id='nb-ingredients-total' value="<?php echo count($recette['liste_ingredients']['ingredient']); ?>" />
             <button type="button" class="btnn" onClick="ajouterIngredient()"> Ajouter un ingrédient </button>
-
             </br></br></br>
             <p>Entrez les étapes </p>
-
-            <div id="div_etapes">
-                <textarea type="text" class="input_etape" id="etape0" name="etape0" placeholder="Etape 0" required></textarea>
-            </div>
-            <input type='hidden' name='nb-etapes-total' id='nb-etapes-total' />
+            <?php for ($i = 0; $i < count($recette['preparation']['etape']); $i++) {
+                $etape = $recette['preparation']['etape'][$i];
+            ?>
+                <div id="div_etapes">
+                    <textarea type="text" class="input_etape" id="etape0" name="etape<?php echo $i; ?>" required><?php echo $etape; ?></textarea>
+                </div>
+            <?php }; ?>
+            <input type='hidden' name='nb-etapes-total' id='nb-etapes-total' value="<?php echo count($recette['preparation']['etape']); ?>" />
 
             <button type="button" class="btnn" onClick="ajouterEtape()"> Ajouter une étape </button>
 
@@ -132,15 +103,13 @@
 
     </div> <!-- fin div containerR -->
 
-<script>
-
-    function deleteRecette() {
-        if (confirm("Etes-vous sûre de vouloir supprimer votre recette ?") == true) {
-            document.location.href= "./post-delete-recette.php?idRecette=<?php echo $id;?>";
-        } 
-    }
-
-</script>
+    <script>
+        function deleteRecette() {
+            if (confirm("Etes-vous sûre de vouloir supprimer votre recette ?") == true) {
+                document.location.href = "./post-delete-recette.php?idRecette=<?php echo $id; ?>";
+            }
+        }
+    </script>
     <script src="../ajouter-recette/ajouter-recette.js">
     </script>
 </body>
