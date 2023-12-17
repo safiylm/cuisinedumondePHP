@@ -74,11 +74,9 @@ if (!isset($_SESSION['favori']))
         </div>
 
 
-        <div style="display:flex;justify-content: space-between; width: 100%; background-color:#eadccf;">
+        <div style="display:flex;justify-content: space-between; width: 100vw; background-color:#eadccf;">
             <img src='Photos/background.jpg' width="400px" height="auto;"/>
-            <div>
-                Lorem ip2long
-            </div>
+            <div>  </div>
         </div>
 
 
