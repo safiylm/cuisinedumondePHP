@@ -14,6 +14,13 @@
             color: white;
         }
 
+        h1{
+            font-weight: 800;
+            font-size: 45px;
+            padding: 25px 0;
+            text-decoration: none;
+        }
+
         a {
             text-decoration: none;
         }
