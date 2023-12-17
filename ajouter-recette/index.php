@@ -35,8 +35,6 @@
 
 <body>
 
-
-
    <div class="container-ajouter-recette">
 
       <form method='post' action="../ajouter-recette/post-ajouter-recette.php">
@@ -44,6 +42,7 @@
          <input type="text" id="nom-recette" name="nom-recette" class="input" placeholder="nom" required />
          <input type="text" id="nb-personne" name="nb-personne" class="input" placeholder="nombre de personnes ou porsion" required />
          <input type="text" id="tmp-total" name="tmp-total" class="input" placeholder="Temps total" required />
+         <input type="text" name="url-image" class="input" placeholder="Lien de l'image" required />
 
 
          <select name="categorie" id="categorie" class="input">
@@ -77,7 +76,7 @@
          <p>Entrez les ingrédients </p>
          <div id="div-ingredient-parent" class="div-ingredient-parent">
             <div id="div-ingredient-enfant-nb-0" class="div-ingredient-enfant">
-               <input type="text" class="input-ing" name="un-ingredient" placeholder="Ingrédient" required />
+               <input type="text" class="input-ing" name="un-ingredient-nb-0" placeholder="Ingrédient" required />
             </div>
          </div>
 
@@ -92,7 +91,7 @@
 
          <div id="div-etape-parent" class="div-etape-parent">
             <div id="div-etape-enfant-nb-0" class="div-etape-enfant">
-               <textarea type="text" class="input_etape" id="etape0" name="une-etape" placeholder="Etape 0" required></textarea>
+               <textarea type="text" class="input_etape" id="etape0" name="une-etape-nb-0" placeholder="Etape 0" required></textarea>
             </div>
          </div>
          <input type='hidden' name='nb-etapes-total' id='nb-etapes-total' />
@@ -113,10 +112,7 @@
          <button type="sunmit" class="btn-submit"> Ajouter la recette </button>
 
       </form>
-   </div> <!-- fin div containerR -->
-
-
-
+   </div> 
 
    <script src="../ajouter-recette/ajouter-recette.js">
    </script>
