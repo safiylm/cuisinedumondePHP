@@ -71,7 +71,7 @@
                     <h1 id='titre'> <?php echo $recette["titre"]; ?> </h1>
 
                     <?php
-                    foreach ($xml->xpath("//utilisateur[email='" . $recette["auteur"] . "']") as $item) {
+                    foreach ($xml->xpath("//utilisateur[@id='" . $recette["auteur"] . "']") as $item) {
                         echo "<p style='text-align:center;'>Auteur : <a href='../leur-compte/index.php?idUtilisateur=" . $item->attributes() . "' >" . $item->nom . " " . $item->prenom . "</a></p>";
                     }
                     ?>

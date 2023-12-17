@@ -26,6 +26,7 @@
     $path = "//utilisateur[@id= " . $_GET["idUtilisateur"] . "]";
 
     foreach ($xml->xpath($path) as $item) {
+        $id = $item->attributes();
         $nom = $item->nom;
         $prenom = $item->prenom;
         $email = $item->email;
@@ -51,7 +52,7 @@
                 <div class="flex-container">
 
                     <?php foreach ($tab["sitecuisine"]["liste_recette"]['recette'] as $recette) {
-                        if ($recette['auteur'] == $email) {
+                        if ($recette['auteur'] == $id) {
                             recette_($recette['image'], $recette["temps_total"], $recette["difficulte"], $recette["nb_personne"], $recette["id"], $recette["titre"], $xml);
                         }
                     } ?>
