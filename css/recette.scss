@@ -2,6 +2,13 @@
     --width-ingredients : 40vw;
 }
 
+.div-right a{
+    text-decoration: none;
+    color: darkslategray;
+    font-weight: 700;
+}
+
+
 body {
     background-color: white !important;
     /*background-color: lightslategrey;*/
@@ -63,7 +70,7 @@ body {
                     margin: 20px 0;
                     display: flex;
                     flex-direction: row;
-                    align-items: flex-start;
+                    align-items: center;
                     justify-content: center;
                     flex-wrap: wrap;
                     padding: 30px 0;
@@ -87,11 +94,10 @@ body {
                         border-radius: 5px;
                         padding: 7px 12px;
                         text-decoration: none;
-                        background-color: #6C829DC0;
-                        color: rgb(250, 250, 250);
+                        color: darkslategray;
 
                         svg {
-                            color: white !important;
+                            color: darkslategray !important;
                         }
                     }
                 }
@@ -203,6 +209,9 @@ table.preparation tr {
 
 
 @media screen and (max-width: 1040px) {
+ 
+  .div-ingredients, .div-etapes , .image-recette{border-radius: none;}
+  .div-image-infos {align-items: center !important; justify-content: center !important;}
 
     .contenu {
         padding: 0 !important;
@@ -214,13 +223,11 @@ table.preparation tr {
             padding: 0;
             margin: 0;
             width: 100vw !important;
-            height: auto;
+            height: auto !important ;
         }
 
         .div-image-infos {
-            min-height:900px;
             flex-direction: column !important;
-            align-items: center !important;
             width: 100vw !important;
 
             .div-image {
@@ -230,7 +237,9 @@ table.preparation tr {
                     height: auto;
                     width: 100vw !important;
                     object-fit: cover;
+                    
                     min-width: none;
+
                 }
             }
         }
@@ -238,7 +247,7 @@ table.preparation tr {
         .div-temps{
             flex-direction: column !important;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
             *{
                 margin: 20px 0;
 
@@ -246,9 +255,9 @@ table.preparation tr {
         }
         .div-right {
             width: 100vw !important;
-            padding: 0 !important;
+            padding: 20px !important;
             max-height: none !important;
-
+            text-align: center;
             h1 {
                 margin: 30px 0;
                 font-size: 2.5em;
@@ -280,6 +289,7 @@ table.preparation tr {
         
         .div-ingredients,
         .div-etapes {
+            border-radius: none;
             width: 100vw !important;
             padding: 5px;
             margin: 0 !important;
@@ -288,4 +298,6 @@ table.preparation tr {
         }
         
     }
+
+
 }
