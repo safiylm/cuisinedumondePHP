@@ -6,9 +6,9 @@
     <title>Mot de passe oublié</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
-    <link rel="stylesheet" href="../../CSS/body.css" />
-    <link rel="stylesheet" href="../../CSS/auth.scss" />
-    <link rel="stylesheet" href="../../CSS/nav.css" />
+    <link rel="stylesheet" href="../../css/body.css" />
+    <link rel="stylesheet" href="../../css/auth.css" />
+    <link rel="stylesheet" href="../../css/nav.css" />
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </head> 
@@ -29,28 +29,29 @@ if(!empty($_POST['email'])){
 
 <body>
 
-<nav>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="../../index.php" id="nav__title" class="active"> RECETTE</a>
 
-    <a href="../../index.php" class="nav__title"> RECETTE</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <?php if (empty($_SESSION['utilisateur']['email'])) { ?>
+                <a class="nav-link" href="../../mon-carnet/index.php">Mon carnet</a>
+                <a class="nav-link" href="../../auth/connexion.php">Connexion</a>
+            <?php } else {  ?>
+                <a class="nav-link" href="../../mon-compte/index.php">Mon compte </a>
+            <?php } ?>
 
-    <div> 
-    <a href="../../categorie/index.php" class="nav__link" aria-current="page">Categorie </a>
-        
-    <?php if (empty($_SESSION['utilisateur']['email'])) { ?>
-
-            <a href="../../mon-carnet/index.php" class="nav__link" aria-current="page">Mon carnet</a>
-
-            <a class="nav__link" href="../../auth/connexion.php">Connexion</a>
-
-        <?php } else {  ?>
-
-            <a href="../../mon-compte/index.php" class="nav__link">Mon compte </a>
-
-        <?php } ?>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
-</nav>
+
     <div class="container">
-        <img id="image-left" src="../../Photos/auth.jpg" />
+        <img id="image-left" src="../../Photos/auth.jpg" style="max-width:50vw; max-height:100vh" />
+
         <div id="div-right">
             <h2>Login</h2>
             <form action="#" method="post" style="padding:30px;">
@@ -61,7 +62,17 @@ if(!empty($_POST['email'])){
 
         </div>
     </div>
+<script>
 
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+</script>
 </body>
 
 </html>

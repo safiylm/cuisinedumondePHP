@@ -1,17 +1,11 @@
 body {
-  /* background-image: linear-gradient(to right, pink, rgb(160, 244, 244), rgb(249, 249, 164)); */
-  background-color: lightslategrey;
   background-color: white !important;
   height: 100%;
 }
 
 a {
   text-decoration: none;
-  ;
 }
-
-
-
 
 .container {
   padding: 0;
@@ -22,8 +16,8 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-
-  #image-left {
+}
+.container #image-left {
     margin: 0;
     padding: 0;
     height: calc(100vh - 55px);
@@ -31,117 +25,125 @@ a {
     object-fit: cover;
   }
 
-  #div-right {
+.container  #div-right {
     width: 50vw;
     margin: 0 auto;
+}
 
-    h2 {
-      color: darkslategrey;
-      font-weight: 700;
-      font-size: 50px;
-      text-align: center;
-      margin: 20px 0;
-    }
-
-
-    .form-control {
-      max-width: 400px;
-      margin: 15px auto;
-      border-radius: 50px !important;
-      height: 45px;
-      ;
-    }
-
-    #div-btn-submit-go-for-inscription {
-
-      display: block;
-      text-align: center;
-
-      a {
-        //to go to inscription 
-        text-decoration: none;
-        color: darkslategrey;
-        font-weight: 600;
-        font-size: 1.1em;
-
-      }
-
-    }
-
-
-
-    .btnSubmit {
-      background-color: darkslategrey !important;
-      border-radius: 50px !important;
-      height: 45px;
-      color: white;
-      font-weight: 600;
-      border: none;
-      padding: 10px 15px;
-      margin-right: 15px;
-    }
-
-    .info p{
-      margin: 25px;
-      text-align: center;
-      color: crimson;
-    }
-  }
+.container  #div-right h2 {
+    color: darkslategrey;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    margin: 20px 0;
 }
 
 
-@media screen and (max-device-width: 900px) {
+.container  #div-right .form-control {
+    max-width: 400px;
+    margin: 15px auto;
+    border-radius: 50px !important;
+    height: 45px;
 
-  .container {
-    flex-direction: column-reverse;
-    padding: 0;
-    justify-content: center;
-    height: 60vh;
+}
 
-    #image-left {
-      width: 0;
-      height: 0;
+.container #div-right #div-btn-submit-go-for-inscription {
+    display: block;
+    text-align: center;
+}
+   
+.container  #div-right  a {
+    text-decoration: none;
+    color: darkslategrey;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.container #div-right .btnSubmit {
+    background-color: darkslategrey !important;
+    border-radius: 50px !important;
+    height: 45px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 15px;
+}
+
+.container #div-right .info p{
+    margin: 25px;
+    text-align: center;
+    color: crimson;
+}
+  
+
+
+@media only screen and (max-width: 900px) {
+
+
+    .container {
+        flex-direction: column-reverse;
+        margin: 30px 0;
+        justify-content: center;
+        height: 60vh;
+
+    }
+    .container #image-left {
+        display: none;
     }
 
-    #div-right {
-      width: 100vw;
-      margin: 0 auto;
+    .container #div-right {
+        width: 90vw;
+        margin: 0 auto;
+    }
 
-
-      h2 {
+    .container h2 {
         font-size: 30px;
-        margin: 30px -10px;
-      }
+        margin: 30px ;
+        text-align: center;
+    }
 
-      form {
-        width: 90%;
+    .container form {
+        width: 100%;
+    }
 
-        #div-btn-submit-go-for-inscription {
-          display: block;
-          margin: 35px 0;
+    .container #div-btn-submit-go-for-inscription {
+        display: block;
+        text-align :center;
+        margin: 40px 0;
+    }
 
-          input {
-            font-size: 1.2em;
-            height: 65px;
-          }
+    .container input {
+        font-size: 1.2em;
+        height: 65px;
+    }
 
-          a {
-            margin: 30px 0;
-            font-size: 1.2em;
-          }
-        }
-      }
+    .container a {
+        margin: 30px 0;
+        font-size: 1.2em;
+        display: block;
+        text-decoration: none;
+        color: darkslategrey !important;
+        font-weight: 600;
+    }
 
-
-      .form-control {
+    .container .form-control {
         margin: 22px auto;
         width: 100%;
-      }
+        height: 70px;
 
-      .btnSubmit {
-        padding: 15px 25px;
-        height: auto;
-      }
     }
-  }
+
+    .container .btnSubmit {
+        background-color: darkslategrey !important;
+        border-radius: 50px !important;
+        height: 60px;
+        color: white;
+        font-weight: 600;
+        border: none;
+        padding: 10px 15px;
+        margin-right: 15px;
+    }
+    
+  
 }
