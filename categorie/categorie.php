@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <title>Catégorie </title>
-    <link rel="stylesheet" href='../css/publication.scss'>
+    <link rel="stylesheet" href="../css/body.css" />
+    <link rel="stylesheet" href="../css/publication.scss" />
+    <link rel="stylesheet" href="../css/categorie.scss" />
     <link rel="stylesheet" href='../css/home.scss'>
     <link rel="stylesheet" href='../css/nav.css'>
-    <link rel="stylesheet" href="../CSS/categorie.scss" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Work+Sans&display=swap" rel="stylesheet">
@@ -37,7 +37,7 @@ if (file_exists('../data/recette-utilisateur.xml')) {
 
 <body>
 
-    <?php include("../Navigation/index.php"); ?>
+    <?php include("../navigation/index.php"); ?>
 
     <div class="div-toutes-categories">
 

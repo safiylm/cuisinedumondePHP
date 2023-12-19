@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
 
-    <link rel="stylesheet" href="../CSS/publication.scss" />
+    <link rel="stylesheet" href="../css/publication.scss" />
+    <link rel="stylesheet" href='../css/nav.css'>
 
 
     <style>
@@ -51,9 +52,8 @@
     $json_object = file_get_contents("../data/recette.json");
     $tab = json_decode($json_object, true);
 
-    if (empty($_SESSION['utilisateur']['email'])) {
-        include("../navigation/index.php");
-    }
+    include("../navigation/index.php");
+
     ?>
 
     <div class="div-mon-carnet">

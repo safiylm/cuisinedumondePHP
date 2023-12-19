@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <title>Catégorie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
-  <link rel="stylesheet" href="../CSS/body.css" />
-  <link rel="stylesheet" href="../css/publication.scss" />
-  <link rel="stylesheet" href="../CSS/categorie.scss" />
+  <link rel="stylesheet" href="../css/body.css" />
+    <link rel="stylesheet" href="../css/publication.scss" />
+    <link rel="stylesheet" href="../css/categorie.scss" />
+    <link rel="stylesheet" href='../css/home.scss'>
+    <link rel="stylesheet" href='../css/nav.css'>
 </head>
 
 <?php
-include("../Navigation/index.php");
+include("../navigation/index.php");
 include('../recherche/recherche_par_pays_categorie.php');
 
 $json_object = file_get_contents("../data/recette.json");

@@ -1,4 +1,5 @@
 <style>
+
     .footer {
         margin-top: 20px;
         padding: 70px;
@@ -8,23 +9,21 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
+    }
 
-        h1,
-        p {
-            color: white;
-        }
-
-        h1{
+       .footer  h1{
             font-weight: 800;
             font-size: 45px;
             padding: 25px 0;
-            text-decoration: none;
+             text-decoration: none  !important;
+            color :white !important;
         }
 
-        a {
-            text-decoration: none;
+      .footer a, .footer p {
+            text-decoration: none  !important;
+            color :white !important;
         }
-    }
+
 </style>
 <?php
 function footer($tab)

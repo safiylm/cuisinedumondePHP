@@ -5,11 +5,13 @@
     <title>Recette </title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
-    <link rel="stylesheet" href="../CSS/body.css" />
+    <link rel="stylesheet" href="../css/body.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/recette.scss" />
     <link rel="stylesheet" href="../css/publication.scss" />
     <link rel="stylesheet" href="../css/commentaire.scss" />
+    <link rel="stylesheet" href="../css/nav.css" />
+
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">

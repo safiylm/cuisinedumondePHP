@@ -43,7 +43,7 @@ function recette($url_image, $temps_total, $difficulte, $nb_personne, $id, $titr
                                 <div>' . $nb_personne . '</div>
                         </div>
                         <div class="div-titre">
-                            <a class="a-titre" href="Recette/index.php?idRecette=' . $id . '">
+                            <a class="a-titre" href="recette/index.php?idRecette=' . $id . '">
                                 ' . $titre . '
                             </a>
 
@@ -99,7 +99,7 @@ function recette_($url_image, $temps_total, $difficulte, $nb_personne, $id, $tit
                                 <div>' . $nb_personne . '</div>
                         </div>
                         <div class="div-titre">
-                            <a class="a-titre" href="../Recette/index.php?idRecette=' . $id . '">
+                            <a class="a-titre" href="../recette/index.php?idRecette=' . $id . '">
                                 ' . $titre . '
                             </a>
 
@@ -154,7 +154,7 @@ function mes_recettes_($url_image, $temps_total, $difficulte, $nb_personne, $id,
                                 <div>' . $nb_personne . '</div>
                         </div>
                         <div class="div-titre">
-                            <a class="a-titre" href="../Recette/index.php?idRecette=' . $id . '">
+                            <a class="a-titre" href="../recette/index.php?idRecette=' . $id . '">
                                 ' . $titre . '
                             </a>
 

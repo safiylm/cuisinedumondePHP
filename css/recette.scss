@@ -1,5 +1,5 @@
 :root{
-    --width-ingredients : 500px;
+    --width-ingredients : 40vw;
 }
 
 body {
@@ -202,7 +202,7 @@ table.preparation tr {
 
 
 
-@media screen and (max-device-width: 940px) {
+@media screen and (max-width: 1040px) {
 
     .contenu {
         padding: 0 !important;
@@ -219,12 +219,16 @@ table.preparation tr {
 
         .div-image-infos {
             min-height:900px;
+            flex-direction: column !important;
+            align-items: center !important;
+            width: 100vw !important;
+
             .div-image {
-                width: 100vw;
+                width: 100vw !important;
 
                 .image-recette {
                     height: auto;
-                    width: 100vw;
+                    width: 100vw !important;
                     object-fit: cover;
                     min-width: none;
                 }
