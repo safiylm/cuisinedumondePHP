@@ -100,30 +100,32 @@ if (count($xml->xpath($path)) == 1) {
         margin-right: auto;
         max-width: 600px;
         margin-bottom: 70px;
-
-        h2 {
+    }
+        .container-donnees-personnelles   h2 {
             margin-bottom: 20px;
             color: darkslategrey;
         }
 
-        button,
-        input {
+        .container-donnees-personnelles button,
+            .container-donnees-personnelles input {
             width: 100%;
             outline: none !important;
         }
 
-    }
+    
 
 
 
     @media screen and (max-device-width: 900px) {
         .container-donnees-personnelles {
-            width: 100vw;
+            width: 90vw;
+            padding: 10px;
+           
+        }
 
-            button,
-            input {
+        .container-donnees-personnelles button,
+        .container-donnees-personnelles input {
                 width: 100%;
             }
-        }
     }
 </style>
