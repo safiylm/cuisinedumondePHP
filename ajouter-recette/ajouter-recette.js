@@ -11,13 +11,13 @@ function ajouterIngredient() {
 
    const input_ing = document.createElement("input")
    input_ing.setAttribute("placeholder", "Ingrédient")
-   input_ing.setAttribute("class", "input-ingredient")
+   input_ing.setAttribute("class", "form-control")
    input_ing.setAttribute("id", "un-ingredient-nb-" + nbing)
    input_ing.setAttribute("name", "un-ingredient-nb-" + nbing)
 
 
    const btn_delete = document.createElement("button")
-   btn_delete.setAttribute("class", "btn_delete")
+   btn_delete.setAttribute("class", "btn btn-primary")
    btn_delete.setAttribute("type", "button")
    btn_delete.setAttribute('onClick', "supprimerIngredient(" + nbing + ")")
 
@@ -39,8 +39,8 @@ function ajouterIngredient() {
 
 
 function supprimerIngredient(i) {
-   const div = document.getElementById('div-ingredient')
-   const n = document.getElementById('divi' + i)
+   const div = document.getElementById('div-ingredient-parent')
+   const n = document.getElementById('div-ingredient-enfant-nb-' + i)
    div.removeChild(n);
    nbing--
 }
@@ -53,12 +53,12 @@ function ajouterEtape() {
    const text = document.createElement('textarea')
    text.setAttribute('id', 'une-etape-nb-' + nbetape)
    text.setAttribute('name', 'une-etape-nb-' + nbetape)
-   text.setAttribute("class", "input_etape")
+   text.setAttribute("class", "form-control")
    text.setAttribute('placeholder', 'Etape ' + nbetape)
 
 
    const btn_delete = document.createElement("button")
-   btn_delete.setAttribute("class", "btn_delete")
+   btn_delete.setAttribute("class", "btn btn-primary")
    btn_delete.setAttribute("type", "button")
    btn_delete.setAttribute('onClick', "supprimerEtape(" + nbetape + ")")
 
@@ -79,8 +79,8 @@ function ajouterEtape() {
 
 
 function supprimerEtape(i) {
-   const div = document.getElementById('div_etapes')
-   const n = document.getElementById('dive' + i)
+   const div = document.getElementById('div-etape-parent')
+   const n = document.getElementById('div-etape-enfant-nb-' + i)
 
    div.removeChild(n);
 

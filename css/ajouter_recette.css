@@ -1,0 +1,85 @@
+
+
+*{
+  box-sizing: border-box;
+}
+.container-ajouter-recette {
+  width: 800px ;
+  padding: 50px 0;
+  margin: 0 auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-ajouter-recette #update-recette-image{
+    width : 100%;
+    height:auto;
+}
+
+.container-ajouter-recette form{
+  width: 100%;
+}
+
+  .container-ajouter-recette input,  
+  .container-ajouter-recette textarea, 
+  .container-ajouter-recette button, 
+  .container-ajouter-recette select
+   {
+       width: 100%;
+       max-width: 100%;
+       min-height : 15px;
+       height : 40px;
+       margin : 10px 0;
+      
+   }
+
+  .container-ajouter-recette textarea{
+    height : 140px;
+
+  }
+
+
+@media  screen and (max-width: 900px) {
+
+  .container-ajouter-recette {
+      width: 100%;
+      padding : 0 8px;
+  }
+
+    .container-ajouter-recette form{
+        width: 100%;
+    }
+
+ .container-ajouter-recette input,  
+ .container-ajouter-recette textarea, 
+ .container-ajouter-recette button, 
+ .container-ajouter-recette select
+  {
+      width: 100%;
+      max-width: 100%;
+      min-height : 55px;
+      margin : 10px 0;
+  }
+
+ .container-ajouter-recette textarea{
+      height : 150px;
+ }
+
+  .container-ajouter-recette select {
+      background-color: white;
+      color: black;
+      padding :15px !important;
+  }
+
+
+  .container-ajouter-recette button {
+      background-color: dodgerblue;
+      border: none;
+      border-radius: 4px;
+      padding: 6px;
+      color: white;
+
+  }
+}

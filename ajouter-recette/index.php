@@ -10,7 +10,7 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-   <link rel="stylesheet" href="../css/ajouter_recette.scss" />
+   <link rel="stylesheet" href="../css/ajouter_recette.css" />
 
    <?php
 
@@ -36,16 +36,16 @@
 <body>
 
    <div class="container-ajouter-recette">
-
+   <h1>Déposer une recette </h1>
       <form method='post' action="../ajouter-recette/post-ajouter-recette.php">
 
-         <input type="text" id="nom-recette" name="nom-recette" class="input" placeholder="nom" required />
-         <input type="text" id="nb-personne" name="nb-personne" class="input" placeholder="nombre de personnes ou porsion" required />
-         <input type="text" id="tmp-total" name="tmp-total" class="input" placeholder="Temps total" required />
-         <input type="text" name="url-image" class="input" placeholder="Lien de l'image" required />
+         <input type="text" id="nom-recette" name="nom-recette" class="form-control" placeholder="nom" required />
+         <input type="text" id="nb-personne" name="nb-personne" class="form-control" placeholder="nombre de personnes ou porsion" required />
+         <input type="text" id="tmp-total" name="tmp-total" class="form-control" placeholder="Temps total" required />
+         <input type="text" name="url-image" class="form-control" placeholder="Lien de l'image" required />
 
 
-         <select name="categorie" id="categorie" class="input">
+         <select name="categorie" id="categorie" class="form-select">
             <option value="Non renseigné">Catégorie non renseigné </option>
             <?php foreach ($tab["sitecuisine"]["liste_categorie"]["categorie"] as $item) {
                echo "<option value='" . $item . "'>" . $item . "</option>";
@@ -53,7 +53,7 @@
          </select>
 
 
-         <select name="difficulte" id="difficulte" class="input">
+         <select name="difficulte" id="difficulte" class="form-select">
             <option value="difficulté" selected>Difficulté non renseigné </option>
             <option value="Facile">Facile</option>
             <option value="Intermédiaire">Intermédiaire</option>
@@ -61,7 +61,7 @@
          </select>
 
 
-         <select name="cout" id="cout" class="input">
+         <select name="cout" id="cout" class="form-select">
 
             <option value="Non renseigné">Coût non renseigné </option>
             <option value="Pas cher">Pas cher</option>
@@ -76,12 +76,12 @@
          <p>Entrez les ingrédients </p>
          <div id="div-ingredient-parent" class="div-ingredient-parent">
             <div id="div-ingredient-enfant-nb-0" class="div-ingredient-enfant">
-               <input type="text" class="input-ing" name="un-ingredient-nb-0" placeholder="Ingrédient" required />
+               <input type="text" class="form-control" name="un-ingredient-nb-0" placeholder="Ingrédient" required />
             </div>
          </div>
 
          <input type='hidden' name='nb-ingredients-total' id='nb-ingredients-total' />
-         <button type="button" class="btnn" onClick="ajouterIngredient()"> Ajouter un ingrédient </button>
+         <button type="button" class="btn btn-primary" onClick="ajouterIngredient()"> Ajouter un ingrédient </button>
 
 
          <!-- **************************************** -->
@@ -96,7 +96,7 @@
          </div>
          <input type='hidden' name='nb-etapes-total' id='nb-etapes-total' />
 
-         <button type="button" class="btnn" onClick="ajouterEtape()"> Ajouter une étape </button>
+         <button type="button" class="btn btn-primary" onClick="ajouterEtape()"> Ajouter une étape </button>
 
          <!-- **************************************** -->
 
@@ -109,7 +109,7 @@
          <!-- **************************************** -->
 
 
-         <button type="sunmit" class="btn-submit"> Ajouter la recette </button>
+         <button type="sunmit" class="btn btn-primary" > Ajouter la recette </button>
 
       </form>
    </div> 
