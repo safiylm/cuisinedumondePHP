@@ -6,7 +6,7 @@
     <title>Mon carnet de recette</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
-
+    <link rel="stylesheet" href="../css/body.css" />
     <link rel="stylesheet" href="../css/publication.scss" />
     <link rel="stylesheet" href='../css/nav.css'>
 
@@ -53,7 +53,7 @@
     $tab = json_decode($json_object, true);
 
     include("../navigation/index.php");
-
+    
     ?>
 
     <div class="div-mon-carnet">
@@ -84,7 +84,7 @@
                                 <?php } ?>
                             </div>
                             <div class="div-titre">
-                                <a class="a-titre" href='../Recette/index.php?idRecette=<?php echo $e; ?>'>
+                                <a class="a-titre" href='../recette/index.php?idRecette=<?php echo $e; ?>'>
                                     <?php echo $recette['titre']; ?>
                                 </a>
                                 <a href="../mon-carnet/mon-carnet-session.php?idRecette=<?php echo intval($res); ?>" id="btn-trash">
