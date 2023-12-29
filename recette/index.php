@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="../css/publication.scss" />
     <link rel="stylesheet" href="../css/commentaire.scss" />
     <link rel="stylesheet" href="../css/nav.css" />
-
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -192,7 +191,7 @@
 
 
 
-        <div class="div-commentaire-etoile">
+        <div class="div-commentaire-etoile" style="padding : 20px; max-width: 1100px; margin: 20px auto;">
             <h4>Commentaires</h4>
             <?php
             $path = "//liste_commentaires/commentaire[id_recette=" .  $_GET['idRecette'] . "]";
