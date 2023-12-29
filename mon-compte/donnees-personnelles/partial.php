@@ -90,9 +90,10 @@ if (count($xml->xpath($path)) == 1) {
 
 
 
+ 
 <style>
     .container-donnees-personnelles {
-        padding: 30px;
+              padding: 30px;
         box-sizing: border-box;
         border-radius: 5%;
         margin-top: 15px;
@@ -128,4 +129,5 @@ if (count($xml->xpath($path)) == 1) {
                 width: 100%;
             }
     }
+
 </style>
