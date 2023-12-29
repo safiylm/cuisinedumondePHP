@@ -5,6 +5,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="stylesheet" href='../css/publication.scss'>
+    <link rel="stylesheet" href='../css/nav.css'>
+    <link rel="stylesheet" href='../css/body.css'>
     <link rel="stylesheet" href='../css/mon-compte.scss'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
