@@ -35,7 +35,7 @@ function recette($url_image, $temps_total, $difficulte, $nb_personne, $id, $titr
     echo '<div class="flex-item">
                     <div class="element">
                         <div class="div-img">
-                            <img src="' . $url_image . '" />
+                            <img src="' . $url_image . '" style="width : 100%; height : 300px;" />
                         </div>
                         <div class="info-recette">
                                 <div>' . $temps_total . '</div>
@@ -91,7 +91,7 @@ function recette_($url_image, $temps_total, $difficulte, $nb_personne, $id, $tit
     echo '<div class="flex-item">
                     <div class="element">
                         <div class="div-img">
-                            <img src="' . $url_image . '" />
+                            <img src="' . $url_image . '" style="width : 100%; height : 300px;" />
                         </div>
                         <div class="info-recette">
                                 <div>' . $temps_total . '</div>
@@ -146,7 +146,7 @@ function mes_recettes_($url_image, $temps_total, $difficulte, $nb_personne, $id,
     echo '<div class="flex-item">
                     <div class="element">
                         <div class="div-img">
-                            <img src="' . $url_image . '" />
+                            <img src="' . $url_image . '" style="width : 100%; height : 300px;"/>
                         </div>
                         <div class="info-recette">
                                 <div>' . $temps_total . '</div>

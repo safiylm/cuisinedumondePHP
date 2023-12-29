@@ -7,7 +7,6 @@
     <link rel="stylesheet" href='/css/publication.scss' />
     <link rel="stylesheet" href='./css/home.scss' />
     <link rel="stylesheet" href='./css/nav.css' />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <?php
@@ -36,25 +37,29 @@ if (!isset($_SESSION['favori']))
 
 <body>
 
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-        <a href="index.php" id="nav__title" class="active"> RECETTE</a>
 
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-            <?php if (empty($_SESSION['utilisateur']['email'])) { ?>
-                <a class="nav-link" href="mon-carnet/index.php">Mon carnet</a>
-                <a class="nav-link" href="auth/connexion.php">Connexion</a>
-            <?php } else {  ?>
-                <a class="nav-link" href="mon-compte/index.php">Mon compte </a>
-            <?php } ?>
+<!-- Top Navigation Menu -->
+<div class="topnav">
+      <a href="index.php" id="nav__title" class="active" > RECETTE</a>
 
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+     <?php if (empty($_SESSION['utilisateur']['email'])) { ?>
+          <a class="nav-link" href="mon-carnet/index.php" >Mon carnet</a>
+          <a class="nav-link" href="auth/connexion.php" >Connexion</a>
+       <?php } else {  ?>
+          <a class="nav-link" href="mon-compte/index.php"  >Mon compte </a>
+      <?php } ?>
+
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
 
 
 
@@ -67,7 +72,7 @@ if (!isset($_SESSION['favori']))
 
 
     <div class="main">
-        <h1> Toutes les recettes </h1>
+        <h1 style=" font-size: 2em;color: darkslategray !important; font-weight: 800; padding: 15px ;"> Toutes les recettes </h1>
 
         <div class="flex-container" id="div-recherche">
             <div class="flex-item">
@@ -84,8 +89,8 @@ if (!isset($_SESSION['favori']))
 
 
         <div style="display:flex;justify-content: space-between; width: 100vw; background-color:#eadccf;">
-            <img src='Photos/background.jpg' width="400px" height="auto;" />
-            <div> </div>
+            <img src='Photos/background.jpg' width="400px" height="auto;"/>
+            <div>  </div>
         </div>
 
 
@@ -106,11 +111,90 @@ if (!isset($_SESSION['favori']))
                     </svg>
                     <a href='leur-compte/index.php?idUtilisateur=<?php //echo $item->attributes(); 
                                                                     ?>' class='a-login-utilisateur'> <?php //echo $item->nom . " " . $item->prenom . "</a> </div>"; } 
-                                                                                                        ?>
+                                                                                                                                    ?>
 
                 </div>
 
         </div> -->
+
+</body>
+
+
+
+<style>
+body {
+    margin: 0 ;
+    padding: 0;
+}
+
+#nav__title {
+    font-size: 22px;
+    color: darkslategray;
+    font-weight: 800;
+    text-decoration: none;
+    padding-left: 15px;
+    text-decoration: none;
+}
+
+.nav__link {
+    font-size: 19px;
+    text-align: center;
+    color: darkslategray;
+    font-weight: 500;
+    text-decoration: none;
+    padding-right:20px;
+}
+
+.nav__title:hover,
+.nav__link:hover {
+    color: rgb(101, 163, 139);
+}
+
+
+ /* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height : 100%;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: whitesmoke;
+  color: darkslategray;
+} 
+
+</style>
 
 <script>
 
@@ -123,5 +207,3 @@ function myFunction() {
   }
 } 
 </script>
-
-</body>
