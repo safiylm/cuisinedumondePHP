@@ -1,4 +1,5 @@
 <?php
+include('../accueil/recette.php');
 
 $q = $_REQUEST["q"];
 
@@ -25,31 +26,31 @@ if ($q !== "") {
         $id = $a[$i][1];
         if (stristr($q, substr($name, 0, $len))) {
             if ($hint === "") {
-
-           
-                $hint = " <div class='element' style='display:inline;'>
-                        <div class='div-img'>" .
-
-                    " <img src='". $tab["sitecuisine"]["liste_recette"]['recette'][$id]['image']. "' class='img-thumbnail' />" .
-                    "</div>
-                        <div class='div-titre'>
-                            <a class='a-titre' href='Recette/index.php?idRecette=" .$id . "' >
-                               " . $name .
-                    "  </a>
-                        </div>
-                    </div>";
+                $recette = $tab["sitecuisine"]["liste_recette"]['recette'][$id];
+                $hint =   '<div>' .
+                    recette_(
+                        $recette['image'],
+                        $recette["temps_total"],
+                        $recette["difficulte"],
+                        $recette["nb_personne"],
+                        $recette["id"],
+                        $recette["titre"],
+                        $xml
+                    )
+                    . " </div>";
             } else {
-                $hint .= " <div class='element' style='display:inline;'>
-                <div class='div-img'>" .
-
-            " <img src='". $tab["sitecuisine"]["liste_recette"]['recette'][$id]['image']. "' class='img-thumbnail' />" .
-            "</div>
-                <div class='div-titre'>
-                    <a class='a-titre' href='Recette/index.php?idRecette=" .$id . "'>
-                       " . $name .
-            "  </a>
-                </div>
-            </div>";
+                $recette = $tab["sitecuisine"]["liste_recette"]['recette'][$id];
+                $hint .= '<div>' .
+                recette_(
+                    $recette['image'],
+                    $recette["temps_total"],
+                    $recette["difficulte"],
+                    $recette["nb_personne"],
+                    $recette["id"],
+                    $recette["titre"],
+                    $xml
+                )
+                . " </div>";
             }
         }
     }

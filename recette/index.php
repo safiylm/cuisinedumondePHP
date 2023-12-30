@@ -34,8 +34,9 @@
         exit('Failed to open test.xml.');
     }
 
-    function getRecetteById($arrays, $id){
-        foreach($arrays as $item){
+    function getRecetteById($arrays, $id)
+    {
+        foreach ($arrays as $item) {
             if ($item['id'] == $id)
                 return $item;
         }
@@ -81,7 +82,7 @@
                         <?php
                         echo "<div class='element-div-temps'><strong> Difficulté </strong> <br>" . $recette["difficulte"] . "</div>";
                         echo  "<div class='element-div-temps'><strong> Temps Totale </strong><br>" . $recette["temps_total"] . "</div>";
-                      ?>
+                        ?>
 
                     </div>
 
@@ -177,86 +178,95 @@
     }
     ?>
 
-<div class="flex-container" >
-            <?php
+    <div class="flex-container">
+        <?php
 
-            foreach ($tab["sitecuisine"]["liste_recette"]['recette'] as $recette) {
-                       if ($categorie == $recette['categorie']) {
-                    
+        foreach ($tab["sitecuisine"]["liste_recette"]['recette'] as $recette) {
+            if ($categorie == $recette['categorie']) {
+
                 recette_($recette['image'], $recette["temps_total"], $recette["difficulte"], $recette["nb_personne"], $recette["id"], $recette["titre"], $xml);
-           
-           }
-           } ?>
-        </div>
-
-
-
-        <div class="div-commentaire-etoile" style="padding : 20px; max-width: 1100px; margin: 20px auto;">
-            <h4>Commentaires</h4>
-            <?php
-            $path = "//liste_commentaires/commentaire[id_recette=" .  $_GET['idRecette'] . "]";
-
-
-
-
-            if (count($xml->xpath($path)) == 0) {
-                echo " <p class='p-commentaire'> Soyez le premier à faire un commentaire.</p> ";
             }
-            foreach ($xml->xpath($path) as $item) {
+        } ?>
+    </div>
 
-                foreach ($xml->xpath("//utilisateur[email='" . $item->email_utilisateur . "']") as $itemm) {
-                    echo " <a href='../leur-compte/index.php?idUtilisateur=" . $itemm->attributes() . "' >" . $itemm->nom . " " . $itemm->prenom . "</a>";
-                }
 
-                echo "<p class='p-commentaire'>" . $item->contenu . "</p>";
-                if ($item->email_utilisateur == $_SESSION['utilisateur']['email']) {
-                    echo "<a href='modifier-commentaire-xml.php?idRecette=" . $_GET['idRecette'] . "&idCommentaire=" . $item->attributes() . "'> Modifier son commentaire  </a>";
-                    echo "<a href='supprimer-commentaire-xml.php?idRecette=" . $_GET['idRecette'] . "&idCommentaire=" . $item->attributes() . "'> Supprimer son commentaire  </a>";
-                }
+
+    <div class="div-commentaire-etoile" style="padding : 20px; max-width: 1100px; margin: 20px auto;">
+        <h4>Commentaires</h4>
+        <?php
+        $path = "//liste_commentaires/commentaire[id_recette=" .  $_GET['idRecette'] . "]";
+
+
+
+
+        if (count($xml->xpath($path)) == 0) {
+            echo " <p class='p-commentaire'> Soyez le premier à faire un commentaire.</p> ";
+        }
+        foreach ($xml->xpath($path) as $item) {
+
+            foreach ($xml->xpath("//utilisateur[email='" . $item->email_utilisateur . "']") as $itemm) {
+                echo " <a href='../leur-compte/index.php?idUtilisateur=" . $itemm->attributes() . "' >" . $itemm->nom . " " . $itemm->prenom . "</a>";
             }
 
-            // echo does the casting for you
+            echo "<div class='p-commentaire' >" . $item->contenu . "";
+            if ($item->email_utilisateur == $_SESSION['utilisateur']['email']) { ?>
+                <div>
+                    <a href='modifier-commentaire-xml.php?idRecette=<?php echo $_GET['idRecette']; ?>&idCommentaire=<?php echo $item->attributes(); ?>'>
 
-            ?>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z" />
+                        </svg></a>
 
 
-            <div class="div-note-etoile">
+                    <a href='supprimer-commentaire-xml.php?idRecette=<?php echo $_GET['idRecette']; ?>&idCommentaire=<?php echo $item->attributes(); ?>' style="margin: 0 15px;">
 
-                <p style='display:inline;'> Noter le cours : &nbsp;
-                <div class="stars" style='display:inline;'>
-                    <i class="star stargrey fas fa-star" data-index="0"></i>
-                    <i class="star stargrey fas fa-star" data-index="1"></i>
-                    <i class="star stargrey fas fa-star" data-index="2"></i>
-                    <i class="star stargrey fas fa-star" data-index="3"></i>
-                    <i class="star stargrey fas fa-star" data-index="4"></i>
-                </div> &nbsp; &nbsp;
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                            <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5" />
+                        </svg></a>
+                        </div> </div>
+        <?php     }
+        }
+        ?>
 
-                <span id="note-en-etoile" style='display:inline;'>
-                </span> </p>
+        <br />
 
-            </div>
+        <div class="div-note-etoile" >
 
-            <?php
-            $path = "//liste_note_etoile/note_etoile[id_recette=" .  $_GET['idRecette'] . "]";
+            <p style='display:inline;'> Noter le cours : &nbsp;
+            <div class="stars" style='display:inline;'>
+                <i class="star stargrey fas fa-star" data-index="0"></i>
+                <i class="star stargrey fas fa-star" data-index="1"></i>
+                <i class="star stargrey fas fa-star" data-index="2"></i>
+                <i class="star stargrey fas fa-star" data-index="3"></i>
+                <i class="star stargrey fas fa-star" data-index="4"></i>
+            </div> &nbsp; &nbsp;
 
-            if (count($xml->xpath($path)) != 0)
-                foreach ($xml->xpath($path) as $item) { ?>
+            <span id="note-en-etoile" style='display:inline;'>
+            </span> </p>
 
-                <script>
-                    for (var i = 0; i < <?php echo $item->nbetoile; ?>; i++)
-                        $(".stars").find('.star[data-index=' + i + ']').addClass("yellow")
-                </script>
-
-            <?php  }
-            ?>
-
-            <p>Faire un commentaire :</p>
-            <form method="post" action="ajouter-commentaire-xml.php">
-                <input type="hidden" name="idRecette" value="<?php echo $_GET['idRecette']; ?>">
-                <textarea id="contenu-commentaire" name="contenu" class="form-control"></textarea>
-                <button type="submit">Commenter</button>
-            </form>
         </div>
+
+        <?php
+        $path = "//liste_note_etoile/note_etoile[id_recette=" .  $_GET['idRecette'] . "]";
+
+        if (count($xml->xpath($path)) != 0)
+            foreach ($xml->xpath($path) as $item) { ?>
+
+            <script>
+                for (var i = 0; i < <?php echo $item->nbetoile; ?>; i++)
+                    $(".stars").find('.star[data-index=' + i + ']').addClass("yellow")
+            </script>
+
+        <?php  }
+        ?>
+
+        <p>Faire un commentaire :</p>
+        <form method="post" action="ajouter-commentaire-xml.php" style="padding : 20px; max-width: 1100px; margin: 20px auto;">
+            <input type="hidden" name="idRecette" value="<?php echo $_GET['idRecette']; ?>">
+            <textarea id="contenu-commentaire" name="contenu" class="form-control"></textarea>
+            <button type="submit">Commenter</button>
+        </form>
+    </div>
 
 
 
@@ -323,9 +333,10 @@
             }
         }
     </script>
-  <?php include("../footer/index.php");
-   footer_($tab);
-   ?>
+    <?php include("../footer/index.php");
+    footer_($tab);
+    ?>
+
 
 </body>
 

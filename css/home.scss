@@ -68,16 +68,16 @@
         flex-wrap: wrap;
         flex-direction: column;
         padding-bottom: 30px;
+    }
 
-        img{
-            width: 100%;
-            height: auto;
-        }
-        .search__container {
-            padding-top: 30px;
-            max-width: 90vw;
-            margin: 20px auto;;
-        }
+    .container__photo__search img{
+        width: 80%;
+        height: auto;
+    }
+    .container__photo__search .search__container {
+        padding-top: 30px;
+        max-width: 90vw;
+        margin: 20px auto;;
     }
 }
 
