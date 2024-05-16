@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <title>Catégorie </title>
     <link rel="stylesheet" href="../css/body.css" />
-    <link rel="stylesheet" href="../css/publication.scss" />
-    <link rel="stylesheet" href="../css/categorie.scss" />
-    <link rel="stylesheet" href='../css/home.scss'>
+    <link rel="stylesheet" href="../css/publication.css" />
+    <link rel="stylesheet" href="../css/categorie.css" />
+    <link rel="stylesheet" href='../css/home.css'>
     <link rel="stylesheet" href='../css/nav.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

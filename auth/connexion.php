@@ -37,6 +37,8 @@ include("../navigation/index.php");
                     <a href='inscription.php'> S'inscrire </a>
                     <a href='mot-de-passe-oublie/index.php'> Mot de passe oublié ?  </a>
                 </div>
+                
+                 <?php if(!empty($_GET['erreur'] )){?>
 
                 <div class="info">
                     <?php if($_GET['erreur']=="password"){
@@ -51,7 +53,7 @@ include("../navigation/index.php");
                     
                     ?>
                 </div>
-
+  <?php }  ?>
             </form>
 
         </div>
