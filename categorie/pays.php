@@ -1,49 +1,25 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-    <meta charset="utf-8">
     <title>Catégorie </title>
-    <link rel="stylesheet" href="../css/body.css" />
     <link rel="stylesheet" href="../css/publication.css" />
     <link rel="stylesheet" href="../css/categorie.css" />
-    <link rel="stylesheet" href='../css/home.css'>
-    <link rel="stylesheet" href='../css/nav.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Work+Sans&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <style>
 
-    .div-categorie h3 {
-        font-size: 2em;
-        color: darkslategray !important;
-        font-weight: 800;
-        padding: 15px;
-    }
-</style>
+    <?php
+    session_start(); 
+    include("../shared/header.php");
+    include("../shared/getallrecettes.php");
+    include('../recherche/recherche_par_pays_categorie.php');
+    echo "<script>var tabjson = $json_object </script>";
+    ?>
 </head>
-
-<?php
-session_start();
-$json_object = file_get_contents("../data/recette.json");
-$tab = json_decode($json_object, true);
-echo "<script>var tabjson = $json_object </script>";
-include('../recherche/recherche_par_pays_categorie.php');
-
-if (file_exists('../data/recette-utilisateur.xml')) {
-    $xml = simplexml_load_file('../data/recette-utilisateur.xml');
-} else {
-    exit('Failed to open test.xml.');
-}
-?>
 
 
 <body>
-
-    <?php include("../navigation/index.php"); ?>
+ <?php
+    include("../shared/navigation.php");
+    ?>
 
     <div class="div-toutes-categories">
         <div class="div-categorie">
@@ -53,7 +29,8 @@ if (file_exists('../data/recette-utilisateur.xml')) {
         </div>
     </div>
 
-    <?php include("../footer/index.php");
-     footer_($tab);?>
+  <?php include("../shared/footer.php");
+          footer_($tab);
+          ?>
 
 </body>

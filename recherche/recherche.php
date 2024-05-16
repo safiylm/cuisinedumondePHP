@@ -1,5 +1,5 @@
 <?php
-include('../accueil/recette.php');
+include('../shared/recette-card.php');
 
 $q = $_REQUEST["q"];
 

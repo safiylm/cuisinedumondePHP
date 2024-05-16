@@ -2,25 +2,17 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
     <title>Connexion</title>
-    <link rel="stylesheet" href="../css/nav.css" />
-    <link rel="stylesheet" href="../css/body.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="../css/auth.css" />
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
+    
+    <?php
+    session_start(); 
+    include("../shared/header.php");
+    ?>
+  
 </head>
 
-<body>
-<?php
-include("../navigation/index.php");
-?>
-
-
-
+<body> <?php include("../shared/navigation.php"); ?>
 
     <div class="container">
         <img id="image-left" src="../Photos/auth.jpg" style="max-width:50vw; max-height:100vh" />

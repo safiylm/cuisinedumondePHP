@@ -1,6 +1,6 @@
 
 <?php
-include('../accueil/recette.php');
+include('../shared/recette-card.php');
 
 
 function liste_recette_by_categorie($tab, $q_categorie, $xml)

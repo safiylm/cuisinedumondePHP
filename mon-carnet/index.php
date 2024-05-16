@@ -2,14 +2,10 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
     <title>Mon carnet de recette</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
-    <link rel="stylesheet" href="../css/body.css" />
-    <link rel="stylesheet" href="../css/publication.scss" />
-    <link rel="stylesheet" href='../css/nav.css'>
+    <link rel="stylesheet" href="../css/publication.css" />
 
+   <?php include("../shared/header.php");?>
 
     <style>
         .div-mon-carnet {
@@ -41,19 +37,9 @@
 
 <body>
     <?php
-    include('../accueil/recette.php');
-
-    if (file_exists('../data/recette-utilisateur.xml')) {
-        $xml = simplexml_load_file('../data/recette-utilisateur.xml');
-    } else {
-        exit('Failed to open test.xml.');
-    }
-
-    $json_object = file_get_contents("../data/recette.json");
-    $tab = json_decode($json_object, true);
-
-    include("../navigation/index.php");
-    
+    include('../shared/recette-card.php');
+    include("../shared/navigation.php");
+    include("../shared/getallrecettes.php");
     ?>
 
     <div class="div-mon-carnet">
@@ -103,7 +89,7 @@
 
         </div>
     </div>
-    <?php include("../footer/index.php");
+    <?php include("../shared/footer.php");
      footer_($tab);
      ?>
 

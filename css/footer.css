@@ -1,0 +1,25 @@
+
+    .footer {
+        margin-top: 20px;
+        padding: 70px;
+        background-color: black;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+       .footer  h1{
+            font-weight: 800;
+            font-size: 45px;
+            padding: 25px 0;
+             text-decoration: none  !important;
+            color :white !important;
+        }
+
+      .footer a, .footer p {
+            text-decoration: none  !important;
+            color :white !important;
+        }
+
