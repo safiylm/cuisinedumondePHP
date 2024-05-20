@@ -2,16 +2,13 @@
 <html>
 
 <head>
-
     <link rel="stylesheet" href='../css/publication.css'>
     <link rel="stylesheet" href='../css/mon-compte.css'>
 
     <?php
+    session_start();
     include("../shared/getallrecettes.php");
-    include('../shared/recette-card.php');
     include('../shared/header.php');
-
-
 
     $path = "//utilisateur[@id= " . $_GET["idUtilisateur"] . "]";
 
@@ -24,37 +21,24 @@
     ?>
     <title><?php echo $renom . " " . $nom; ?> | Cuisine du monde </title>
 
-
 </head>
 
 <body>
-<?php     include("../shared/navigation.php");
-?>
+
+    <?php
+    include("../shared/navigation.php");
+    ?>
     <div class="div-mon-compte">
-        <div class="div0">
-            <h3> <?php echo $prenom . " " . $nom; ?></h3>
-            <div class="div-menu-horizontale">
-                <button id="mes-recettes-btn"> Les recettes de <?php echo $prenom . " " . $nom; ?></button>
-            </div>
+
+        <div class="div-mon-compte-main">
+            <?php getAllRespicesByUserId($tab, $_GET["idUtilisateur"], $xml); ?>
         </div>
-        <div class="div1">
 
-            <div class="div1-left">
-                <div class="flex-container">
-
-                    <?php foreach ($tab["sitecuisine"]["liste_recette"]['recette'] as $recette) {
-                        if ($recette['auteur'] == $id) {
-                            recette_($recette['image'], $recette["temps_total"], $recette["difficulte"], $recette["nb_personne"], $recette["id"], $recette["titre"], $xml);
-                        }
-                    } ?>
-
-                </div>
-            </div>
-
-            <div class="div1-right">
-                <img src='../Photos/personne.png' />
-            </div>
+        <div class="div-mon-compte-sommaire d-flex flex-column align-items-center flex-wrap justify-content-center">
+            <img src='../Photos/personne.png' />
+            <h1> <?php echo $prenom . " " . $nom; ?></h1>
         </div>
+
     </div>
 
 </body>
