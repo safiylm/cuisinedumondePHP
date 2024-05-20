@@ -78,5 +78,18 @@ function getAllRespicesByPays($tab, $q_pays, $xml)
   echo " </div>";
 }
 
+function displayFavoritesRespiceSession_($tab,  $xml)
+{
+  echo '<div class="flex-container">';
+    foreach ($_SESSION['favori'] as $fav) {
+     $recette = $tab["sitecuisine"]["liste_recette"]['recette'][intval($fav)];
+        recette_($recette['image'], $recette["temps_total"], $recette["difficulte"], $recette["nb_personne"], $recette["id"], $recette["titre"], $xml);
+      
+    
+  }
+  echo " </div>";
+}
+
+
 
 ?>
