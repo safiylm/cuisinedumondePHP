@@ -1,5 +1,5 @@
 <div class="container-donnees-personnelles">
-            <h2 id="titreDataUpdate">Modifier son mot de passe </h2>
+            <h2>Modifier son mot de passe </h2>
             <form action="donnees-personnelles/post-edit-password.php" method="post">
 
             
@@ -159,7 +159,7 @@
             button{
                 width: 10%;
                 border: none;
-                background-color: mediumorchid;
+                background-color: #0d6efd;
                 color: white;
                 border-radius: 0 10px 10px 0  ;
             }

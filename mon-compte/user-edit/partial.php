@@ -11,7 +11,7 @@ if (count($xml->xpath($path)) == 1) {
     foreach ($xml->xpath($path) as $item) { ?>
         <div class="container-donnees-personnelles">
 
-            <h2 id="titreDataUpdate">Modifier ses données personelles</h2>
+            <h2>Modifier ses données personelles</h2>
 
             <form action="donnees-personnelles/post-edit-name.php" method="post" id="form-edit-name">
 
@@ -28,7 +28,7 @@ if (count($xml->xpath($path)) == 1) {
         </div>
 
         <div class="container-donnees-personnelles">
-            <h2 id="titreDataUpdate">Modifier son email</h2>
+            <h2>Modifier son email</h2>
             <form action="donnees-personnelles/post-edit-email.php" method="post">
                 <label>Entrez votre nouvelle adresse email. Un mail de confirmation vous sera envoyer.
                     Lorsque vous l'aurez confirmé, votre adresse email sera modifié.
@@ -41,7 +41,7 @@ if (count($xml->xpath($path)) == 1) {
         <?php include("edit-password.php"); ?>
 
         <div class="container-donnees-personnelles">
-            <button onclick="deleteAccount()" class="btn btn-danger" style="margin: 15px 0; background-color: crismon;"> Supprimer le compte </button>
+            <button onclick="deleteAccount()" class="btn btn-primary" style="margin: 15px 0; background-color: crismon;"> Supprimer le compte </button>
 
         </div>
 
