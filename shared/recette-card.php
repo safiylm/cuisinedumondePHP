@@ -1,8 +1,14 @@
 <?php
 
 //function allow to factorisation code for repice display in Container of many repice
-function recette($url_image, $temps_total, $difficulte, $nb_personne, $id, $titre, $xml)
+function recette($recette, $xml)
 {
+    $id = $recette["id"];
+    $titre = $recette["titre"];
+    $url_image = $recette['image'];
+    $temps_total = $recette["temps_total"];
+    $difficulte = $recette["difficulte"];
+
     if (is_file($url_image)) {
         $url_image = "Photos/" . $url_image;
     }
@@ -41,7 +47,6 @@ function recette($url_image, $temps_total, $difficulte, $nb_personne, $id, $titr
                         <div class="info-recette">
                                 <div>' . $temps_total . '</div>
                                 <div>' . $difficulte . '</div>
-                                <div>' . $nb_personne . '</div>
                         </div>
                         <div class="div-titre">
                             <a class="a-titre" href="recette/index.php?idRecette=' . $id . '">
@@ -58,9 +63,14 @@ function recette($url_image, $temps_total, $difficulte, $nb_personne, $id, $titr
 
 
 //function allow to factorisation code for repice display in Container of many repice
-function recette_($url_image, $temps_total, $difficulte, $nb_personne, $id, $titre, $xml)
-{
-
+function recette_($recette, $xml)
+    {
+        $id = $recette["id"];
+        $titre = $recette["titre"];
+        $url_image = $recette['image'];
+        $temps_total = $recette["temps_total"];
+        $difficulte = $recette["difficulte"];
+    
     if (is_file($url_image)) {
         $url_image = "Photos/" . $url_image;
     }
@@ -73,7 +83,6 @@ function recette_($url_image, $temps_total, $difficulte, $nb_personne, $id, $tit
                         <div class="info-recette">
                                 <div>' . $temps_total . '</div>
                                 <div>' . $difficulte . '</div>
-                                <div>' . $nb_personne . '</div>
                         </div>
                         <div class="div-titre">
                             <a class="a-titre" href="../recette/index.php?idRecette=' . $id . '">
@@ -92,8 +101,13 @@ function recette_($url_image, $temps_total, $difficulte, $nb_personne, $id, $tit
 
 
 //function allow to factorisation code for repice display in Container of many repice
-function mes_recettes_($url_image, $temps_total, $difficulte, $nb_personne, $id, $titre, $xml, $iduser)
+function mes_recettes_($recette, $xml, $iduser)
 {
+    $id = $recette["id"];
+    $titre = $recette["titre"];
+    $url_image = $recette['image'];
+    $temps_total = $recette["temps_total"];
+    $difficulte = $recette["difficulte"];
 
     if (is_file($url_image)) {
         $url_image = "Photos/" . $url_image;
@@ -133,7 +147,6 @@ function mes_recettes_($url_image, $temps_total, $difficulte, $nb_personne, $id,
                         <div class="info-recette">
                                 <div>' . $temps_total . '</div>
                                 <div>' . $difficulte . '</div>
-                                <div>' . $nb_personne . '</div>
                         </div>
                         <div class="div-titre">
                             <a class="a-titre" href="../recette/index.php?idRecette=' . $id . '">
