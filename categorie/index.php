@@ -8,9 +8,7 @@
 
   <?php
   session_start();
-  include("../shared/header.php");
-   include('../shared/favorisfunction.php');
-  include("../shared/getallrecettes.php");
+
   $json_object = file_get_contents("../data/recette.json");
   $tab = json_decode($json_object, true);
 
@@ -20,6 +18,11 @@
   } else {
     exit('Failed to open test.xml.');
   }
+
+  include("../shared/header.php");
+  include('../shared/favorisfunction.php');
+  include("../shared/getallrecettes.php");
+
   ?>
 </head>
 

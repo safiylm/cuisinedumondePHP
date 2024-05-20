@@ -9,14 +9,18 @@
 
     <title> Mon compte | Cuisine du monde </title>
 
-    <?php include("../shared/header.php"); 
+    <?php 
+    session_start();
+    include("../shared/header.php"); 
     
+    $json_object = file_get_contents("../data/recette.json");
+    $tab = json_decode($json_object, true);
+
     if (file_exists('../data/recette-utilisateur.xml')) {
         $xml = simplexml_load_file('../data/recette-utilisateur.xml');
     } else {
         exit('Failed to open test.xml.');
     }
-    session_start();
     ?>
 
 </head>
@@ -25,6 +29,8 @@
     <?php
     include("../shared/navigation.php");
     include("../shared/getallrecettes.php");
+    include("../shared/favorisfunction.php");
+
     ?>
     <div class="div-mon-compte">
 
@@ -55,7 +61,7 @@
             <h3>Hello <?php echo $_SESSION['utilisateur']['prenom']; ?></h3>
 
             <div class="btn-group-vertical">
-                <button class="btn btn-primary" id="mon-carnet-btn"> Mon Carnet de recettes favorites </button>
+                <button class="btn btn-primary" id="mon-carnet-btn"> Mes favoris </button>
                 <button class="btn btn-primary" id="mes-recettes-btn"> Mes recettes</button>
                 <button class="btn btn-primary" id="mes-donnees-personnelles-btn"> Mes données personnelles </button>
                 <button class="btn btn-primary" onclick="goAddRespice()" id="deposer-recette-btn"> Déposer une recette </button>

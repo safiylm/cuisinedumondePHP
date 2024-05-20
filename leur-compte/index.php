@@ -7,9 +7,21 @@
 
     <?php
     session_start();
+ 
+    $json_object = file_get_contents("../data/recette.json");
+    $tab = json_decode($json_object, true);
+
+    if (file_exists('../data/recette-utilisateur.xml')) {
+        $xml = simplexml_load_file('../data/recette-utilisateur.xml');
+    } else {
+        exit('Failed to open test.xml.');
+    }
+
     include("../shared/getallrecettes.php");
     include('../shared/header.php');
+    include("../shared/favorisfunction.php");
 
+    
     $path = "//utilisateur[@id= " . $_GET["idUtilisateur"] . "]";
 
     foreach ($xml->xpath($path) as $item) {
@@ -18,9 +30,10 @@
         $prenom = $item->prenom;
         $email = $item->email;
     }
+   
     ?>
     <title><?php echo $renom . " " . $nom; ?> | Cuisine du monde </title>
-
+   
 </head>
 
 <body>
