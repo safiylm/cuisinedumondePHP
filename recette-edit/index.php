@@ -3,16 +3,13 @@
 
 <head>
     <title>Modifier Recette</title>
-    <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/ajouter_recette.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-   <link rel="stylesheet" href="../css/ajouter_recette.css" />
 
     <?php
     session_start();
-    include("../navigation/index.php");
+    include("../shared/header.php");
+    include("../shared/navigation.php");
     ?>
 
 </head>
@@ -24,11 +21,12 @@
     $json_object = file_get_contents($path);
     $tab = json_decode($json_object, true);
     $id = htmlspecialchars($_GET['idRecette']);
+
     if (isset($id)) {
         $recette = $tab["sitecuisine"]["liste_recette"]['recette'][$id];
     }
-
     ?>
+
     <div class="container-ajouter-recette">
         <h1> Modifier sa recette </h1>
         <form method='post' action="post-update-recette.php">
