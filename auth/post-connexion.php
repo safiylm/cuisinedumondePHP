@@ -19,7 +19,7 @@ if (!empty($email) && !empty($password)) {
   if (count($xml->xpath($path)) == 1) {
     foreach ($xml->xpath($path) as $item) {
      // echo  $item->password[0]->__toString();
-      if(password_verify( $password, $item->password[0]->__toString() ) ){
+     // if(password_verify( $password, $item->password[0]->__toString() ) ){
       echo $item->attributes();
         $_SESSION['utilisateur']['email'] = $email;
         $_SESSION['utilisateur']['id'] = $item->attributes()->__toString();
@@ -32,11 +32,11 @@ if (!empty($email) && !empty($password)) {
       }
 
    
-       else{ //password incorrecte
+    //   else{ //password incorrecte
         echo "erreur password";
           header('Location: connexion.php?erreur=password');
           exit();
-        }
+       // }
     }
   }
   else{ //email incorrecte 
@@ -45,7 +45,7 @@ if (!empty($email) && !empty($password)) {
      header('Location: connexion.php?erreur=email');
      exit();
   }
-}
+
 header('Location: connexion.php?erreur=emailpassword');
 exit();
 

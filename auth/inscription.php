@@ -30,7 +30,7 @@
 
         <input type="email" class="form-control" name="email" placeholder="email" required />
 
-        <input type="password" class="form-control" name="mdp" placeholder="password" required />
+        <input type="password" class="form-control" name="password" placeholder="password" required />
 
         <div style='display: block; text-align:center;'>
           <input type="submit" class="btnSubmit" value="S'inscrire" />
