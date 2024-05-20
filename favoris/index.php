@@ -4,6 +4,7 @@
 <head>
     <title>Mon carnet de recette</title>
     <link rel="stylesheet" href="../css/publication.css" />
+    <link rel="stylesheet" href="../css/favoris.css" />
 
     <?php
     session_start();
@@ -19,31 +20,7 @@
     }
     ?>
 
-    <style>
-        .div-mon-carnet {
-            padding: 50px;
-            margin: 50px auto;
-            width: 80vw;
-            background-color: whitesmoke;
-            min-height: 80vh;
-        }
 
-        #info-panier-vide {
-            margin: 100px 0;
-            line-height: 65px;
-            font-size: 40px;
-            text-align: center;
-            color: darkslategray;
-            text-decoration: underline;
-        }
-
-        .h1-mon-carnet {
-            text-align: center;
-            color: darkslategray;
-            font-size: 30px;
-            font-weight: 800;
-        }
-    </style>
 
 </head>
 

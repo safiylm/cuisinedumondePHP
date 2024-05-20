@@ -3,26 +3,35 @@ body {
 
 }
 
-h1 {
-    text-align: center;
-    font-size: larger;
-    /* text-transform: uppercase;*/
-    font-weight: lighter;
-    text-decoration: none;
-    font-family: 'Work Sans', sans-serif;
-    /* color: #858585; */
-    padding-bottom: 50px;
+#mon-carnet-contenu{
+    width: 100% !important;
 }
-.container {
+
+.div-mon-carnet {
     margin-left: auto;
     margin-right: auto;
     padding: 60px;
     margin-top: 100px;
-    background-color: #fff;
+    background-color: #f1f2f2;
     max-width: 1000px !important;
     min-height: 500px;
     height: auto;
+    h1{
+        text-align: center;
+    }
+
+    #info-panier-vide {
+        margin: 20px 0;
+        line-height: 45px;
+        font-size: 30px;
+        text-align: center;
+        color: darkslategray;
+        text-decoration: underline;
+    }
+    
 }
+
+/*
 
 
 .img-fav {
@@ -38,7 +47,6 @@ h1 {
     border-bottom: 3px solid #6C829D;
     height: 210px;
     width: 850px;
-    /*! margin: 0 auto; */
 }
 
 
@@ -47,7 +55,6 @@ h1 {
 .div-trash {
     float: left;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     height: 195px;
     margin: 5px;
@@ -75,7 +82,7 @@ h1 {
     font-weight: bolder;
     padding-left: 10px;
     ;
-}
+} */
 
 
 
