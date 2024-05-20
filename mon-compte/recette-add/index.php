@@ -1,39 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
 
-<head>
-   <title>Recette </title>
-   <meta charset="UTF-8">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
-   <link rel="stylesheet" href="../css/body.css" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
    <link rel="stylesheet" href="../css/ajouter_recette.css" />
 
-   <?php
-
-
-
-   // Connexion à la base de données
-   include("../navigation/index.php");
-
-   $json_object = file_get_contents("../data/recette.json");
-   $tab = json_decode($json_object, true);
-   $id = $_GET['idRecette'];
-
-
-   if (file_exists('../data/recette-utilisateur.xml')) {
-      $xml = simplexml_load_file('../data/recette-utilisateur.xml');
-   } else {
-      exit('Failed to open test.xml.');
-   }
-
-   ?>
-</head>
-
-<body>
 
    <div class="container-ajouter-recette">
    <h1>Déposer une recette </h1>
@@ -118,5 +86,3 @@
    </script>
 
  
-</body>
-</html>
