@@ -20,6 +20,7 @@
     }
     
 </style>
+<h1>Mon carnet de recette favorites</h1>
 
 <div class="flex-container">
 
