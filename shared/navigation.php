@@ -17,7 +17,7 @@
         </li>
         <?php if (empty($_SESSION['utilisateur']['email'])) { ?>
         <li class="nav-item">
-          <a class="nav-link" href="../mon-carnet/index.php" >Mon carnet</a>
+          <a class="nav-link" href="../favoris/index.php" >Mon carnet</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../auth/connexion.php" >Connexion</a>

@@ -8,7 +8,7 @@ function footer($tab)
                 <h1>Categorie</h1>';
 
     foreach ($tab["sitecuisine"]["liste_categorie"]["categorie"] as $categ) {
-        echo   '<a href="./categorie/categorie.php?nom=' . $categ . '">
+        echo   '<a href="./categorie/?categorie=' . $categ . '">
                         <p>' . $categ . '</p>
                     </a>';
     }
@@ -16,7 +16,7 @@ function footer($tab)
             <div>
                 <h1>Cuisine du monde </h1>';
     foreach ($tab["sitecuisine"]["liste_cuisine_pays"]["pays"] as $pays) {
-        echo '<a href="./categorie/pays.php?nom='. $pays["nom"]. '">
+        echo '<a href="./categorie/?pays='. $pays["nom"]. '">
                         <p>'. $pays["nom"].'</p>
                     </a>';
     }
@@ -38,7 +38,7 @@ function footer_($tab)
                 <h1>Categorie</h1>';
 
     foreach ($tab["sitecuisine"]["liste_categorie"]["categorie"] as $categ) {
-        echo   '<a href="../categorie/categorie.php?nom=' . $categ . '">
+        echo   '<a href="../categorie/?categorie=' . $categ . '">
                         <p>' . $categ . '</p>
                     </a>';
     }
@@ -46,7 +46,7 @@ function footer_($tab)
             <div>
                 <h1>Cuisine du monde </h1>';
     foreach ($tab["sitecuisine"]["liste_cuisine_pays"]["pays"] as $pays) {
-        echo '<a href="../categorie/pays.php?nom='. $pays["nom"]. '">
+        echo '<a href="../categorie/?pays='. $pays["nom"]. '">
                         <p>'. $pays["nom"].'</p>
                     </a>';
     }
