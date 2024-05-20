@@ -37,7 +37,7 @@
                     </li>
                     <?php if (empty($_SESSION['utilisateur']['email'])) { ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="./favoris/index.php">Mon carnet</a>
+                            <a class="nav-link" href="./favoris/index.php">Favoris</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./auth/connexion.php">Connexion</a>
@@ -77,7 +77,7 @@
 
 
         <div class="main">
-            <h1 style=" font-size: 2em;color: darkslategray !important; font-weight: 800; padding: 15px ;">
+            <h1>
                 Toutes les recettes
             </h1>
 

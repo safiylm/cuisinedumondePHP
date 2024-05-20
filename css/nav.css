@@ -11,3 +11,14 @@ body {
     padding-left: 15px;
     text-decoration: none;
 }
+
+
+h1, h2{
+   
+        color: darkslategray !important;
+        font-weight: 800;
+        font-size:35px;
+        padding: 25px 0;
+        text-decoration: none !important;
+    
+}

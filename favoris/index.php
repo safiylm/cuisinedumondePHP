@@ -5,8 +5,19 @@
     <title>Mon carnet de recette</title>
     <link rel="stylesheet" href="../css/publication.css" />
 
-   <?php session_start();
-   include("../shared/header.php");?>
+    <?php
+    session_start();
+    include("../shared/header.php");
+
+    $json_object = file_get_contents("../data/recette.json");
+    $tab = json_decode($json_object, true);
+
+    if (file_exists('../data/recette-utilisateur.xml')) {
+        $xml = simplexml_load_file('../data/recette-utilisateur.xml');
+    } else {
+        exit('Failed to open test.xml.');
+    }
+    ?>
 
     <style>
         .div-mon-carnet {
@@ -14,7 +25,7 @@
             margin: 50px auto;
             width: 80vw;
             background-color: whitesmoke;
-            height: 80vh;
+            min-height: 80vh;
         }
 
         #info-panier-vide {
@@ -40,23 +51,19 @@
     <?php
     include("../shared/navigation.php");
     include("../shared/getallrecettes.php");
+    include("../shared/favorisfunction.php");
     ?>
 
-<div class="div-mon-carnet">
-        <h1 class='h1-mon-carnet'> Mon Carnet </h1>
+    <div class="div-mon-carnet">
+        <h1> Mon Carnet </h1>
         <div class="flex-container">
 
-            <?php if (empty($_SESSION['utilisateur']['email'])) {   // utilisateur n'est pas connecté  
-
+            <?php 
+            if (empty($_SESSION['utilisateur']['email'])) {   // utilisateur n'est pas connecté  
                 if (empty($_SESSION['favori'])) {
                     echo "<p id='info-panier-vide'>VOTRE CARNET DE RECETTE EST VIDE.</p>";
-                }
-                foreach ($_SESSION['favori'] as $e) {
-
-
-                    $recette = $tab["sitecuisine"]["liste_recette"]['recette'][intval($e)];
-                   
-                    displayrespicesession_($recette['image'], $recette["temps_total"], $recette["difficulte"], $recette["nb_personne"], $recette["id"], $recette["titre"], $xml);
+                } else {
+                    displayFavoritesRespiceSession_($tab, $xml);
                 }
             }
 
@@ -66,9 +73,10 @@
     </div>
 
     <?php include("../shared/footer.php");
-     footer_($tab);
-     ?>
+    footer_($tab);
+    ?>
 
 
 </body>
+
 </html>
