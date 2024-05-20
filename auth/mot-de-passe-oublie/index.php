@@ -14,7 +14,7 @@
 
 
 <?php
-include('../../sendmail.php');
+include('../../shared/sendmail.php');
 
 if(!empty($_POST['email'])){
 

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../../sendmail.php');
+include('../../shared/sendmail.php');
 
 if (file_exists('../../data/recette-utilisateur.xml')) {
     $xml = simplexml_load_file('../../data/recette-utilisateur.xml');

@@ -37,7 +37,7 @@
                     </li>
                     <?php if (empty($_SESSION['utilisateur']['email'])) { ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="./mon-carnet/index.php">Mon carnet</a>
+                            <a class="nav-link" href="./favoris/index.php">Mon carnet</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./auth/connexion.php">Connexion</a>
@@ -84,6 +84,7 @@
             <div id="div-recherche">
                 <span id="txtHint" class="flex-container"></span>
             </div>
+           
             <div class="flex-container">
                 <?php foreach ($tab["sitecuisine"]["liste_recette"]['recette'] as $recette) {
                     recette($recette['image'], $recette["temps_total"], $recette["difficulte"], $recette["nb_personne"], $recette["id"], $recette["titre"], $xml);
