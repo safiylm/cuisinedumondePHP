@@ -12,6 +12,7 @@
     <?php
     session_start(); 
     include("./shared/header.php");
+    include('./shared/favorisfunction.php');
     ?>
 </head>
 
