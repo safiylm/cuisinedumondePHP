@@ -26,7 +26,12 @@
         <li class="nav-item">
           <a class="nav-link" href="../mon-compte/index.php"  >Mon compte </a>
         </li>
-         <?php } ?>
+         <?php } 
+             
+   if (!isset($_SESSION['favori']))
+   $_SESSION['favori'] = array();
+  ?>
+        
       </ul>
     
     </div>
