@@ -66,11 +66,11 @@
 
                         <div id="div-btn-save-recette">
                             <?php
-                            if (empty($_SESSION['utilisateur']['email'])) {
-                                displayHeartSession($id);
-                            } else {
-                                displayHeartXml($xml, $id);
-                            } ?>
+                             if (empty($_SESSION['utilisateur']['email'])) {
+                                 displayHeartSession($id);
+                             } else {
+                                 displayHeartXml($xml, $id);
+                             } ?>
                         </div>
                     </div>
 
@@ -151,24 +151,9 @@
             </form>
         </div>
 
-
-
     <?php
     }
-    ?>
 
-    <div class="flex-container">
-        <?php
-
-        foreach ($tab["sitecuisine"]["liste_recette"]['recette'] as $recette) {
-            if ($categorie == $recette['categorie']) {
-
-                recette_($recette['image'], $recette["temps_total"], $recette["difficulte"], $recette["nb_personne"], $recette["id"], $recette["titre"], $xml);
-            }
-        } ?>
-    </div>
-
-    <?php
     include("../shared/footer.php");
     footer_($tab);
     ?>
