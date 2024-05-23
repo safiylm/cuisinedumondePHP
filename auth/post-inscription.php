@@ -1,6 +1,9 @@
 <?php
 session_start();
-include('../shared/sendmail.php');
+?>
+
+<?php 
+//include('../shared/sendmail.php');
 
 if (file_exists('../data/recette-utilisateur.xml')) {
   $xml = simplexml_load_file('../data/recette-utilisateur.xml');
@@ -8,21 +11,24 @@ if (file_exists('../data/recette-utilisateur.xml')) {
   exit('Failed to open test.xml.');
 }
 
+
+$password = $_POST['password'];
+// $password = password_hash($password,  PASSWORD_BCRYPT);
+
+
 function checkValue(){
   return !empty(htmlspecialchars($_POST['password'])) && !empty(htmlspecialchars($_POST['prenom'])) &&
   !empty(htmlspecialchars($_POST['nom'])) &&  !empty(htmlspecialchars($_POST['email']));
 }
 
+
 if (checkValue() ) {
 
-
-
-  $password = $_POST['password'];
- // $password = password_hash($password,  PASSWORD_BCRYPT);
-  // on ajoute la recette dans le carnet de recette
-
   $path = "//utilisateur[email ='" . $_POST['email'] . "']";
+    echo $path;
+
   if (count($xml->xpath($path)) == 0) {
+
 
     $var = $xml->liste_utilisateur->addChild('utilisateur');
     $cpt = count($xml->liste_utilisateur->children());
@@ -38,19 +44,21 @@ if (checkValue() ) {
 
     $xml->asXML();
     $xml->saveXML("../data/recette-utilisateur.xml");
-    $emailhash = password_hash($_POST['email'],  PASSWORD_BCRYPT);
+  echo "<script>document.location.href='../mon-compte/index.php'</script>";
 
+
+    $emailhash = password_hash($_POST['email'],  PASSWORD_BCRYPT);
     $subjet = "Demande de confirmation de votre mail";
     $contenuMail = "Veuillez confirmer votre mail<br/> http://localhost/auth/check-email/lien.php?e=" . $emailhash;
     $altbody = "Demande de confirmation de votre mail";
-    sendmail("safinazylm@gmail.com", $subjet, $contenuMail, $altbody);
-  } else { // on enleve la recette du carnet de recette 
-    header('Location: inscription.php?erreur=emailexistedeja');
+ //   sendmail("safinazylm@gmail.com", $subjet, $contenuMail, $altbody);
+  } else { 
+       echo "existe ";
+
+       echo "<script>document.location.href='inscription.php?erreur=email'</script>";
   }
 
-  header('Location: check-email/info.php');
-  exit();
 } else {
-  header('Location: inscription.php');
-  exit();
+  echo "<script>document.location.href='inscription.php'</script>";
+
 }
