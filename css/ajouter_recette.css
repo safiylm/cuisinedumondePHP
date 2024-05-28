@@ -37,6 +37,18 @@
     height : 140px;
 
   }
+  
+  .div-ingredient-enfant
+  {
+    display:flex;
+      input{
+          flex:80%;
+      }
+      button{
+          flex :20%;
+      }
+  
+  }
 
 
 @media  screen and (max-width: 900px) {
