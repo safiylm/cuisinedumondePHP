@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -10,7 +13,6 @@
     <title> Mon compte | Cuisine du monde </title>
 
     <?php 
-    session_start();
     include("../shared/header.php"); 
     
     $json_object = file_get_contents("../data/recette.json");
@@ -61,10 +63,10 @@
             <h3>Hello <?php echo $_SESSION['utilisateur']['prenom']; ?></h3>
 
             <div class="btn-group-vertical">
-                <button class="btn btn-primary" id="mon-carnet-btn"> Mes favoris </button>
-                <button class="btn btn-primary" id="mes-recettes-btn"> Mes recettes</button>
-                <button class="btn btn-primary" id="mes-donnees-personnelles-btn"> Mes données personnelles </button>
-                <button class="btn btn-primary" onclick="goAddRespice()" id="deposer-recette-btn"> Déposer une recette </button>
+                <a class="btn btn-primary" id="favoris-btn" href='#favoris'> Mes favoris </a>
+                <a class="btn btn-primary" id="mes-recettes-btn" href='#mesrecettes'> Mes recettes</a>
+                <a class="btn btn-primary" id="mes-donnees-personnelles-btn" href='#donneespersonnelles'> Mes données personnelles </a>
+                <a class="btn btn-primary" id="deposer-recette-btn"  href='#addrecette'> Déposer une recette </a>
                 <button class="btn btn-primary" onclick="sedeconnecter()"> Se déconnecter </button>
             </div>
         </div>
@@ -75,41 +77,78 @@
     </div>
 
     <script>
-        $('#mes-donnees-personnelles-contenu').hide()
-        $('#deposer-recette-contenu').hide()
-        $('#mes-recettes-contenu').hide()
+    
+    const queryString = document.location.href ;
+    console.log(document.location.href )
 
+        function displayFavoris(){
+            $('#mes-donnees-personnelles-contenu').hide()
+            $('#deposer-recette-contenu').hide()
+            $('#mes-recettes-contenu').hide()
+            $('#mon-carnet-contenu').show()
+        }
 
-
-        $('#mes-recettes-btn').click(function() {
+        function displayRecettes(){
             $('#mes-recettes-contenu').show()
             $('#mes-donnees-personnelles-contenu').hide()
             $('#deposer-recette-contenu').hide()
             $('#mon-carnet-contenu').hide()
-        })
-
-        $('#mes-donnees-personnelles-btn').click(function() {
+        }
+        
+        function displayDonneesPersonnelles(){
             $('#mes-recettes-contenu').hide()
             $('#mes-donnees-personnelles-contenu').show()
             $('#mon-carnet-contenu').hide()
             $('#deposer-recette-contenu').hide()
-        })
+        }
 
-        $('#deposer-recette-btn').click(function() {
-            $('#mes-recettes-contenu').hide()
+        function displayAddRecette(){
+             $('#mes-recettes-contenu').hide()
             $('#mes-donnees-personnelles-contenu').hide()
             $('#mon-carnet-contenu').hide()
             $('#deposer-recette-contenu').show()
+        }
+        
+        displayRecettes();
+        
+        $('#mes-recettes-btn').click(function() {
+           displayRecettes();
+        })
+  
+        $('#mes-donnees-personnelles-btn').click(function() {
+           displayDonneesPersonnelles()
+        })
+  
+        $('#deposer-recette-btn').click(function() {
+           displayAddRecette()
         })
 
-        $('#mon-carnet-btn').click(function() {
-            $('#mes-recettes-contenu').hide()
-            $('#mes-donnees-personnelles-contenu').hide()
-            $('#mon-carnet-contenu').show()
-            $('#deposer-recette-contenu').hide()
-
+        $('#favoris-btn').click(function() {
+            displayFavoris()
         })
-
+        
+        
+        
+        if( queryString.indexOf("#favoris") !== -1)
+        {
+            displayFavoris()
+        }
+     
+        if( queryString.indexOf("#mesrecettes")!== -1)
+        { 
+            displayRecettes();
+        }
+        
+        if( queryString.indexOf("#addrecette")!== -1)
+        { 
+           displayAddRecette()
+        }
+        
+        if( queryString.indexOf("#donneespersonnelles")!== -1)
+        {
+            console.log('dta')
+           displayDonneesPersonnelles()
+        }
 
         function sedeconnecter() {
             document.location.href = "../auth/deconnexion/index.php"
