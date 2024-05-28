@@ -24,6 +24,10 @@ function isLikedSession($id){
 function like_session($idRecette)
 {
     $isLiked =isLikedSession($idRecette);
+  
+    if(empty($_SESSION['favori']))
+    $_SESSION['favori']= array();
+  
     //on ajoute les recettes enregistrés dans les variables de sessions 
     if (!$isLiked &&  !empty($idRecette))
         array_push($_SESSION['favori'], htmlspecialchars($idRecette));
@@ -42,6 +46,7 @@ function dislike_session($idRecette)
     }
 
 }
+
 
 
 function displayHeartSession($id)
@@ -63,15 +68,17 @@ function displayHeartSession($id)
     
 }
 
-
 /***************************************************************** */
       
 if(isset($_POST['like_xml']) && isset($_POST['fromHome'])  ) { 
 like_xml( $_POST['like_xml'], $_POST['fromHome']);
+   echo "<script>window.location.href= document.URL</script>";
+
 } 
 
 if(isset($_POST['dislike_xml']) && isset($_POST['fromHome'])  ) { 
    dislike_xml($_POST['dislike_xml'], $_POST['fromHome']);
+   echo "<script>window.location.href= document.URL</script>";
 } 
 
 function isLikedXml($xml, $id ){
