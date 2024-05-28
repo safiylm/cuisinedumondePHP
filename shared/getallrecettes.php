@@ -48,10 +48,11 @@ function getAllRespicesByCategorie($tab, $q_categorie, $xml)
 {
   echo '<div class="flex-container">';
   foreach ($tab["sitecuisine"]["liste_recette"]['recette'] as $recette) {
-
-    if ($recette['categorie'] == $q_categorie) {
-      recette_($recette, $xml);
-    }
+        if (!empty($q_categorie) && !empty($recette["categorie"]) ){
+            if ($recette['categorie'] == $q_categorie) {
+                recette_($recette, $xml);
+            }
+        }
   }
   echo " </div>";
 }
@@ -61,8 +62,11 @@ function getAllRespicesByPays($tab, $q_pays, $xml)
 {
   echo '<div class="flex-container">';
   foreach ($tab["sitecuisine"]["liste_recette"]['recette'] as $recette) {
-    if ($recette['pays'] == $q_pays) {
-      recette_( $recette, $xml);
+      
+    if (!empty($q_pays) && !empty($recette["pays"]) ){
+        if($recette["pays"] == $q_pays) {
+            recette_( $recette, $xml);
+        }
     }
   }
   echo " </div>";
