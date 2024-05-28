@@ -46,5 +46,4 @@ $fp = fopen('../data/recette.json', 'w');
 fwrite($fp, $jsonString);
 fclose($fp);
 
-header('Location: ../recette/index.php?idRecette='.$id.'');
-exit();
+echo "<script>document.location.href='../recette/index.php?idRecette=".$id."'</script>";

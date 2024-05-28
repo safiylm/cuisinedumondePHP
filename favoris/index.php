@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -7,7 +10,7 @@
     <link rel="stylesheet" href="../css/favoris.css" />
 
     <?php
-    session_start();
+
     include("../shared/header.php");
 
     $json_object = file_get_contents("../data/recette.json");

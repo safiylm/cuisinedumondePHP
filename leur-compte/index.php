@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -6,8 +9,6 @@
     <link rel="stylesheet" href='../css/mon-compte.css'>
 
     <?php
-    session_start();
- 
     $json_object = file_get_contents("../data/recette.json");
     $tab = json_decode($json_object, true);
 
@@ -32,7 +33,7 @@
     }
    
     ?>
-    <title><?php echo $renom . " " . $nom; ?> | Cuisine du monde </title>
+    <title><?php echo $prenom . " " . $nom; ?> | Cuisine du monde </title>
    
 </head>
 

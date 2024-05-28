@@ -1,19 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
+
     <title>Cuisine du monde </title>
 
     <link rel="stylesheet" href='./css/publication.css' />
     <link rel="stylesheet" href='./css/home.css' />
     <link rel="stylesheet" href='./css/nav.css' />
 
-
-    <?php
-    session_start(); 
+<?php
     include("./shared/header.php");
     include('./shared/favorisfunction.php');
-    ?>
+?>
 </head>
 
 

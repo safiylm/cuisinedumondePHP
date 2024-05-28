@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <?php include('accueil/index.php');?>
 
 <script>

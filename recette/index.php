@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -8,10 +12,10 @@
     <link rel="stylesheet" href="../css/commentaire.css" />
 
     <?php
-    session_start();
+
     include("../shared/header.php");
-    include('../shared/favorisfunction.php');
     include("../shared/getallrecettes.php");
+    include('../shared/favorisfunction.php');
 
     $id = $_GET['idRecette'];
 
