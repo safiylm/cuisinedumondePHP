@@ -1,11 +1,10 @@
 <?php
 session_start();
 
-$path='../data/recette.json';
+$path='../../data/recette.json';
 $json_object = file_get_contents($path);
 $tab = json_decode($json_object, true);
 
-print_r($_POST); echo "</br></br></br>";
 
 $newrecette=array();
 $idd = count($tab["sitecuisine"]["liste_recette"]['recette']);
@@ -26,7 +25,9 @@ $newrecette['liste_ingredients']["ingredient"][0] = $_POST['un-ingredient-nb-0']
 
 
 for( $i =1; $i<$_POST['nb-ingredients-total']; $i++){
-    $newrecette['liste_ingredients']["ingredient"][$i] = $_POST['un-ingredient-nb-'.$i];
+    if(!empty($_POST['un-ingredient-nb-'.$i] ) ) {
+        $newrecette['liste_ingredients']["ingredient"][$i] = $_POST['un-ingredient-nb-'.$i];
+    }
 }
 
 $newrecette['difficulte']=$_POST['difficulte'];
@@ -37,8 +38,9 @@ $newrecette['preparation']['etape']=array();
 $newrecette['preparation']['etape'][0]=$_POST['une-etape-nb-0'];
 
 for( $i =1; $i<$_POST['nb-etapes-total']; $i++){
-    $newrecette['preparation']["etape"][$i] = $_POST['une-etape-nb-'.$i];
-
+    if(!empty($_POST['une-etape-nb-'.$i] ) ) {
+        $newrecette['preparation']["etape"][$i] = $_POST['une-etape-nb-'.$i];
+    }
 }
 
 print_r($newrecette);
@@ -53,6 +55,5 @@ $fp = fopen($path, 'w');
 fwrite($fp, $jsonString);
 fclose($fp);
 
+echo "<script>document.location.href='../../recette/index.php?idRecette=".$idd."'</script>";
 
-header('Location: ../recette/index.php?idRecette='.$idd.'');
-exit();
