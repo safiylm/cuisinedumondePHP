@@ -1,11 +1,11 @@
 
    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-   <link rel="stylesheet" href="../css/ajouter_recette.css" />
+   <link rel="stylesheet" href="../../css/ajouter_recette.css" />
 
 
    <div class="container-ajouter-recette">
    <h1>Déposer une recette </h1>
-      <form method='post' action="../ajouter-recette/post-ajouter-recette.php">
+      <form method='post' action="./recette-add/post-ajouter-recette.php">
 
          <input type="text" id="nom-recette" name="nom-recette" class="form-control" placeholder="nom" required />
          <input type="text" id="nb-personne" name="nb-personne" class="form-control" placeholder="nombre de personnes ou porsion" required />
@@ -82,7 +82,7 @@
       </form>
    </div> 
 
-   <script src="../ajouter-recette/ajouter-recette.js">
+   <script src="./recette-add/ajouter-recette.js">
    </script>
 
  
