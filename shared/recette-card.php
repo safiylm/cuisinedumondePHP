@@ -51,18 +51,18 @@ function recette_($recette, $xml)
     }
 
     echo '<div class="flex-item">
-                    <div class="element">
+                     <a class="element" href="../recette/index.php?idRecette=' . $id . '">
                         <div class="div-img">
                             <img src="' . $url_image . '" style="width : 100%; height : 300px;" />
-                        </div>
-                        <div class="info-recette">
-                                <div>' . $temps_total . '</div>
-                                <div>' . $difficulte . '</div>
-                        </div>
-                        <div class="div-titre">
-                            <a class="a-titre" href="../recette/index.php?idRecette=' . $id . '">
+                         </div>'.
+                        // <div class="info-recette">
+                        //         <div>' . $temps_total . '</div>
+                        //         <div>' . $difficulte . '</div>
+                        // </div>
+                       ' <div class="div-titre">
+                            <div class="a-titre">
                                 ' . $titre . '
-                            </a>';
+                            </div>';
 
     if (empty($_SESSION['utilisateur']['email'])) {
         displayHeartSession($id);
@@ -70,7 +70,7 @@ function recette_($recette, $xml)
         displayHeartXml($xml, $id, false);
     }
     echo '</div>
-                    </div>
+                 </a>
                 </div>';
 }
 
