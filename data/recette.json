@@ -34,93 +34,96 @@
             "recette": [
                 {
                     "id": 0,
-                    "titre": "dana ku\u015fba\u015f\u0131 eti (viandes coup\u00e9es en cubes)",
-                    "auteur": 6,
-                    "image": "https:\/\/yemek.com\/_next\/image\/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2018%2F08%2Fduduklude-et-kavurma-one-cikan.jpg&w=1920&q=75",
-                    "categorie": "Viande",
+                    "titre": "Profiteroles maison",
+                    "auteur": 1,
+                    "categorie": "D\u00e9sserts",
+                    "pays": "Cuisine italienne",
+                    "image": "https:\/\/www.abakingjourney.com\/wp-content\/uploads\/2019\/10\/Profiteroles-Feature-1.jpg",
                     "liste_ingredients": {
-                        "nb_personne": "6 personnes",
+                        "nb_personne": "20 profiteroles",
                         "ingredient": [
-                            "1 kg de viande en cubes",
-                            "1 oignon (hach\u00e9)",
-                            "1 gousse d'ail",
-                            "2 cuill\u00e8res   \u00e0 soupe de beurre",
-                            "1 cuill\u00e8re \u00e0 soupe d'huile",
-                            "1 cuill\u00e8re \u00e0 caf\u00e9 de thym",
-                            "2 cuill\u00e8res \u00e0 caf\u00e9 de sel",
-                            "1 cuill\u00e8re \u00e0 caf\u00e9 de poivre noir",
-                            "1 litre d'eau (5 tasses)"
+                            "50 g de sucre",
+                            "1 pinc\u00e9e de sel",
+                            "60g de beurre",
+                            "125g de farine",
+                            "25cl d'eau",
+                            "4 oeufs",
+                            "Pour la sauce au chocolat:",
+                            "50g de chocolat",
+                            "1 filet de lait",
+                            "Pour la ganifure : glace vanille"
                         ]
                     },
-                    "difficulte": "Interm\u00e9diaire",
-                    "temps_total": "55 minutes",
+                    "difficulte": "Moyen",
+                    "temps_total": "1h30 minutes",
+                    "cout": "Bon marcher",
                     "preparation": {
                         "etape": [
-                            "Faire fondre le beurre dans la cocotte minute. Une fois qu'elle est bien chauff\u00e9e, mettez la viande en cubes dans la cocotte minute et fermez-la.",
-                            "R\u00f4tir jusqu'\u00e0 ce que la viande absorbe eau. Une fois que la viande a absorb\u00e9 son eau, ajoutez l'oignon et l'ail.",
-                            "Enfin, ajoutez les \u00e9pices, le sel et l'eau et fermez le couvercle de l'autocuiseur.",
-                            "Cuire 20 minutes \u00e0 feu moyen et 30 minutes \u00e0 feu doux.",
-                            "Votre viande tendre est pr\u00eate. Bon app\u00e9tit."
+                            "Pour la p\u00e2te \u00e0 choux : Mettre l'eau, le beurre, le sucre et le sel dans une casserole sur le feu.",
+                            "Porter l'eau \u00e0 \u00e9bullition. Retirer du feu et verser la farine en une seule fois.",
+                            "M\u00e9langer avec une cuill\u00e8re en bois et ne pas laisser de grumeaux.",
+                            "Remuer la p\u00e2te au dessus du feu, jusqu'\u00e0 ce qu'elle se d\u00e9tache des parois de la casserole et forme une boule.",
+                            "Laisser refroidir une minute. Incorporer les \u0153ufs un \u00e0 un.",
+                            "Former les choux sur une plaque recouverte de papier sulfuris\u00e9.",
+                            "Cuire au four chaud \u00e0 180\u00b0C (th.6) pendant une vingtaine de minutes.",
+                            "Une fois les choux refroidis, pr\u00e9parer votre sauce au chocolat. Faire fondre le chocolat au bain-marie avec un peu de lait (varier la quantit\u00e9 en fonction des go\u00fbts).",
+                            "Pour finir, couper les choux en deux, les garnir d'une boule de glace. Disposer les choux dans les assiettes et verser le chocolat ti\u00e8de dessus. D\u00e9guster aussit\u00f4t.",
+                            "Bon app\u00e9tit !"
                         ]
                     }
                 },
                 {
                     "id": 1,
-                    "titre": "Patl\u0131canl\u0131 \u015ei\u015f K\u00f6fte Tarifi",
-                    "auteur": 6,
-                    "categorie": "Viande",
-                    "pays": "Cuisine Turque",
-                    "image": "https:\/\/yemek.com\/_next\/image\/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2021%2F10%2Fpatlicanli-sis-kofte-yemekcom.jpg&w=1920&q=75",
+                    "titre": "Lasagne",
+                    "auteur": 3,
+                    "categorie": "Plats",
+                    "pays": "Cuisine italienne",
+                    "image": "https://images.pexels.com/photos/4079522/pexels-photo-4079522.jpeg",
                     "liste_ingredients": {
-                        "nb_personne": "",
+                        "nb_personne": "8 personnes",
                         "ingredient": [
-                            "Pour les boulettes de viande :",
-                            "400 grammes de b\u0153uf hach\u00e9 mi-gras",
-                            "1 oeuf",
-                            "1 oignon (transform\u00e9)",
-                            "3 cuill\u00e8res \u00e0 soupe de chapelure",
-                            "1 cuill\u00e8re \u00e0 caf\u00e9 de sel",
-                            "1\/2 cuill\u00e8re \u00e0 caf\u00e9 de poivre noir",
-                            "1 cuill\u00e8re \u00e0 caf\u00e9 de cumin",
-                            "1 gousse d'ail r\u00e2p\u00e9e",
-                            " 2 cuill\u00e8res \u00e0 soupe d'huile (pour cuire les boulettes de viande)",
-                            "Pour l'aubergine :",
-                            "4 aubergines (tranch\u00e9es finement, tremp\u00e9es dans de l'eau sal\u00e9e)",
-                            "6 cuill\u00e8res \u00e0 soupe d'huile d'olive",
-                            "1,5 cuill\u00e8res \u00e0 caf\u00e9 de sel",
-                            "Pour la sauce tomate :",
-                            "3 cuill\u00e8res \u00e0 soupe d'huile",
-                            "2 gousses d'ail",
-                            "1,5 tasse de pur\u00e9e de tomates",
-                            "1 cuill\u00e8re \u00e0 soupe de concentr\u00e9 de tomate",
-                            "1 cuill\u00e8re \u00e0 caf\u00e9 de sel",
-                            "1\/2 cuill\u00e8re \u00e0 caf\u00e9 de poivre noir",
-                            "1\/2 tasse d'eau",
-                            "Pour ce qui pr\u00e9c\u00e8de :",
-                            "1 pinc\u00e9e de persil hach\u00e9"
+                            "1 paquet de lasagne",
+                            "3 oignons",
+                            "1 carotte",
+                            "15 cl d'eau",
+                            "thym",
+                            "sel",
+                            "poivre",
+                            "100g de farine",
+                            "125g de beurre",
+                            "2 gousse d'ail",
+                            "1 branche de c\u00e9leri",
+                            "600g de boeuf hach\u00e9",
+                            "1 l de lait"
                         ]
                     },
-                    "difficulte": "Moyen",
-                    "temps_total": "1h",
+                    "difficulte": "Facile",
+                    "temps_total": "30 min",
                     "preparation": {
                         "etape": [
-                            "Placer les aubergines tranch\u00e9es finement et s\u00e9ch\u00e9es dans de l'eau sal\u00e9e sur une plaque \u00e0 p\u00e2tisserie recouverte de papier sulfuris\u00e9. Versez dessus l'huile d'olive et le sel et enfournez \u00e0 180 degr\u00e9s pendant 15 minutes.",
-                            "Pour les boulettes de viande ; Dans un bol profond, p\u00e9trir la viande hach\u00e9e, l'\u0153uf, l'oignon, la chapelure, le sel, le poivre noir, le cumin et l'ail jusqu'\u00e0 ce que le tout soit bien m\u00e9lang\u00e9.",
-                            "Prenez des morceaux du m\u00e9lange de la taille d'une paume, fa\u00e7onnez-les en longues boulettes de viande plates et enfilez-les sur des brochettes.",
-                            "Faites cuire les boulettes de viande que vous avez pr\u00e9par\u00e9es dans une po\u00eale chauff\u00e9e pendant environ 2 minutes, devant et derri\u00e8re.",
-                            "Pour la sauce; Faire revenir l'ail avec l'huile dans une po\u00eale. Ajoutez ensuite le concentr\u00e9 de tomates et le concentr\u00e9 de tomates. Assaisonner de sel et de poivre, ajouter de l'eau, faire bouillir un moment et retirer du feu.",
-                            "Placez 2 aubergines sorties du four sur le plan de travail afin qu'elles se touchent. Mettez la brochette de boulettes de viande au bout et enveloppez-la.",
-                            "Placez les boulettes de viande emball\u00e9es dans la plaque du four, versez dessus la sauce tomate et faites-les cuire au four \u00e0 185 degr\u00e9s pendant 15 minutes. Disposez les brochettes de boulettes sorties du four sur une assiette de service, saupoudrez de persil et servez. Bon app\u00e9tit!"
+                            "Faire revenir gousses hach\u00e9es d'ail et les oignons \u00e9minc\u00e9s dans un peu d'huile\n                d'olive.",
+                            "Ajouter la carotte et la branche de c\u00e9leri hach\u00e9e puis la viande et faire revenir le\n                tout.",
+                            "Laisser cuire jusqu'\u00e0 \u00e9vaporation.",
+                            "Ajouter la pur\u00e9e de tomates, l'eau et les herbes. Saler, poivrer, puis laisser\n                mijoter \u00e0\n                    feu doux 45 minutes.",
+                            "Pr\u00e9parer la b\u00e9chamel : faire fondre 100 g de beurre.",
+                            "Hors du feu, ajouter la farine d'un coup.",
+                            "Ajouter le lait peu \u00e0 peu.",
+                            "Remuer sans cesse, jusqu'\u00e0 ce que le m\u00e9lange s'\u00e9paississe.",
+                            "Ensuite, parfumer avec la muscade, saler, poivrer. Laisser cuire environ 5 minutes,\n                    \u00e0\n                    feu tr\u00e8s doux, en remuant. R\u00e9server.",
+                            "Pr\u00e9chauffer le four \u00e0 200\u00b0C (thermostat 6-7). Huiler le plat \u00e0 lasagnes. Poser une\n                fine\n                    couche de b\u00e9chamel puis des feuilles de lasagnes, de la bolognaise, de la\n                b\u00e9chamel et du\n                    parmesan. R\u00e9p\u00e9ter l'op\u00e9ration 3 fois de suite.",
+                            "Sur la derni\u00e8re couche de lasagnes, ne mettre que de la b\u00e9chamel et recouvrir de\n                fromage\n                    r\u00e2p\u00e9. Parsemer quelques noisettes de beurre.",
+                            "Enfourner pour environ 25 minutes de cuisson.",
+                            "D\u00e9guster"
                         ]
                     }
                 },
                 {
                     "id": 2,
                     "titre": "Tartelette aux pommes",
-                    "auteur": 5,
+                    "auteur": 1,
                     "categorie": "D\u00e9sserts",
                     "pays": "Cuisine Turque",
-                    "image": "https:\/\/yemek.com\/_next\/image\/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2022%2F03%2Felmali-kurabiye-tarifi-yemekcom.jpg&w=1920&q=75",
+                    "image": "https://i.nefisyemektarifleri.com/2019/02/22/teremyagli-elmali-kurabiye-tarifi-12.jpg",
                     "liste_ingredients": {
                         "nb_personne": "",
                         "ingredient": [
@@ -151,41 +154,41 @@
                 },
                 {
                     "id": 3,
-                    "titre": "Kuru Fasulye",
-                    "auteur": 5,
-                    "categorie": "Soupes",
-                    "pays": "Cuisine Turque",
-                    "image": "https:\/\/img.cuisineaz.com\/660x660\/2019\/07\/22\/i148279-.webp",
+                    "titre": "Cookies maison",
+                    "auteur": 6,
+                    "categorie": "D\u00e9sserts",
+                    "image": "https:\/\/assets.afcdn.com\/recipe\/20190529\/93153_w2000h1556c1cx2220cy1728cxb4441cyb3456.webp",
+                    "temps_total": "10 min",
+                    "difficulte": "Facile",
+                    "cout": "Pas cher",
                     "liste_ingredients": {
-                        "nb_personne": "6 personnes",
+                        "nb_personne": "4 personnes",
                         "ingredient": [
-                            "500 g haricots blancs",
-                            "3 c. \u00e0 soupe concentr\u00e9 de tomates",
-                            "1 c. \u00e0 soupe beurre",
-                            "sel, poivre",
-                            "1 oignon",
-                            "2 c. \u00e0 soupe huile d'olive",
-                            "1 c. \u00e0 caf\u00e9 paprika"
+                            "100 gramme chocolat noir",
+                            "85 gramme beurre tendre",
+                            "85 gramme sucre",
+                            "150 gramme farine",
+                            "1 c.\u00e0.c de sel",
+                            "1 c.\u00e0.c de levure chimique",
+                            "1 paquet de sucre vanill&#xE9;",
+                            "1 oeuf"
                         ]
                     },
-                    "difficulte": "Moyen",
-                    "temps_total": "30 minutes ",
                     "preparation": {
                         "etape": [
-                            " Mettre les haricots \u00e0 tremper dans de l\u2019eau froide la veille de la pr\u00e9paration. Ils vont ainsi se gorger d\u2019eau et seront plus simples \u00e0 cuire.",
-                            "Le jour J, faites cuire les haricots dans un grand volume d'eau bouillante. \u00c9cumez r\u00e9guli\u00e8rement la mousse qui se formera. Laissez cuire 20 minutes, et \u00e9gouttez.",
-                            "\u00c9mincez l\u2019oignon et faites le revenir quelques minutes dans le beurre et l\u2019huile.",
-                            "Ajoutez le paprika en poudre et le poivre g\u00e9n\u00e9reusement.",
-                            "Versez les haricots dans la pr\u00e9paration, et m\u00e9langez bien. Salez.",
-                            "Versez 1,5 l d\u2019eau sur les haricots, et laissez mijoter pendant au moins 30 minutes \u00e0 partir de la reprise de l\u2019\u00e9bullition.",
-                            "Rectifiez l'assaisonnement si n\u00e9cessaire, et servez chaud !"
+                            " D\u00e9tailler le chocolat en p\u00e9pites.",
+                            "Pr\u00e9chauffer le four \u00e0 180\u00b0C (thermostat 6). Dans un saladier, mettre 75 g de beurre, le sucre, l'oeuf entier, la vanille et m\u00e9langer le tout avec une cuill\u00e8re en bois.",
+                            "Ajouter petit \u00e0 petit la farine m\u00e9lang\u00e9e \u00e0 la levure, le sel et le chocolat.",
+                            "Avec une feuille de papier essuie-tout, beurrer une plaque allant au four et former les cookies sur la plaque.",
+                            "Pour former les cookies, utiliser 2 cuill\u00e8res \u00e0 soupe et faire des petits tas espac\u00e9s les uns des autres; ils grandiront \u00e0 la cuisson.",
+                            "Enfourner pour 10 minutes de cuisson."
                         ]
                     }
                 },
                 {
                     "id": 4,
                     "titre": "Eclairs au chocolat faciles de Chef Damien",
-                    "auteur": 5,
+                    "auteur": 2,
                     "categorie": "D\u00e9sserts",
                     "pays": "Cusine fran\u00e7aise",
                     "image": "https:\/\/static.750g.com\/images\/640-400\/c727cfc5240b2ac4e92882acf519543d\/eclairs-au-chocolat.jpg",
@@ -232,11 +235,11 @@
                 {
                     "id": 5,
                     "titre": "Mersin Tantuni",
-                    "auteur": 6,
+                    "auteur": 2,
                     "categorie": "Viande",
                     "cout": "Bon marcher",
                     "pays": "Cuisine Turque",
-                    "image": "https:\/\/yemek.com\/_next\/image\/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2021%2F08%2Ftantuni-yemekcom.jpg&w=1920&q=75",
+                    "image": "https://i.lezzet.com.tr/images-xxlarge/ev-yapimi-tantuni-4cd3b50a-9354-437d-9de3-8cfe6f96403f",
                     "liste_ingredients": {
                         "nb_personne": "4 personnes",
                         "ingredient": [
@@ -263,48 +266,40 @@
                 },
                 {
                     "id": 6,
-                    "titre": "Profiteroles maison",
-                    "auteur": 6,
-                    "categorie": "D\u00e9sserts",
-                    "pays": "Cuisine italienne",
-                    "image": "https:\/\/www.abakingjourney.com\/wp-content\/uploads\/2019\/10\/Profiteroles-Feature-1.jpg",
+                    "titre": "dana ku\u015fba\u015f\u0131 eti (viandes coup\u00e9es en cubes)",
+                    "auteur": 2,
+                    "image": "https://i.pinimg.com/736x/5b/92/68/5b9268123cc3b9955aa85f21f450df2e.jpg",
+                    "categorie": "Viande",
                     "liste_ingredients": {
-                        "nb_personne": "20 profiteroles",
+                        "nb_personne": "6 personnes",
                         "ingredient": [
-                            "50 g de sucre",
-                            "1 pinc\u00e9e de sel",
-                            "60g de beurre",
-                            "125g de farine",
-                            "25cl d'eau",
-                            "4 oeufs",
-                            "Pour la sauce au chocolat:",
-                            "50g de chocolat",
-                            "1 filet de lait",
-                            "Pour la ganifure : glace vanille"
+                            "1 kg de viande en cubes",
+                            "1 oignon (hach\u00e9)",
+                            "1 gousse d'ail",
+                            "2 cuill\u00e8res   \u00e0 soupe de beurre",
+                            "1 cuill\u00e8re \u00e0 soupe d'huile",
+                            "1 cuill\u00e8re \u00e0 caf\u00e9 de thym",
+                            "2 cuill\u00e8res \u00e0 caf\u00e9 de sel",
+                            "1 cuill\u00e8re \u00e0 caf\u00e9 de poivre noir",
+                            "1 litre d'eau (5 tasses)"
                         ]
                     },
-                    "difficulte": "Moyen",
-                    "temps_total": "1h30 minutes",
-                    "cout": "Bon marcher",
+                    "difficulte": "Interm\u00e9diaire",
+                    "temps_total": "55 minutes",
                     "preparation": {
                         "etape": [
-                            "Pour la p\u00e2te \u00e0 choux : Mettre l'eau, le beurre, le sucre et le sel dans une casserole sur le feu.",
-                            "Porter l'eau \u00e0 \u00e9bullition. Retirer du feu et verser la farine en une seule fois.",
-                            "M\u00e9langer avec une cuill\u00e8re en bois et ne pas laisser de grumeaux.",
-                            "Remuer la p\u00e2te au dessus du feu, jusqu'\u00e0 ce qu'elle se d\u00e9tache des parois de la casserole et forme une boule.",
-                            "Laisser refroidir une minute. Incorporer les \u0153ufs un \u00e0 un.",
-                            "Former les choux sur une plaque recouverte de papier sulfuris\u00e9.",
-                            "Cuire au four chaud \u00e0 180\u00b0C (th.6) pendant une vingtaine de minutes.",
-                            "Une fois les choux refroidis, pr\u00e9parer votre sauce au chocolat. Faire fondre le chocolat au bain-marie avec un peu de lait (varier la quantit\u00e9 en fonction des go\u00fbts).",
-                            "Pour finir, couper les choux en deux, les garnir d'une boule de glace. Disposer les choux dans les assiettes et verser le chocolat ti\u00e8de dessus. D\u00e9guster aussit\u00f4t.",
-                            "Bon app\u00e9tit !"
+                            "Faire fondre le beurre dans la cocotte minute. Une fois qu'elle est bien chauff\u00e9e, mettez la viande en cubes dans la cocotte minute et fermez-la.",
+                            "R\u00f4tir jusqu'\u00e0 ce que la viande absorbe eau. Une fois que la viande a absorb\u00e9 son eau, ajoutez l'oignon et l'ail.",
+                            "Enfin, ajoutez les \u00e9pices, le sel et l'eau et fermez le couvercle de l'autocuiseur.",
+                            "Cuire 20 minutes \u00e0 feu moyen et 30 minutes \u00e0 feu doux.",
+                            "Votre viande tendre est pr\u00eate. Bon app\u00e9tit."
                         ]
                     }
                 },
                 {
                     "id": 7,
                     "titre": "Spaghettis bolognaise ",
-                    "auteur": 5,
+                    "auteur": 2,
                     "categorie": "Plats",
                     "pays": "Cuisine italienne",
                     "image": "https:\/\/th.bing.com\/th\/id\/R.92e7465b38148f1187e865c40671cda6?rik=1bEmHnCqc47KwA&riu=http%3a%2f%2fm.mcdn.fr%2ffiles%2fimages%2fficherecette%2f3%2f3%2f6%2f820633%2f1997432-focus.jpg&ehk=4P4JWSjfyLmnaitGKZrZj98m7lHALZe9eKBHs4ne8jg%3d&risl=&pid=ImgRaw&r=0",
@@ -333,7 +328,7 @@
                 {
                     "id": 8,
                     "titre": "Moelleux au chocolat facile et rapide",
-                    "auteur": 5,
+                    "auteur": 1,
                     "categorie": "Rapide",
                     "pays": "",
                     "image": "https:\/\/img-3.journaldesfemmes.fr\/gxrSSgs8hQpJ3s0qQUuXEWmNDLA=\/750x500\/45a6cd52d2d346a79622f4b5a56c3b94\/ccmcms-jdf\/39704340.jpg",
@@ -364,7 +359,7 @@
                 {
                     "id": 9,
                     "titre": "G\u00e2teau au chocolat hyper moelleux ",
-                    "auteur": 5,
+                    "auteur": 3,
                     "categorie": "D\u00e9sserts",
                     "pays": "",
                     "image": "https:\/\/cdn.pratico-pratiques.com\/app\/uploads\/sites\/3\/2018\/08\/20193309\/gateau-au-chocolat-hyper-moelleux.jpeg",
@@ -406,53 +401,58 @@
                 },
                 {
                     "id": 10,
-                    "titre": "Lasagne",
-                    "auteur": 6,
-                    "categorie": "Plats",
-                    "pays": "Cuisine italienne",
-                    "image": "https:\/\/assets.afcdn.com\/recipe\/20200408\/109520_w600.jpg",
+                    "titre": "Patl\u0131canl\u0131 \u015ei\u015f K\u00f6fte Tarifi",
+                    "auteur": 2,
+                    "categorie": "Viande",
+                    "pays": "Cuisine Turque",
+                    "image": "https://i.pinimg.com/736x/43/6e/80/436e809f6ee3c06e265ebdc136e5ceca.jpg",
                     "liste_ingredients": {
-                        "nb_personne": "8 personnes",
+                        "nb_personne": "",
                         "ingredient": [
-                            "1 paquet de lasagne",
-                            "3 oignons",
-                            "1 carotte",
-                            "15 cl d'eau",
-                            "thym",
-                            "sel",
-                            "poivre",
-                            "100g de farine",
-                            "125g de beurre",
-                            "2 gousse d'ail",
-                            "1 branche de c\u00e9leri",
-                            "600g de boeuf hach\u00e9",
-                            "1 l de lait"
+                            "Pour les boulettes de viande :",
+                            "400 grammes de b\u0153uf hach\u00e9 mi-gras",
+                            "1 oeuf",
+                            "1 oignon (transform\u00e9)",
+                            "3 cuill\u00e8res \u00e0 soupe de chapelure",
+                            "1 cuill\u00e8re \u00e0 caf\u00e9 de sel",
+                            "1\/2 cuill\u00e8re \u00e0 caf\u00e9 de poivre noir",
+                            "1 cuill\u00e8re \u00e0 caf\u00e9 de cumin",
+                            "1 gousse d'ail r\u00e2p\u00e9e",
+                            " 2 cuill\u00e8res \u00e0 soupe d'huile (pour cuire les boulettes de viande)",
+                            "Pour l'aubergine :",
+                            "4 aubergines (tranch\u00e9es finement, tremp\u00e9es dans de l'eau sal\u00e9e)",
+                            "6 cuill\u00e8res \u00e0 soupe d'huile d'olive",
+                            "1,5 cuill\u00e8res \u00e0 caf\u00e9 de sel",
+                            "Pour la sauce tomate :",
+                            "3 cuill\u00e8res \u00e0 soupe d'huile",
+                            "2 gousses d'ail",
+                            "1,5 tasse de pur\u00e9e de tomates",
+                            "1 cuill\u00e8re \u00e0 soupe de concentr\u00e9 de tomate",
+                            "1 cuill\u00e8re \u00e0 caf\u00e9 de sel",
+                            "1\/2 cuill\u00e8re \u00e0 caf\u00e9 de poivre noir",
+                            "1\/2 tasse d'eau",
+                            "Pour ce qui pr\u00e9c\u00e8de :",
+                            "1 pinc\u00e9e de persil hach\u00e9"
                         ]
                     },
-                    "difficulte": "Facile",
-                    "temps_total": "30 min",
+                    "difficulte": "Moyen",
+                    "temps_total": "1h",
                     "preparation": {
                         "etape": [
-                            "Faire revenir gousses hach\u00e9es d'ail et les oignons \u00e9minc\u00e9s dans un peu d'huile\n                d'olive.",
-                            "Ajouter la carotte et la branche de c\u00e9leri hach\u00e9e puis la viande et faire revenir le\n                tout.",
-                            "Laisser cuire jusqu'\u00e0 \u00e9vaporation.",
-                            "Ajouter la pur\u00e9e de tomates, l'eau et les herbes. Saler, poivrer, puis laisser\n                mijoter \u00e0\n                    feu doux 45 minutes.",
-                            "Pr\u00e9parer la b\u00e9chamel : faire fondre 100 g de beurre.",
-                            "Hors du feu, ajouter la farine d'un coup.",
-                            "Ajouter le lait peu \u00e0 peu.",
-                            "Remuer sans cesse, jusqu'\u00e0 ce que le m\u00e9lange s'\u00e9paississe.",
-                            "Ensuite, parfumer avec la muscade, saler, poivrer. Laisser cuire environ 5 minutes,\n                    \u00e0\n                    feu tr\u00e8s doux, en remuant. R\u00e9server.",
-                            "Pr\u00e9chauffer le four \u00e0 200\u00b0C (thermostat 6-7). Huiler le plat \u00e0 lasagnes. Poser une\n                fine\n                    couche de b\u00e9chamel puis des feuilles de lasagnes, de la bolognaise, de la\n                b\u00e9chamel et du\n                    parmesan. R\u00e9p\u00e9ter l'op\u00e9ration 3 fois de suite.",
-                            "Sur la derni\u00e8re couche de lasagnes, ne mettre que de la b\u00e9chamel et recouvrir de\n                fromage\n                    r\u00e2p\u00e9. Parsemer quelques noisettes de beurre.",
-                            "Enfourner pour environ 25 minutes de cuisson.",
-                            "D\u00e9guster"
+                            "Placer les aubergines tranch\u00e9es finement et s\u00e9ch\u00e9es dans de l'eau sal\u00e9e sur une plaque \u00e0 p\u00e2tisserie recouverte de papier sulfuris\u00e9. Versez dessus l'huile d'olive et le sel et enfournez \u00e0 180 degr\u00e9s pendant 15 minutes.",
+                            "Pour les boulettes de viande ; Dans un bol profond, p\u00e9trir la viande hach\u00e9e, l'\u0153uf, l'oignon, la chapelure, le sel, le poivre noir, le cumin et l'ail jusqu'\u00e0 ce que le tout soit bien m\u00e9lang\u00e9.",
+                            "Prenez des morceaux du m\u00e9lange de la taille d'une paume, fa\u00e7onnez-les en longues boulettes de viande plates et enfilez-les sur des brochettes.",
+                            "Faites cuire les boulettes de viande que vous avez pr\u00e9par\u00e9es dans une po\u00eale chauff\u00e9e pendant environ 2 minutes, devant et derri\u00e8re.",
+                            "Pour la sauce; Faire revenir l'ail avec l'huile dans une po\u00eale. Ajoutez ensuite le concentr\u00e9 de tomates et le concentr\u00e9 de tomates. Assaisonner de sel et de poivre, ajouter de l'eau, faire bouillir un moment et retirer du feu.",
+                            "Placez 2 aubergines sorties du four sur le plan de travail afin qu'elles se touchent. Mettez la brochette de boulettes de viande au bout et enveloppez-la.",
+                            "Placez les boulettes de viande emball\u00e9es dans la plaque du four, versez dessus la sauce tomate et faites-les cuire au four \u00e0 185 degr\u00e9s pendant 15 minutes. Disposez les brochettes de boulettes sorties du four sur une assiette de service, saupoudrez de persil et servez. Bon app\u00e9tit!"
                         ]
                     }
                 },
                 {
                     "id": 11,
                     "titre": "Hamburger",
-                    "auteur": 5,
+                    "auteur": 4,
                     "categorie": "Fast-food",
                     "image": "https:\/\/assets.afcdn.com\/recipe\/20180614\/79556_w600.jpg",
                     "liste_ingredients": {
@@ -483,7 +483,7 @@
                 {
                     "id": 12,
                     "titre": "Sandwich au thon et \u0153uf",
-                    "auteur": 6,
+                    "auteur": 4,
                     "categorie": "Sandwich",
                     "image": "https:\/\/img.cuisineaz.com\/320x320\/2018\/10\/27\/i143583-croque-monsieur-au-saumon-et-au-boursin.webp",
                     "liste_ingredients": {
@@ -513,7 +513,7 @@
                 {
                     "id": 13,
                     "titre": "Maki Sushi",
-                    "auteur": 6,
+                    "auteur": 3,
                     "categorie": "Plats",
                     "image": "https:\/\/img.cuisineaz.com\/312x250\/2013\/12\/20\/i8238-maki-sushi.webp",
                     "liste_ingredients": {
@@ -545,9 +545,9 @@
                 {
                     "id": 14,
                     "titre": "Cappuccino rapide",
-                    "auteur": 6,
+                    "auteur": 3,
                     "categorie": "Boissons",
-                    "image": "https:\/\/cac.img.pmdstatic.net\/fit\/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2F1bcfed7e-ad56-47a6-95a3-b667fcdc9bd3.2Ejpeg\/650x324\/quality\/80\/crop-from\/center\/cappuccino-noisette.jpeg",
+                    "image": "https://images.pexels.com/photos/533393/pexels-photo-533393.jpeg?auto=compress&cs=tinysrgb&w=1200",
                     "liste_ingredients": {
                         "nb_personne": "1 personne",
                         "ingredient": [
@@ -572,9 +572,9 @@
                 {
                     "id": 15,
                     "titre": "Cappuccino noisette",
-                    "auteur": 6,
+                    "auteur": 4,
                     "categorie": "Boissons",
-                    "image": "data:image\/jpeg;base64,\/9j\/4AAQSkZJRgABAQAAAQABAAD\/2wCEAAoHCBUVEhgSEhUSGBgYGBgaGBgSGBgSGRIYGBgZGRkYGBgcIy4lHB4rIRgYJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHhISHjQsJCQ0NDQ0NDY0NjQ0NDQ0NDQ0NDQ0MTY0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQxNP\/AABEIANgA6gMBIgACEQEDEQH\/xAAbAAABBQEBAAAAAAAAAAAAAAAEAAECAwUGB\/\/EAEEQAAIBAgMFBQUFBgUEAwAAAAECAAMRBBIhBTFBUWEicYGRoQYTMlKxFEJywdEVFiNikqJTstLh8GOCwvEkM1T\/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX\/xAAlEQACAgIDAQABBAMAAAAAAAAAAQIREiEDMUFRYRMigaEEMrH\/2gAMAwEAAhEDEQA\/AOa9rR2ZxJGk7j2sXsTi2GkJdmfA\/wBpPDaiFHQQbDC0OZRlvIOgCKAxghEZm1tLBfhrEUF4QjMLzaxOYqLTCwrnMNOM6CpqoiY\/DQwXwSNSSwoskjUnUujzX2zOxq3E53E0dZ09dLzLxGGks1g6MP3ccUpomhGFKQzZAHuIvs801pSfuIrKoxzh4xw81noSpqcLCjN+zxvs80DTjZYCADhovssPyxwkAM8YaP7gzRFOSyxhRme5Mb3TTVyRZIAZRptK1wzXvNrLEi6xBQbs7EFKZBmC76nvM2sUbJMXSIZ6Tj9n++XLOT2z7K1qK5wMy9OE7ha4QZjwlOO9okemUYcJfIc3+O9NHlaVLGxhf2nS0Ix9FGckekpTCLzMzqzpyoGKm94rkazrqvs+iYYVAzZsobhY34ATnvcKWsTG40JcifRXh3O+028CWcgQBlRRpCNl4vK+sIpBOUq0dQtOy2g9RYWrhluJRUE3ONAbrBaqw1xBagkM1iAskiaUJIjhZLNYlKJLlpR0WEIJDNEB1KUEqJNSqIBWEaEwMrI5Za0jaMCGWSCyUUAGtFaSigBG0Vo5MjmgA9pJV1kVMkzQALpYVqgIUXMzH2NUuew288J0nsjjETEqtS2VtNd156r7uhyWTYUeYbdxRVbCcs9Ykb5s7ee7WmAwmknbMeGNRIHWSXviAkssk2o0Xx7mn7u5taZ1pKOog2SopdDosJSnxjUF1mgafZisqjQ2VWuLGGVJk7PezTXqTSL0c041IFeDPCnEGeMaKCI4ERiElmiHtLUMgI4kNGkWNVMArGG1DAK0ENlDGQJjtIkRiFmj5pG0e0AHzRrxWj5YARJiElljhYAJRLAIyrJhYAPRQFh3zsaWMbKO0NwnHpoYR78yWrCyO1TdjMllmpjNSYAyymZxVIqCyeWSAkrQNCu0dRJZZILACyhvmiT2YBSENB0iYxUTYgzaU3UTEWauFe6y4mXIh3EGcQpoO4jM0CmISZWLLEWhLJERgI4kstFNQwOrDKsEcQLB2EjaWlY2WAiu0fLJ5Y4WAEMsfLJhY4WAEMscLJ2iEAGVZO0QjwAaQvJNIQAsxEEYQ2tBGgREgBJgRgJMCBRG0cCStHAgMlTEKXdB0EJWAxLD8AptextzsbadZLYuB97VRDbtNlAOgY2ubnkB9RPTm2StFP4aXNgMxIHQBQAbDXgJMpY9AoKWmcAMA5FyMo5sQPTfKKlNENmYHW3O55aaA9LzZxyObEqbAENcKxLcCGW53XkVZy3Y92mUKcqAJbW4+IXv06zF8rZ0x4Ix8AsKKZBYUg2l+0b8SLAbzD0xlAbsMhOhBcDsra+ot9esza1QKpOQHc1zZbEm5YEaDdY2EqpvmFiFU9rtBg5UcLXFiLAyMpff7NcI\/P6NpMfRzEVKVEG+migbtb7u+8lTxeGYAvRoi\/RLBeebLfpMfDIb5KJLqeBu7ciAQLi1rga6d0r93UGqGoCN3vBmGp4kXvBSa9Bwi\/DaOFwbkBqagEXDo7LcdQANP0lg9jMNVF6VV1NtArLVF+617eMzKdhbfmDFh2RYhSddQTezam\/CG4PalRG7JYqNct1W437yDoDy5QU5ES4o+GbtD2Erpc0np1bC+UXpvbmFbQ+c5WpSZWKupVhvDAgjvBnpFLFV6js4qgdrRMxCm+4BWGW2ttect2\/QTEUiK9GolUAhHAL3b5c6i3LQzWPLfZhPiro8vtHAl+Jw7I7U23qbGVWmxkNFHtFABo4EeG7MwJquRewAux6dImAHLEoO3wqx7gZ1C4SyM2GwxKro1WoM+vTgJkVPeHVnC9M1vQRW\/B0vQL9n1D9w+NhF+yqvy\/3L+sOo4akRepibdAGb85prsvZ9hfHvfj2D+kNh+05eoIOwhLygiUZoiBJARASQECiNo4ElaSAgMdBL1lSy5YAaGyMVkqKeIa6nvADDxH0no2G2+uW9RXK7s6qWK9HVe0OOo07p5UJol6iZWRylgN243AbUcd5mU4+lwe6PRa+HTEpak6ZSLFqXu7a8TcFhbwMC\/dsqqhcpfXM+8X6Ei9iNO+cvQ2vm7VRKbN86k03\/AKhY+s0qO32UdmpXXoWWqPNwT6znbOmLkjSOwkaylLEhTncaKSuugaxOh9ZTW2EGRkWpSTKTbMlM30BvccN3KVD2pfS7I1txenqP6WH0ksP7Tqoyn3YFydEddSdTvOupkp\/gvKXoK2za4Xt1FyLYBkF817aICbWtpfdpKsXSOXPTDagDJcjgO0DyJvxPKaVb2npOuRzTK3vlKsR6jxgg9oaKgZWQWGUWRy1upuAY9gpKtmfQR8ouUC9Vvu39sWBtrwmjhtkO4vTu5GtrBACRuFz\/AM+gR9qyvwe7FtxFJAfMt+UAre0dRgQzuQd+ZsvdqgU+sqmxOSNnA0QtTLU94m+xXKrAq2oGbf4anS17zo8RVBosrsUATVWIescw3FBop\/FbdusNfNVx7PUBvY80sD33\/M8ocXcYWqxJswAUbrAsoJ04kHjrYy4poynKzEx7K1Rinw3sLm9wNL367\/GD2ko06TnGtFaStGgIaH7KxBRiRv005wK0dTY3El7A6\/aW3q+JQUqTJTQLYohCA26\/lOZr4Cop1Ru8DMPMTT2UgqEkLqBfQ2v4Q3EYwo1lZlI0O4zNyp0axhkrOVZbb5HKeRnQviXZlDdtSLkhVNj3wT7dV4Untw7A\/wBMef4D9L8lBwC2u1aiOgYsfQQaphkG6op7ladjUxWxEFvs+LqH+ZiL\/wB4+kBxO19lnSngKg6tWcf+RmpgcylG5sCDLBg36QxKlJ6g93SZByzl\/rNVMOltzX7xAZz\/ANjfgt+6VMpBsQQeR0nUjBoVJz2IG5hYeczPsjG4cX00N768NYrGZKy5YqtPK2Xu9ReJYwJATZrJ2AeYX\/LMZZuV2tQQ8yB\/Si3\/AM3rJkOPZlVUgbkiaNfU36D0FvygVUTmR1+AjV2HEypsW3M+Zj1xAqkshthf25ufqYzbRbpM9jIZpSRDkw5sYx4yVNy3OAAw\/BrrB6BbNvZtIZSx4kKO7eT6Dzm3thMuGYAWuw\/zaDySZdIZadPvY\/5f95se0B\/+MnIuh77hzEu0OXpydopIiNNzAaKPHRCxsoJJ3AC5PhACMU6LZnslXqWaoBTX+bVj3CdTgNgYahY5c78319OEylyRRcYNnK+zmEqqWqZHCBTqRYGUbTdyS6HQ7iLeRE9CevcWAAE5DaeECVGRSMrAnQFrHw3THK5WbxWKo5SmGBOZ7DjYkEd0v7HzVPMyOOplRvB6j9Jm+9M0C0F1AZDLDcXiUpPlZULWB7RddCOgNpXT2vSG\/D0276lUfpNkzlobA6ODOkRxxImA+3UtanhcKOr++qnyL2gyYnGVD\/DQgf8ASpKij\/utp5xO30CpdnS4pGZQqDeRcnQAd5hdHChKTHOGIBJWkPeW\/E\/wJ4m\/Sc5gajqw+0MHsb5GcOe4gXtDNs+0tSsBQQKlMalUGUdB1gMynYkkk3PEx1kBJiUIksPq1LhBwVAO8n\/b6QBYU9Q2VeFrjv3SZAgylRzLBMThbTZ2UoKkHnf0luJwk5ZWpM6ou4o43EUpn1ac6PG4UjhMitS6SouwkjKZJBlhj05UactGbKqaaza2bQuZnUk1nRbJQRSehxWwrFLYqOSj1JhO18WHw1OnxUi\/UKpF\/WC457uTyCjytKcawKLbrKS6Jk+zPMaSMjNjI1PZ\/ZqV6mWo+RQL8ix5Az0LZ+zKNBf4aL+LeT4zzOgLLe9r6wylj6qfC7+enrOabbZ1QgsUz0jEVrAzGeqb63nO0\/aWuuhIbvEKT2lDfHTv+EzNpmiRq40kp2S3hOUqPURwxzaHjN+jtWg25mQ8jul7IlT76MOhtJya8Bxszf2hRq2SpRp7rZnAa3cRrLf3Rwh195R11+J+PjHxOwA3wAjuN4J+71Xm00XIvTJ8T+nNvtV7nSlvPxIpP0lD45z\/AIY\/CifpMZ9ohiSV38pJMYPlM6zmo1PtL\/Ow\/D2fpIPVZhZixHUkiBNjrD4TB3xpMkKNXD2UFuH1MIoJpc7zrMzBFnIZibDcOF5qq8aQNlgEkJEGSEYhxJPU7aL\/AC3\/ALiP0kRJEDsG2t2F+W4xMZubJftEdB\/z1mrUJmDgKmVlPnNx6onPyR3ZvxvVGXjTMPETocTYzHxNMSYmjMWpBmmjVQQVkmiM2V0BrOm2PTvOeww1nS7ObLTLdNInsa0itxmLkcz5TNIIuL8dPSbGDQaiZWI+KbRMGDs0gzSZEYrKJA6mLqIdBmX1EQ20PvqR5iXskrakDwkOKZrGcki1Npo3GFYaupvZhMipgkP3R4aSn7Fb4WYev1kuHwtcz9R0Z6SaPynNo9ZNzA+Ylq7UqL8aHvGv0kvjZouaLOloY+qnwuw8YX+8GI+ectT2wm43Hp6GX\/tOnzMhw\/BSnH6YtP2bxbXyUXbKATks9gdxNjKH2diFNmp1B3i0toPiEvkqOt9NG4SZrYhviqnXmQZ1HCWbH2Bi8U7U6KZmVS5DFV7IsOPfM8USrFWOoJBAN7EGxFxDqArKSRWdSQQfdsy3B3g2tcdI9LBgcIAXYY8t0MpyFGhC0pwASywRwse0AGvL6AuCOVmH0P1EolmHqWYHgdD3HSJrQBtFMwYchfvtv9LnwmfU2y9F8lQZl+6Rvt+cMpVij35H8935R9u7GJXUWBPYbfa+oB8PoZLin2VGTXQL+8FNvvEd+koq7QQ7nXznOYvCuhKupB4XGhHQ8YLEoIt8jOifFKfvDzgz4pPmExg0e95WJOZrJjVB0uZ0GzHdkLtooGVQOJ4nw0HnOb2TgWqVAovrx5DnOyZVBWlTHZQW8eN\/WLFBk2EYQWUk8AfQTBxD3cnrNzFuEo9WOndOflJekt+DRR7RoxDMsgRCKNUqbgKfxi4l6IahACWXiaaE+ZMlui4q+uzOMbLNurhqSdh0AO+7OQSDxA4zMrIuY5M2XhmsT6SVJMqUXHsFKRGnLwhOgBPQaxVaDLbMrC+7MCL+cokCekDvA8pT9iT5V8oaVjZICoiMKvKSFBeUNenKysqxFIQcpIJJ2jwASJCUEpWTvACTGVs8VR4K7xklrVZW1WUM8qZ4Cs2tnVA7FGNiRoeR4Gd9sPDri8K1Cpo6jKT8pW+U\/TznlFGqVYMN4nWLte9MVKbulQrkcIxQutt+nHdJZSYDtzZwYmnUft0iyFRdtxtmU7rH8pkUvZiq\/wACue5Wv5Wt6zr9hbZSi2daAqOQfj4k6k3INzOhTa2PrC9H3WHXMAFYIvxcg69rTW9oWI8rqeyWKB1psB1DD8pGlsNlP8TToL39Z6ycdiVB95WLKNWZ0pKT3LbKq795J+k5zF7YDm2RaoBJYkZQF00BsASNTcAaW5Xitj0YOCrLSuFFiRYHlzPUw7CanqePSUYt6TEe7WopY3VWsRv3A7\/OC4is1K6DRuPNYDCdq4oM+Vdy6QCC03PGEqZQiQkpESUAL0xeULalTYre5e\/bF+XPrrOkwm0UZFOamhtqmdTl6TlJEiZygmax5HE3NrVKIOihmIvmRgAvfb6WmQiljZRcngovKZZSqFTpfqAzpfxQgxqNIHLKWwus7JTNN1GtiCFamw14m1m7wYv2jTKhaiVHIG98pJ\/7r7pVSTOxBfKNTrme3QDWXLswAFnewG4hXa\/gBf0kNL0tNvrozGW9yBYX8ukjlhTYUgFs1MKOLOEv3BrHzln7Nf5Kn9I\/1S8l9M8ZfC2qkoKS95URKRm2VZYgksywzDYLOl1embHWxJIOnZbkdeXGDko9goyl0AZI7JLcyg69oD5NL9xP1kWbMQFW19ALlr+JhkhqLBHPCDuIU6ENYgg31B3xPh2+VvIx2S0ZzCQIhb0TxHnIGlGIoQR1qte4Npe1A2kPckRAMmNdZsr7X4i33L243ty0G8eBAmA6RwsKQWzXb2nxJ0z0wOiJp\/bA6+1ajgh2U3JO47zyG4eEDyGTWjChllPFuPhNuul5MAk8TfnrJU6E1sGKC\/8A2LV05gEHwQkyW6KjGzMWlaWqsPxSoz3ohrH7pVgQd1gDqf8AeSq7KqqLlDuucpDEd4GsakvQxfgABLlRLXL6\/Lkf62t6xlI1BA14kkZeum+SelY2D0W\/DUT6MQYNjS\/AqWFd\/gRj1A0890PoJQQZKyVM4vmBD+YK6EQHC4nI4cKGI4XK38Rv8biFVsUKrgscm4WLdkczc7twmcm\/4NIKP8gz0M9QrTQ2JOVb62A5njoTGr4coQGDA23MCD6w5sECNHQ8iGvr00gFZCrdsk6i5uWIH\/qEZWEuNpFdh0PeLjxhqVGIzFMyi1wiKosP5sp5cxLMbswKmem4ItftEC45g6Shtq18gTOdONhnI5Fzr47+sNS2gVwdMJ+2ovw0z4BV8CdT6QX7RR\/wE8z+kFALHmTGymGCG+SXwuZ5EvGJiWizXygm2+3CaWkY4t9C95Is9+fWxIB77b\/GQdCpsQR3yJB6\/rCkwTcS0VNdPIa+U0aOHFgwPa32dCLH8NxYzJW\/C47iQfMS4O\/z1P6ifreRKLfRrxziv9jYw6lnJqZGZbWypbLxGpub8bX+sG2lXJcIrFQo1Kk6k7wRa+gtu5mCUS4Px1Nbk2dhck3Jte0sd79\/EnUnvMSg09jlyJrQSuyb08\/vA2l8zMXW34zrAUpCay02yLbDIT97PkUX3ZlAubnwMhR2c5+VfxnLe3KEZd2xThdYoBFESupQEOdLX1Btpob37pRU0lqSMnFrszKlERhQENypbeb90glMuwRRcsbAXAue86RqQONA3uhJqghWIwpQ2YpfiodWI7wDcRsPhi5yrcnkoJ\/53xZIeL6KVEvSHrsV8uYsq9G4d5Gg9YkC07LVoO1ie2pIDi9xYG3C0nJeF\/pv3QKy3Fj6ylma2QsxX5WZivkTaFuVJJUEAk2B4DgIK6ytE7XQhVO4BfKN7lm1sfAQnDIpvaoqMNwbsnvBI18LyP2uuL5a4I\/mVHXwIAJHjJb+FqN9lT4N1tmBF919Ol7cpLDYQO+VjpYk23i27TXjaWnH1eLUWuNf4bdb\/f8AyjYWuyElCmu8OCdN+hFork0PGKkNW2ci1Mgelc8KnYI7za1+m88pKts51TNlTKB91hYAd\/5SnEMX7TEHwA8NBKqGVCewrA7xmNPxuu\/xhvsG1dD08FmQ1F93Zd\/bW68+PZ8bSm80q1bCFbsjowBsVUswPS1wfH0jJRwx34jLcbiLkdDpoekE\/onH5\/0z8xHS8jfqZtUNopRXJTZKiZiWuGV7kcmGW2i\/pxlHvaf\/AOdv6jHl+Aw\/IClMsbKCSeA1M0BgcSEIGQDfZAM3dx19YoopsONdmdc3Ba7W4MSb9L8ppLthipRqVMqVItmPLThpr5RRSsU1sjJpugAgE3VMv8oYv6kAzQw+yXIu1lH9R9NIoopyaWh8cVK7CaeHq0vhVHXXRey5P4vy1gP2lDfPSYOb2FNiANANDb4r6x4pC3Zq1TSKXouDq9cdPeVBfwzSaqbBc7EDdnyuR1zMCfWNFNMUYucl0GUMVqFqt2P5EF+gY62X8IBj7VFBdEzFjqMjXVdeJN79w9IopOKTLybjsyGkbA7wPK8UUszC8Nh0ADO9NFPNhc23hUG\/xlmKNK4ai1QOOIBUcr3axB37o8Uj03SVAdSkcwcvUZuZqOSvDTXTwh2GekVIqVMTf5HL1M1uTG68By38IooE+icqzfw0ZRwBOcnr0PTWPTxVWkDlAAJuc6Mem8EWEUUH8BasHxeMeowL20GltAO6QSnff6xRRvQo7bIigx+FWI6AmJ8I6jMUcDmVIEUUlSdg4KikmNePFNDIlSqlWDAKbG4DglfEAjvmi\/tBWO9aJ70Y3\/viiixTLUminC7YNMBfdqy5jcgkEKxuQq8xc2ud00f3jo\/4eJPXKNf748UnBFwm6P\/Z",
+                    "image": "https://images.pexels.com/photos/4606751/pexels-photo-4606751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
                     "liste_ingredients": {
                         "nb_personne": "1 personne",
                         "ingredient": [
@@ -601,7 +601,7 @@
                 {
                     "id": 16,
                     "titre": "P\u00e2te bris\u00e9e au Kitchenaid",
-                    "auteur": 6,
+                    "auteur": 5,
                     "categorie": "Bases",
                     "image": "https:\/\/img.cuisineaz.com\/660x660\/2017\/09\/26\/i132581-pate-brisee-au-kitchenaid.webp",
                     "liste_ingredients": {
@@ -678,34 +678,34 @@
                 },
                 {
                     "id": 19,
-                    "titre": "Cookies maison",
-                    "auteur": 6,
-                    "categorie": "D\u00e9sserts",
-                    "image": "https:\/\/assets.afcdn.com\/recipe\/20190529\/93153_w2000h1556c1cx2220cy1728cxb4441cyb3456.webp",
-                    "temps_total": "10 min",
-                    "difficulte": "Facile",
-                    "cout": "Pas cher",
+                    "titre": "Kuru Fasulye",
+                    "auteur": 1,
+                    "categorie": "Soupes",
+                    "pays": "Cuisine Turque",
+                    "image": "https://i.pinimg.com/736x/d7/73/6c/d7736cf5b0a6adec94ea190e5af8dd62.jpg",
                     "liste_ingredients": {
-                        "nb_personne": "4 personnes",
+                        "nb_personne": "6 personnes",
                         "ingredient": [
-                            "100 gramme chocolat noir",
-                            "85 gramme beurre tendre",
-                            "85 gramme sucre",
-                            "150 gramme farine",
-                            "1 c.\u00e0.c de sel",
-                            "1 c.\u00e0.c de levure chimique",
-                            "1 paquet de sucre vanill&#xE9;",
-                            "1 oeuf"
+                            "500 g haricots blancs",
+                            "3 c. \u00e0 soupe concentr\u00e9 de tomates",
+                            "1 c. \u00e0 soupe beurre",
+                            "sel, poivre",
+                            "1 oignon",
+                            "2 c. \u00e0 soupe huile d'olive",
+                            "1 c. \u00e0 caf\u00e9 paprika"
                         ]
                     },
+                    "difficulte": "Moyen",
+                    "temps_total": "30 minutes ",
                     "preparation": {
                         "etape": [
-                            " D\u00e9tailler le chocolat en p\u00e9pites.",
-                            "Pr\u00e9chauffer le four \u00e0 180\u00b0C (thermostat 6). Dans un saladier, mettre 75 g de beurre, le sucre, l'oeuf entier, la vanille et m\u00e9langer le tout avec une cuill\u00e8re en bois.",
-                            "Ajouter petit \u00e0 petit la farine m\u00e9lang\u00e9e \u00e0 la levure, le sel et le chocolat.",
-                            "Avec une feuille de papier essuie-tout, beurrer une plaque allant au four et former les cookies sur la plaque.",
-                            "Pour former les cookies, utiliser 2 cuill\u00e8res \u00e0 soupe et faire des petits tas espac\u00e9s les uns des autres; ils grandiront \u00e0 la cuisson.",
-                            "Enfourner pour 10 minutes de cuisson."
+                            " Mettre les haricots \u00e0 tremper dans de l\u2019eau froide la veille de la pr\u00e9paration. Ils vont ainsi se gorger d\u2019eau et seront plus simples \u00e0 cuire.",
+                            "Le jour J, faites cuire les haricots dans un grand volume d'eau bouillante. \u00c9cumez r\u00e9guli\u00e8rement la mousse qui se formera. Laissez cuire 20 minutes, et \u00e9gouttez.",
+                            "\u00c9mincez l\u2019oignon et faites le revenir quelques minutes dans le beurre et l\u2019huile.",
+                            "Ajoutez le paprika en poudre et le poivre g\u00e9n\u00e9reusement.",
+                            "Versez les haricots dans la pr\u00e9paration, et m\u00e9langez bien. Salez.",
+                            "Versez 1,5 l d\u2019eau sur les haricots, et laissez mijoter pendant au moins 30 minutes \u00e0 partir de la reprise de l\u2019\u00e9bullition.",
+                            "Rectifiez l'assaisonnement si n\u00e9cessaire, et servez chaud !"
                         ]
                     }
                 },
@@ -866,7 +866,7 @@
                     "titre": "Spaghetti \u00e0 la bolognaise",
                     "auteur": 6,
                     "categorie": "Plats",
-                    "image": "https:\/\/assets.afcdn.com\/recipe\/20230517\/142899_w600.jpg",
+                    "image": "https://i.pinimg.com/736x/0b/da/22/0bda2231163c662d1407d0ce9ca84b17.jpg",
                     "liste_ingredients": {
                         "nb_personne": "2 personnes",
                         "ingredient": [
@@ -899,7 +899,7 @@
                     "titre": "Salade fra\u00eecheur gourmande (p\u00e2tes)",
                     "auteur": 6,
                     "categorie": "Salades",
-                    "image": "https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcQeUjZ9Osg3R08gH9oC7NYLhOlRUWcmxe2VKg&usqp=CAU",
+                    "image": "https://i.pinimg.com/736x/5f/5a/5f/5f5a5f1ad77805b3bc29448703db6a68.jpg",
                     "liste_ingredients": {
                         "nb_personne": "6 personnes",
                         "ingredient": [
@@ -930,7 +930,7 @@
                     "auteur": 5,
                     "categorie": "Accompagnements",
                     "pays": "Cuisine Turque",
-                    "image": "https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcSZr2pYV5MlK_5b66NwF45-ZMEsHh5kudZvQA&usqp=CAU",
+                    "image": "https://i.pinimg.com/736x/2b/cd/93/2bcd93f6df1e2e7a4cac412bf044ecb9.jpg",
                     "liste_ingredients": {
                         "nb_personne": "5 personnes",
                         "ingredient": [
@@ -954,9 +954,9 @@
                 },
                 {
                     "id": 28,
-                    "titre": "Salade grecque",
+                    "titre": "Salade au thon",
                     "auteur": 6,
-                    "image": "https:\/\/assets.afcdn.com\/recipe\/20190704\/94666_w600.jpg",
+                    "image": "https://i.pinimg.com/736x/ef/d6/65/efd6656e3e54a30f4412e8fc9ae859b7.jpg",
                     "categorie": "Salades",
                     "cout": "Pas cher",
                     "liste_ingredients": {
@@ -1051,7 +1051,7 @@
                     "titre": "Soupes aux lentilles rouges",
                     "auteur": "6",
                     "pays": "Cuisine Turque",
-                    "image": "https:\/\/yemek.com\/_next\/image\/?url=https%3A%2F%2Fcdn.yemek.com%2Fmncrop%2F940%2F625%2Fuploads%2F2014%2F06%2Fmercimek-corbasi-yemekcom.jpg&w=1920&q=75",
+                    "image": "https://i.pinimg.com/736x/e8/87/40/e88740ae2817df8507477a5ada45e406.jpg",
                     "categorie": "Soupes",
                     "cout": "Pas cher",
                     "liste_ingredients": {
@@ -1075,6 +1075,64 @@
                             "Mixer le tout au blender et refaites cuire jusqu'\u00e0 \u00e9bullition. Dans une po\u00eale \u00e0 part cuire le piment dans l'huile. L'ajouter \u00e0 la soupe en fin de cuisson selon ce que vous pouvez supporter de piment. ",
                             "Servir chaud avec le citron coup\u00e9 en quartiers servi \u00e0 part pour en ajouter le jus par dessus. ",
                             "* Il est important que les lentilles soient rouges car j'ai essay\u00e9 avec des vertes du Puy et c'est trop \u00e9pais, il faut ajouter le double d'eau et une fois refroidi \u00e7a s'\u00e9paissit encore plus et enfin le go\u00fbt n'est pas le m\u00eame que le vrai. Bon app\u00e9tit."
+                        ]
+                    }
+                },
+                {
+                    "id": 32,
+                    "titre": " Gratin de brocoli",
+                    "auteur": "2",
+                    "image": "https:\/\/img.cuisineaz.com\/660x660\/2015\/11\/21\/i75136-gratin-de-brocoli.webp",
+                    "categorie": "Plats",
+                    "cout": "Pas cher",
+                    "liste_ingredients": {
+                        "nb_personne": "6 personnes",
+                        "ingredient": [
+                            "1kg de Brocoli",
+                            "30g Beurre",
+                            "50cl Lait \u00e9cr\u00e9m\u00e9",
+                            "100g gruy\u00e8re r\u00e2p\u00e9",
+                            "20cl cr\u00eame fra\u00eeche",
+                            "1 oeuf",
+                            "30g farine",
+                            "sel & poivre du moulin"
+                        ]
+                    },
+                    "difficulte": "Facile",
+                    "temps_total": "45min",
+                    "preparation": {
+                        "etape": [
+                            " Pr\u00e9chauffez votre four th.6 (180\u00b0C). ",
+                            " D\u00e9taillez le brocoli en bouquets puis jetez le trognon. Faites cuire les bouquets de brocoli \u00e0 l'autocuiseur 5 \u00e0 10 min dans l'eau sal\u00e9e, puis \u00e9gouttez-les. ",
+                            " Faites fondre le beurre dans une casserole, ajoutez la farine avant que le beurre ne soit color\u00e9 et remuez vivement. Hors du feu, incorporez le lait en fouettant. Remettez votre casserole sur le feu sans cesser de remuer pour que la b\u00e9chamel \u00e9paississe. Hors du feu \u00e0 nouveau, ajoutez la cr\u00e8me, l\u2019\u0153uf, la muscade et 80 g de gruy\u00e8re r\u00e2p\u00e9. ",
+                            " Beurrez un plat \u00e0 gratin, disposez-y les brocolis et versez la sauce au-dessus, parsemez de gruy\u00e8re r\u00e2p\u00e9. Enfournez pendant 15 min puis finissez la cuisson par un passage sous le gril pour dorer le gratin. "
+                        ]
+                    }
+                },
+                {
+                    "id": 33,
+                    "titre": " Citronnade rapide",
+                    "auteur": "2",
+                    "image": "https:\/\/img.cuisineaz.com\/320x320\/2013\/12\/20\/i16050-citronnade-rapide.webp",
+                    "categorie": "Boissons",
+                    "cout": "Pas cher",
+                    "liste_ingredients": {
+                        "nb_personne": "4 personnes",
+                        "ingredient": [
+                            "4 citrons jaune",
+                            "1.5l eau plate",
+                            "180g sucre en poudre ",
+                            "5 gla\u00e7ons"
+                        ]
+                    },
+                    "difficulte": "Facile",
+                    "temps_total": "10 minutes",
+                    "preparation": {
+                        "etape": [
+                            " Prenez les 4 citrons, coupez-les en 2 puis pressez-les pour en extraire le jus. ",
+                            "Versez l'eau plate dans une carafe, ajoutez le sucre en poudre, et faites-le fondre dans l'eau. ",
+                            "Lorsque le sucre est totalement dissout, ajoutez le jus de citron. M\u00e9langez bien puis ajoutez les gla\u00e7ons. ",
+                            "Servez imm\u00e9diatement votre citronnade, pendant qu'elle est bien fra\u00eeche. "
                         ]
                     }
                 }
