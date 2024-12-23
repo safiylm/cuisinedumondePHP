@@ -2,9 +2,15 @@
     --width-ingredients: 40vw;
 }
 
-.div-right a {
+a {
     text-decoration: none;
-    color: rgb(90, 135, 135);
+    color: rgb(2, 2, 2);
+}
+
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(53, 84, 84);
 }
 
 
@@ -16,13 +22,33 @@ body {
     font-size: 1rem;
     line-height: 1.5rem;
 
+    #heart {
+        margin: 0 30px !important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            border: none;
+            border-radius: 5px;
+            padding: 7px 12px;
+            text-decoration: none;
+            color: rgb(123, 131, 131);
+            background-color: transparent;
+            font-weight: 500;
+
+            svg {
+                color: red !important;
+            }
+        }
+    }
+
     .contenu {
         box-sizing: border-box;
-        background-color: white;
         margin: 0 auto;
-        padding: 50px 15px;
+        padding: 15px;
         width: 100vw;
-        background-color: rgb(232, 232, 232);
 
         .div-image-infos,
         .div-ingredients-etapes {
@@ -34,83 +60,50 @@ body {
             padding: 0;
         }
 
-        .div-image-infos {
 
-            .div-image {
-                margin: 0;
-                padding: 0;
-                width: var(--width-ingredients);
-                height: 400px;
 
-                .image-recette {
-                    height: 400px;
-                    width: var(--width-ingredients);
-                    object-fit: cover;
-                }
+        .div-image {
+            margin: 0;
+            padding: 0;
+
+            h1 {
+                margin: 20px 0;
+                text-transform: capitalize;
+                font-size: 2em;
+                font-weight: 800;
+                text-align: center;
+                color: darkslategray;
             }
 
-            .div-right {
-                width: var(--width-ingredients);
-                max-height: 400px;
-                padding: 30px;
-                font-size: 1.1em;
-
-                h1 {
-                    margin: 20px 0;
-                    text-transform: capitalize;
-                    font-size: 2em;
-                    font-weight: 800;
-                    text-align: center;
-                    color: darkslategray;
-                }
-
-                #p-auteur {
-                    text-align: center;
-                    margin: 10px 0;
-                }
-
-                .div-temps {
-                    margin: 10px 0;
-                    padding: 0;
-
-                    .div-temps-element {
-                        margin: 20px;
-
-                        div {
-                            text-align: center;
-                        }
-
-                        :last-child {
-                            color: darkslategray;
-
-                            display: block;
-                        }
-
-                    }
-                }
-
-                #div-btn-save-recette {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: center;
-
-                    a {
-                        border: none;
-                        border-radius: 5px;
-                        padding: 7px 12px;
-                        text-decoration: none;
-                        color: rgb(123, 131, 131);
-                        background-color: transparent;
-                        font-weight: 500;
-
-                        svg {
-                            color: red !important;
-                        }
-                    }
-                }
+            .image-recette {
+                height: 500px;
+                width: 700px;
+                object-fit: cover;
             }
         }
+
+
+
+        table {
+
+            margin: 25px 0;
+            padding: 15px;
+            font-size: 1.1em;
+
+            th {
+                text-align: center;
+                font-weight: 700;
+                padding: 15px;
+                border-bottom: 0.5px solid black;
+            }
+
+            td {
+                text-align: center;
+                color: darkslategray;
+                padding: 15px;
+            }
+        }
+
 
         .div-ingredients-etapes {
 
@@ -130,36 +123,25 @@ body {
                 }
             }
 
-            #ingredients p {
-                font-size: 1.1em;
+
+            #ingredients p,
+            .div-etapes p {
+                color: black;
+                font-size: 17.6px;
                 line-height: 30px;
-                text-align: center;
-                border-bottom: 1px solid lightgray;
                 padding: 8px 0px;
                 margin-top: 4px;
                 margin-bottom: 0;
+                text-align: center;
             }
 
-            .div-etapes {
-                background-color: rgb(244, 244, 244);
+            #ingredients p {
+                border-bottom: 1px solid lightgray;
             }
 
         }
     }
 }
-
-
-
-
-
-
-table.preparation td.preparation_etape {
-    font-size: 1.1em;
-    padding: 0.3em;
-    line-height: 30px;
-
-}
-
 
 
 @media (max-width: 1040px) {
@@ -177,80 +159,74 @@ table.preparation td.preparation_etape {
             height: auto !important;
         }
 
-        .div-image-infos {
-            align-items: center !important;
-            justify-content: center !important;
-            flex-direction: column !important;
+
+        .div-image {
             width: 100vw !important;
 
-            .div-image {
+            .image-recette {
+                height: auto;
                 width: 100vw !important;
-
-                .image-recette {
-                    height: auto;
-                    width: 100vw !important;
-                    object-fit: cover;
-                    min-width: none;
-                }
-            }
-        }
-
-        .div-right {
-            width: 100vw !important;
-            padding: 20px !important;
-            text-align: center;
-
-            h1 {
-                margin: 30px 0;
-                font-size: 2.5em;
-                text-align: center;
-                width: 100%;
-            }
-            #div-btn-save-recette a {
-                font-size: 1.1em;
-            }
-
-            .div-temps {
-                margin: 0 !important;
-                padding: 15px 0 !important;
-                border: none;
-
-                .div-temps-element {
-                    font-size: 1.1em;
-                    margin: 15px;
-
-                    * {
-                        margin: 5px 0;
-                    }
-                }
-            }
-
-         
-
-
-        }
-
-        .div-ingredients-etapes {
-            margin: 0 !important;
-            width: 100vw !important;
-
-            .div-ingredients,
-            .div-etapes {
-                border-radius: none;
-                width: 100vw !important;
-                padding: 5px;
-                margin: 0 !important;
-
-            }
-
-            .div-ingredients,
-            .div-ingredients h2 {
-                padding-top: 10px !important;
-
+                object-fit: cover;
+                min-width: none;
             }
         }
 
     }
 
+    .div-ingredients-etapes {
+        margin: 0 !important;
+        width: 100vw !important;
 
+        .div-ingredients,
+        .div-etapes {
+            border-radius: none;
+            width: 100vw !important;
+            padding: 5px;
+            margin: 0 !important;
+
+        }
+
+        .div-ingredients,
+        .div-ingredients h2 {
+            padding-top: 10px !important;
+
+        }
+    }
+
+}
+@media (max-width: 640px) {
+
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+    }
+
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        left: 6px;
+        content: attr(data-label);
+        font-weight: bold;
+    }
 }

@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 ?>
 
@@ -45,73 +45,57 @@ session_start();
         exit();
     } else {
         $recette = getRecetteById($tab["sitecuisine"]["liste_recette"]['recette'], $id); ?>
+        <div class="d-flex flew-wrap align-items-center justify-content-center">
+            <h1 id='titre'> <?php echo $recette["titre"]; ?> </h1>
+
+            <div id="heart">
+                <?php
+                if (empty($_SESSION['utilisateur']['email'])) {
+                    displayHeartSession($id);
+                } else {
+                    displayHeartXml($xml, $id);
+                } ?>
+            </div>
+        </div>
 
         <div class="contenu d-flex flex-column align-items-center justify-content-center">
-            <div class="div-image-infos d-flex flex-row align-items-center justify-content-start">
 
-                <div class="div-image">
+            <div class="div-image">
 
-                    <?php if (is_file('../Photos/' . $recette["image"])) { ?>
-                        <img src='../Photos/<?php echo $recette["image"]; ?>' width="400px" height="400px" class='image-recette' />
-                    <?php  } else { ?>
-                        <img src='<?php echo $recette["image"]; ?>' width="400px" height="400px" class='image-recette' />
-                    <?php } ?>
-                </div>
-
-                <div class="div-right">
-
-                    <h1 id='titre'> <?php echo $recette["titre"]; ?> </h1>
-                    <div class="d-flex flex-row align-items-center justify-content-evenly">
-                        <?php
-                        foreach ($xml->xpath("//utilisateur[@id='" . $recette["auteur"] . "']") as $item) {
-                            echo "<p id='p-auteur'>Auteur : <a href='../leur-compte/index.php?idUtilisateur=" . $item->attributes() . "' >" . $item->nom . " " . $item->prenom . "</a></p>";
-                        }
-                        ?>
-
-                        <div id="div-btn-save-recette">
-                            <?php
-                             if (empty($_SESSION['utilisateur']['email'])) {
-                                 displayHeartSession($id);
-                             } else {
-                                 displayHeartXml($xml, $id);
-                             } ?>
-                        </div>
-                    </div>
-
-                    <div class="div-temps d-flex flex-wrap flex-row align-items-center justify-content-center">
-                        <div class='div-temps-element d-flex flex-column align-items-center justify-content-center'>
-                            <div> Difficulté </div>
-                            <div> <?php echo $recette["difficulte"]; ?></div>
-                        </div>
-                        <div class='div-temps-element d-flex flex-column align-items-center justify-content-center'>
-                            <div> Temps Totale</div>
-                            <div> <?php echo $recette["temps_total"]; ?></div>
-                        </div>
-
-                        <div class='div-temps-element d-flex flex-column align-items-center justify-content-center'>
-                            <div>Categorie</div>
-                            <div> <a href='../categorie/index.php?categorie=<?php echo $recette['categorie']; ?>'>
-                                    <?php echo $recette['categorie']; ?>
-                                </a>
-                            </div>
-                        </div>
-
-                        <?php if (!empty($recette["pays"])) { ?>
-                            <div class='div-temps-element d-flex flex-column align-items-center justify-content-center'>
-                                <div>Pays</div>
-                                <div> <a href='../categorie/index.php?pays=<?php echo $recette['pays'] ?>'>
-                                        <?php echo $recette['pays']; ?>
-                                    </a>
-                                </div>
-                            </div>
-                        <?php } ?>
-
-                    </div>
-
-
-                </div>
-
+                <?php if (is_file('../Photos/' . $recette["image"])) { ?>
+                    <img src='../Photos/<?php echo $recette["image"]; ?>' width="400px" height="400px" class='image-recette' />
+                <?php  } else { ?>
+                    <img src='<?php echo $recette["image"]; ?>' width="400px" height="400px" class='image-recette' />
+                <?php } ?>
             </div>
+
+            <table>
+                <tr>
+                    <th> Auteur </th>
+                    <th>Difficulté</th>
+                    <th>Temps Totale</th>
+                    <th>Categorie</th>
+                    <?php if (!empty($recette["pays"])) {
+                        echo "<th> Pays  </th>";
+                    } ?>
+                </tr>
+                <tr>
+                    <td> <?php
+                            foreach ($xml->xpath("//utilisateur[@id='" . $recette["auteur"] . "']") as $item) {
+                                echo "<a href='../leur-compte/index.php?idUtilisateur=" . $item->attributes() . "' >" . $item->nom . " " . $item->prenom . "</a>";
+                            }
+                            ?>
+                    </td>
+                    <td> <?php echo $recette["difficulte"]; ?></td>
+                    <td> <?php echo $recette["temps_total"]; ?></td>
+                    <td> <?php echo $recette["categorie"]; ?></td>
+                    <?php if (!empty($recette["pays"])) {
+                        echo "<td> " . $recette["pays"] . "  </td>";
+                    } ?>
+                </tr>
+
+            </table>
+
 
             <div class="div-ingredients-etapes d-flex flex-row flex-wrap align-items-start  justify-content-center">
                 <div class="div-ingredients">
