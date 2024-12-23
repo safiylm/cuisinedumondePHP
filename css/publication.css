@@ -48,9 +48,12 @@ body {
             margin-right: auto;
             padding: 0;
             margin: 10px;
-            background-color: whitesmoke;
+            background-color: white;
             box-shadow: #f98d8d ;
             border-radius: 20px 20px 0 0;
+            box-shadow: #d3d3d3 4px 4px 20px;
+            text-decoration: none;
+            display: block;
 
             .div-img {
 
@@ -103,14 +106,12 @@ body {
                 height: 90px;
 
                 .a-titre {
-
                     display: block;
-                    text-decoration: none;
-                    font-size: 1em;
+                 
+                    font-size: 1.2em;
                     text-align: center;
-                    text-transform: capitalize;
-                    color: darkslategrey;
-                
+                    color: black;
+                    font-weight: lighter;
                 }
 
                 .a-titre:hover {
@@ -129,6 +130,10 @@ body {
             }
         }
 
+        .btn-light{
+            background-color: transparent !important;
+            border:none; 
+        }
         #heart{
             width: 20px;
             height: 20px ;
