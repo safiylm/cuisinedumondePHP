@@ -1,24 +1,44 @@
-body {
-    margin: 0 ;
-    padding: 0;
-}
 
-#nav__title {
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #nav__title {
     font-size: 22px;
     color: darkslategray;
     font-weight: 800;
     text-decoration: none;
     padding-left: 15px;
     text-decoration: none;
-}
+  }
 
+  .navbar {
+    background-color: white !important;
 
-h1, h2{
-   
-        color: darkslategray !important;
-        font-weight: 800;
-        font-size:35px;
-        padding: 25px 0;
-        text-decoration: none !important;
-    
-}
+  }
+
+  #navbarText {
+    position: absolute;
+    right: 0;
+
+    li a {
+      font-size: 18px;
+      color: darkslategray;
+      font-weight: 700;
+      text-decoration: none;
+      padding-left: 15px;
+      text-decoration: none;
+      padding-right: 15px;
+    }
+  }
+
+  h1,
+  h2 {
+
+    color: darkslategray !important;
+    font-weight: 800;
+    font-size: 35px;
+    padding: 25px 0;
+    text-decoration: none !important;
+  }
