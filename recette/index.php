@@ -82,7 +82,7 @@ session_start();
                 <tr>
                     <td> <?php
                             foreach ($xml->xpath("//utilisateur[@id='" . $recette["auteur"] . "']") as $item) {
-                                echo "<a href='../leur-compte/index.php?idUtilisateur=" . $item->attributes() . "' >" . $item->nom . " " . $item->prenom . "</a>";
+                                echo "<a href='../leur-compte/index.php?id=" . $item->attributes() . "' >" . $item->nom . " " . $item->prenom . "</a>";
                             }
                             ?>
                     </td>

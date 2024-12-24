@@ -16,22 +16,22 @@ function recette($recette, $xml)
                     <a class="element" href="recette/index.php?idRecette=' . $id . '">
                         <div class="div-img">
                             <img src="' . $url_image . '" style="width : 100%; height : 300px;" />
-                        </div>'.
-                        // <div class="info-recette">
-                        //         <div>' . $temps_total . '</div>
-                        //         <div>' . $difficulte . '</div>
-                        // </div>
-                       ' <div class="div-titre">
+                        </div>' .
+        // <div class="info-recette">
+        //         <div>' . $temps_total . '</div>
+        //         <div>' . $difficulte . '</div>
+        // </div>
+        ' <div class="div-titre">
                             <div class="a-titre">
                                 ' . $titre . '
                                 </div>';
-                               
-                                if (empty($_SESSION['utilisateur']['email'])) {
-                                    displayHeartSession($id);
-                                } else {
-                                    displayHeartXml($xml, $id, true);
-                                }
-                                echo '</div>
+
+    if (empty($_SESSION['utilisateur']['email'])) {
+        displayHeartSession($id);
+    } else {
+        displayHeartXml($xml, $id, true);
+    }
+    echo '</div>
                     </a>
                 </div>';
 }
@@ -51,15 +51,15 @@ function recette_($recette, $xml)
     }
 
     echo '<div class="flex-item">
-                     <a class="element" href="../recette/index.php?idRecette=' . $id . '">
+                    <a class="element" href="../recette/index.php?idRecette=' . $id . '">
                         <div class="div-img">
                             <img src="' . $url_image . '" style="width : 100%; height : 300px;" />
-                         </div>'.
-                        // <div class="info-recette">
-                        //         <div>' . $temps_total . '</div>
-                        //         <div>' . $difficulte . '</div>
-                        // </div>
-                       ' <div class="div-titre">
+                         </div>' .
+        // <div class="info-recette">
+        //         <div>' . $temps_total . '</div>
+        //         <div>' . $difficulte . '</div>
+        // </div>
+        ' <div class="div-titre">
                             <div class="a-titre">
                                 ' . $titre . '
                             </div>';
@@ -70,7 +70,7 @@ function recette_($recette, $xml)
         displayHeartXml($xml, $id, false);
     }
     echo '</div>
-                 </a>
+                    </a>
                 </div>';
 }
 

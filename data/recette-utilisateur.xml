@@ -8,55 +8,42 @@
             <nom>Yilmaz</nom>
             <email>safinazylm@gmail.com</email>
             <password>123</password>
+            <photo_de_profil>
+                https://images.pexels.com/photos/29480470/pexels-photo-29480470/free-photo-of-tranquil-autumn-path-lined-with-bare-trees.jpeg</photo_de_profil>
         </utilisateur>
 
         <utilisateur id="2">
-            <prenom>Berat</prenom>
-            <nom>Yilmaz</nom>
-            <email>berat@gmail.com</email>
+            <prenom>Jean</prenom>
+            <nom>Martin</nom>
+            <email>jean.martin@gmail.com</email>
             <password>123</password>
-        </utilisateur>
+            <isEmailChecked>false</isEmailChecked>
+            <dateCreation>2024/05/17</dateCreation>
+            <photo_de_profil>https://images.pexels.com/photos/14495016/pexels-photo-14495016.jpeg</photo_de_profil>
 
+        </utilisateur>
         <utilisateur id="3">
-            <prenom>azra</prenom>
-            <nom>yilmaz</nom>
-            <email>azra@gmail.com</email>
+            <prenom>Camille</prenom>
+            <nom>Marchand</nom>
+            <email>camille.marchand@gmail.com</email>
             <password>123</password>
-        </utilisateur>
-        <utilisateur id="4">
-            <prenom>Zehra</prenom>
-            <nom>kaya</nom>
-            <email>zehrakaya@gmail.com</email>
-            <password>123</password>
+            <isEmailChecked>false</isEmailChecked>
+            <dateCreation>2024/05/23</dateCreation>
+            <photo_de_profil>
+                https://images.pexels.com/photos/29851687/pexels-photo-29851687/free-photo-of-artisanal-dessert-with-sparkling-cupcakes.jpeg</photo_de_profil>
+
         </utilisateur>
 
-        <utilisateur id="5">
-            <prenom>Talha</prenom>
-            <nom>Kayahan</nom>
-            <email>talhakaya@gmail.com</email>
-            <password>123</password>
-        </utilisateur>
-
-
-        <utilisateur id="6">
-            <prenom>Yilmaz</prenom>
-            <nom>Safinaz</nom>
-            <email>safinazyilmaz54@gmail.com</email>
-            <password>$2y$10$5nkA58cwS2cgM8P1MjIFz.8r0Hz65vLALRGsx/NPC1pWtjSQqKuhG</password>
-            <isEmailChecked>true</isEmailChecked>
-            <dateCreation>2023/12/12</dateCreation>
-        </utilisateur>
     </liste_utilisateur>
 
+
     <liste_enregistrements>
+        <enregistrement id="1">
+            <email_utilisateur>camille.marchand@gmail.com</email_utilisateur>
+            <id_recette>5</id_recette>
+        </enregistrement>
 
-
-        
-        
-        
-        
-        
-    <enregistrement id="3"><email_utilisateur>safinazyilmaz54@gmail.com</email_utilisateur><id_recette>5</id_recette></enregistrement><enregistrement id="3"><email_utilisateur>safinazyilmaz54@gmail.com</email_utilisateur><id_recette>26</id_recette></enregistrement><enregistrement id="3"><email_utilisateur>safinazyilmaz54@gmail.com</email_utilisateur><id_recette>7</id_recette></enregistrement><enregistrement id="4"><email_utilisateur>safinazyilmaz54@gmail.com</email_utilisateur><id_recette>2</id_recette></enregistrement></liste_enregistrements>
+    </liste_enregistrements>
 
     <liste_commentaires>
 
@@ -122,7 +109,7 @@
             <nbetoile>4</nbetoile>
         </note_etoile>
         <note_etoile id="5">
-            <email_utilisateur/>
+            <email_utilisateur />
             <id_recette>4</id_recette>
             <nbetoile>3</nbetoile>
         </note_etoile>
@@ -142,9 +129,14 @@
             <nbetoile>3</nbetoile>
         </note_etoile>
         <note_etoile id="9">
-            <email_utilisateur/>
+            <email_utilisateur />
             <id_recette>18</id_recette>
             <nbetoile>4</nbetoile>
         </note_etoile>
-    <note_etoile id="10"><email_utilisateur>safinazyilmaz54@gmail.com</email_utilisateur><id_recette>1</id_recette><nbetoile>3</nbetoile></note_etoile></liste_note_etoile>
+        <note_etoile id="10">
+            <email_utilisateur>safinazyilmaz54@gmail.com</email_utilisateur>
+            <id_recette>1</id_recette>
+            <nbetoile>3</nbetoile>
+        </note_etoile>
+    </liste_note_etoile>
 </recette_utilisateur>
