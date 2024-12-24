@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 ?>
 <!DOCTYPE html>
@@ -12,9 +12,9 @@ session_start();
 
     <title> Mon compte | Cuisine du monde </title>
 
-    <?php 
-    include("../shared/header.php"); 
-    
+    <?php
+    include("../shared/header.php");
+
     $json_object = file_get_contents("../data/recette.json");
     $tab = json_decode($json_object, true);
 
@@ -36,11 +36,37 @@ session_start();
     ?>
     <div class="div-mon-compte">
 
+
+        <div class="div-mon-compte-sommaire d-flex flex-column align-items-center flex-wrap justify-content-center">
+            <img src='<?php echo $_SESSION['utilisateur']['photo_de_profil']; ?>' alt='photo de profil de <?php echo $prenom . " " . $nom; ?>' />
+            <h3>Hello <?php echo $_SESSION['utilisateur']['prenom']; ?></h3>
+            <table>
+                <tr>
+                    <th>Nombre de recettes</th>
+                    <th>Followers</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>450</td>
+                </tr>
+
+            </table>
+
+            <div class="btn-group-vertical">
+                <a class="btn btn-light" id="favoris-btn" href='#favoris'> Mes favoris </a>
+                <a class="btn btn-light" id="mes-recettes-btn" href='#mesrecettes'> Mes recettes</a>
+                <a class="btn btn-light" id="mes-donnees-personnelles-btn" href='#donneespersonnelles'> Mes données personnelles </a>
+                <a class="btn btn-light" id="deposer-recette-btn" href='#addrecette'> Déposer une recette </a>
+                <button class="btn btn-light" onclick="sedeconnecter()"> Se déconnecter </button>
+            </div>
+        </div>
+
+
         <div class="div-mon-compte-main">
 
             <div id="mes-recettes-contenu">
                 <h1>Mes recettes</h1>
-                    <?php getMyAllRespices($tab, $_SESSION['utilisateur']['id'], $xml); ?>
+                <?php getMyAllRespices($tab, $_SESSION['utilisateur']['id'], $xml); ?>
             </div>
 
             <div id="mon-carnet-contenu">
@@ -58,96 +84,76 @@ session_start();
 
         </div>
 
-        <div class="div-mon-compte-sommaire d-flex flex-column align-items-center flex-wrap justify-content-center">
-            <img src='../Photos/personne.png' />
-            <h3>Hello <?php echo $_SESSION['utilisateur']['prenom']; ?></h3>
-
-            <div class="btn-group-vertical">
-                <a class="btn btn-primary" id="favoris-btn" href='#favoris'> Mes favoris </a>
-                <a class="btn btn-primary" id="mes-recettes-btn" href='#mesrecettes'> Mes recettes</a>
-                <a class="btn btn-primary" id="mes-donnees-personnelles-btn" href='#donneespersonnelles'> Mes données personnelles </a>
-                <a class="btn btn-primary" id="deposer-recette-btn"  href='#addrecette'> Déposer une recette </a>
-                <button class="btn btn-primary" onclick="sedeconnecter()"> Se déconnecter </button>
-            </div>
-        </div>
-
-
-    </div>
 
     </div>
 
     <script>
-    
-    const queryString = document.location.href ;
-    console.log(document.location.href )
+        const queryString = document.location.href;
+        console.log(document.location.href)
 
-        function displayFavoris(){
+        function displayFavoris() {
             $('#mes-donnees-personnelles-contenu').hide()
             $('#deposer-recette-contenu').hide()
             $('#mes-recettes-contenu').hide()
             $('#mon-carnet-contenu').show()
         }
 
-        function displayRecettes(){
+        function displayRecettes() {
             $('#mes-recettes-contenu').show()
             $('#mes-donnees-personnelles-contenu').hide()
             $('#deposer-recette-contenu').hide()
             $('#mon-carnet-contenu').hide()
         }
-        
-        function displayDonneesPersonnelles(){
+
+        function displayDonneesPersonnelles() {
             $('#mes-recettes-contenu').hide()
             $('#mes-donnees-personnelles-contenu').show()
             $('#mon-carnet-contenu').hide()
             $('#deposer-recette-contenu').hide()
         }
 
-        function displayAddRecette(){
-             $('#mes-recettes-contenu').hide()
+        function displayAddRecette() {
+            $('#mes-recettes-contenu').hide()
             $('#mes-donnees-personnelles-contenu').hide()
             $('#mon-carnet-contenu').hide()
             $('#deposer-recette-contenu').show()
         }
-        
+
         displayRecettes();
-        
+
         $('#mes-recettes-btn').click(function() {
-           displayRecettes();
+            displayRecettes();
         })
-  
+
         $('#mes-donnees-personnelles-btn').click(function() {
-           displayDonneesPersonnelles()
+            displayDonneesPersonnelles()
         })
-  
+
         $('#deposer-recette-btn').click(function() {
-           displayAddRecette()
+            displayAddRecette()
         })
 
         $('#favoris-btn').click(function() {
             displayFavoris()
         })
-        
-        
-        
-        if( queryString.indexOf("#favoris") !== -1)
-        {
+
+
+
+        if (queryString.indexOf("#favoris") !== -1) {
             displayFavoris()
         }
-     
-        if( queryString.indexOf("#mesrecettes")!== -1)
-        { 
+
+        if (queryString.indexOf("#mesrecettes") !== -1) {
             displayRecettes();
         }
-        
-        if( queryString.indexOf("#addrecette")!== -1)
-        { 
-           displayAddRecette()
+
+        if (queryString.indexOf("#addrecette") !== -1) {
+            displayAddRecette()
         }
-        
-        if( queryString.indexOf("#donneespersonnelles")!== -1)
-        {
+
+        if (queryString.indexOf("#donneespersonnelles") !== -1) {
             console.log('dta')
-           displayDonneesPersonnelles()
+            displayDonneesPersonnelles()
         }
 
         function sedeconnecter() {

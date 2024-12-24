@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 ?>
 <!DOCTYPE html>
@@ -22,19 +22,20 @@ session_start();
     include('../shared/header.php');
     include("../shared/favorisfunction.php");
 
-    
-    $path = "//utilisateur[@id= " . $_GET["idUtilisateur"] . "]";
+
+    $path = "//utilisateur[@id= " . $_GET["id"] . "]";
 
     foreach ($xml->xpath($path) as $item) {
         $id = $item->attributes();
         $nom = $item->nom;
         $prenom = $item->prenom;
         $email = $item->email;
+        $photo = $item->photo_de_profil;
     }
-   
+
     ?>
     <title><?php echo $prenom . " " . $nom; ?> | Cuisine du monde </title>
-   
+
 </head>
 
 <body>
@@ -44,13 +45,24 @@ session_start();
     ?>
     <div class="div-mon-compte">
 
-        <div class="div-mon-compte-main">
-            <?php getAllRespicesByUserId($tab, $_GET["idUtilisateur"], $xml); ?>
+        <div class="div-mon-compte-sommaire d-flex flex-column align-items-center flex-wrap justify-content-center">
+            <img src='<?php echo $photo; ?>' alt='photo de profil de <?php echo $prenom . " " . $nom; ?>' />
+            <h1> <?php echo $prenom . " " . $nom; ?></h1>
+            <table>
+                <tr>
+                    <th>Nombre de recettes</th>
+                    <th>Followers</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>450</td>
+                </tr>
+
+            </table>
         </div>
 
-        <div class="div-mon-compte-sommaire d-flex flex-column align-items-center flex-wrap justify-content-center">
-            <img src='../Photos/personne.png' />
-            <h1> <?php echo $prenom . " " . $nom; ?></h1>
+        <div class="div-mon-compte-main">
+            <?php getAllRespicesByUserId($tab, $_GET["id"], $xml); ?>
         </div>
 
     </div>

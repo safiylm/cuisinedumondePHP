@@ -30,6 +30,7 @@ if (!empty($email) && !empty($password)) {
                 $_SESSION['utilisateur']['password'] = $item->password[0]->__toString();
                 $_SESSION['utilisateur']['prenom'] = $item->prenom[0]->__toString();
                 $_SESSION['utilisateur']['nom'] =  $item->nom[0]->__toString();
+                $_SESSION['utilisateur']['photo_de_profil'] =  $item->photo_de_profil[0]->__toString();
     
                 echo "<script>document.location.href='../mon-compte/index.php'</script>";
                 //header not working 
